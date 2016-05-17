@@ -450,7 +450,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-wq-LLa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-wq-LLa">
                                 <rect key="frame" x="360" y="152" width="300" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="TOj-kW-gur"/>
@@ -517,7 +517,6 @@
                             <constraint firstItem="jmn-yG-ivD" firstAttribute="baseline" secondItem="5vH-Z2-vXD" secondAttribute="baseline" id="Onl-yA-Qe5"/>
                             <constraint firstItem="MW0-oU-d4U" firstAttribute="top" secondItem="jmn-yG-ivD" secondAttribute="bottom" constant="50" id="RnV-v9-AdN"/>
                             <constraint firstItem="wFB-kK-iIY" firstAttribute="trailing" secondItem="JbI-dE-7TP" secondAttribute="trailing" id="S4a-UV-fPN"/>
-                            <constraint firstItem="ukV-NT-SUS" firstAttribute="leading" secondItem="SVK-wq-LLa" secondAttribute="leading" id="Ua6-vi-mI2"/>
                             <constraint firstItem="MW0-oU-d4U" firstAttribute="centerX" secondItem="KNB-cE-SEr" secondAttribute="centerX" id="Wd6-m3-2UB"/>
                             <constraint firstItem="JbI-dE-7TP" firstAttribute="top" secondItem="MW0-oU-d4U" secondAttribute="top" id="aVI-LJ-4Mq"/>
                             <constraint firstItem="wFB-kK-iIY" firstAttribute="bottom" secondItem="LqS-To-mW7" secondAttribute="bottom" id="ar0-5j-0TT"/>
@@ -530,7 +529,663 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EK3-a8-fKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="5249"/>
+            <point key="canvasLocation" x="901" y="5181"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="37v-t6-ECI">
+            <objects>
+                <viewController id="1rR-4v-nCO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EyY-FB-106"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpu-qB-tag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DCq-dp-0zb">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-bH-2gH">
+                                <rect key="frame" x="647" y="62" width="480" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="oPa-nZ-GYT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m9-SK-Pme">
+                                <rect key="frame" x="1180" y="62" width="109" height="40"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AID-9W-I9D">
+                                <rect key="frame" x="135" y="620" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Bq-U2-zlD"/>
+                                    <constraint firstAttribute="height" constant="400" id="Z0n-gY-9ib"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGU-Xa-arS">
+                                <rect key="frame" x="135" y="152" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6SB-fm-w0s"/>
+                                    <constraint firstAttribute="height" constant="400" id="eu8-kJ-L0w"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uql-fN-d2h">
+                                <rect key="frame" x="1035" y="620" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IPG-2e-Cs0"/>
+                                    <constraint firstAttribute="height" constant="400" id="cai-Be-tJ2"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po8-Jv-kZg">
+                                <rect key="frame" x="585" y="620" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="DaA-oi-b1k"/>
+                                    <constraint firstAttribute="width" constant="300" id="Sv8-y4-czx"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkG-6b-ZdI">
+                                <rect key="frame" x="1485" y="620" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="WCr-wp-IPX"/>
+                                    <constraint firstAttribute="width" constant="300" id="ffu-CO-Q14"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktm-8Q-43q">
+                                <rect key="frame" x="1485" y="152" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4Cg-2Z-cEq"/>
+                                    <constraint firstAttribute="height" constant="400" id="sPA-W3-8Nx"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKy-sY-cxr">
+                                <rect key="frame" x="585" y="152" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5cG-hB-Kx9"/>
+                                    <constraint firstAttribute="height" constant="400" id="xce-vn-erl"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-WN-fb2">
+                                <rect key="frame" x="1035" y="152" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Ss-36-bG4"/>
+                                    <constraint firstAttribute="height" constant="400" id="HeP-bT-7QJ"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="AID-9W-I9D" firstAttribute="leading" secondItem="DCq-dp-0zb" secondAttribute="leadingMargin" constant="115" id="0lC-vW-h9f"/>
+                            <constraint firstItem="ZKy-sY-cxr" firstAttribute="top" secondItem="9v0-bH-2gH" secondAttribute="bottom" constant="50" id="1wD-f4-5Hg"/>
+                            <constraint firstItem="Uql-fN-d2h" firstAttribute="trailing" secondItem="MdW-WN-fb2" secondAttribute="trailing" id="2fM-pa-hPH"/>
+                            <constraint firstItem="9v0-bH-2gH" firstAttribute="baseline" secondItem="9m9-SK-Pme" secondAttribute="baseline" id="3cx-al-9WQ"/>
+                            <constraint firstItem="ZKy-sY-cxr" firstAttribute="top" secondItem="AGU-Xa-arS" secondAttribute="top" id="AMN-Wc-AVl"/>
+                            <constraint firstItem="PkG-6b-ZdI" firstAttribute="trailing" secondItem="ktm-8Q-43q" secondAttribute="trailing" id="Bxc-gG-gJj"/>
+                            <constraint firstItem="9m9-SK-Pme" firstAttribute="leading" secondItem="9v0-bH-2gH" secondAttribute="trailing" constant="53" id="De8-Tq-bm8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PkG-6b-ZdI" secondAttribute="trailing" constant="115" id="FES-en-lbc"/>
+                            <constraint firstItem="mpu-qB-tag" firstAttribute="top" secondItem="PkG-6b-ZdI" secondAttribute="bottom" constant="60" id="Mid-Cy-Q8Y"/>
+                            <constraint firstItem="AID-9W-I9D" firstAttribute="leading" secondItem="AGU-Xa-arS" secondAttribute="leading" id="OBv-67-Ub5"/>
+                            <constraint firstItem="ktm-8Q-43q" firstAttribute="top" secondItem="MdW-WN-fb2" secondAttribute="top" id="OHU-ji-Ae3"/>
+                            <constraint firstItem="PkG-6b-ZdI" firstAttribute="leading" secondItem="Uql-fN-d2h" secondAttribute="trailing" constant="150" id="OHX-mh-PVU"/>
+                            <constraint firstItem="po8-Jv-kZg" firstAttribute="leading" secondItem="ZKy-sY-cxr" secondAttribute="leading" id="RbK-Zq-rSq"/>
+                            <constraint firstItem="9v0-bH-2gH" firstAttribute="leading" secondItem="DCq-dp-0zb" secondAttribute="leading" constant="647" id="WiM-FR-0L9"/>
+                            <constraint firstItem="PkG-6b-ZdI" firstAttribute="bottom" secondItem="Uql-fN-d2h" secondAttribute="bottom" id="dKN-Bb-N2i"/>
+                            <constraint firstItem="mpu-qB-tag" firstAttribute="top" secondItem="AID-9W-I9D" secondAttribute="bottom" constant="60" id="hIo-G5-4A2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ktm-8Q-43q" secondAttribute="trailing" constant="115" id="iCx-Ev-hjG"/>
+                            <constraint firstItem="po8-Jv-kZg" firstAttribute="leading" secondItem="AID-9W-I9D" secondAttribute="trailing" constant="150" id="iyj-p3-GPG"/>
+                            <constraint firstItem="MdW-WN-fb2" firstAttribute="top" secondItem="9m9-SK-Pme" secondAttribute="bottom" constant="50" id="jt5-ym-qJE"/>
+                            <constraint firstItem="9v0-bH-2gH" firstAttribute="top" secondItem="EyY-FB-106" secondAttribute="bottom" constant="62" id="ml0-Yq-pJo"/>
+                            <constraint firstItem="po8-Jv-kZg" firstAttribute="bottom" secondItem="AID-9W-I9D" secondAttribute="bottom" id="wLa-yI-dlU"/>
+                            <constraint firstItem="AGU-Xa-arS" firstAttribute="leading" secondItem="DCq-dp-0zb" secondAttribute="leadingMargin" constant="115" id="ySm-8k-mJr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Loq-Cf-o52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="6513"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gIX-fJ-Y7R">
+            <objects>
+                <viewController id="FhU-KX-0tY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3yV-tR-Hff"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gz0-hV-Oca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NDZ-Yl-5U1">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
+                                <rect key="frame" x="647" y="62" width="480" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="Cpc-Sn-kb5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-6u-m4E">
+                                <rect key="frame" x="1180" y="62" width="109" height="40"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-Kl-w0T">
+                                <rect key="frame" x="115" y="615" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="V0D-oG-UL6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ozy-ai-CSl"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-PP-xth">
+                                <rect key="frame" x="115" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="U3Y-LX-M0c"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="VlK-Ju-Ocm"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ika-3B-LFE">
+                                <rect key="frame" x="475" y="615" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="h06-We-hQy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="sUP-V0-3WR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tg-Gc-0ge">
+                                <rect key="frame" x="835" y="615" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="33w-mz-IdT"/>
+                                    <constraint firstAttribute="width" constant="250" id="ha2-3v-6B6"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-hR-Chk">
+                                <rect key="frame" x="835" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="bxa-N0-z1Z"/>
+                                    <constraint firstAttribute="width" constant="250" id="f9W-KU-nw3"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Un-sz-Onj">
+                                <rect key="frame" x="1555" y="615" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="VCw-qk-WaT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ohx-aV-isV"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-Ya-5bp">
+                                <rect key="frame" x="1555" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="CuG-8F-rNd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="Wjn-yO-iRR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Nc-vwx">
+                                <rect key="frame" x="475" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="mrP-Rm-RfJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="yqs-Tw-ljF"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-KQ-oJy">
+                                <rect key="frame" x="1195" y="615" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="0xN-LY-tRQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="N7a-qS-p7g"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Ve-8Ew">
+                                <rect key="frame" x="1195" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="1cP-1D-9Wt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="6CL-GY-1Ic"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Un-sz-Onj" firstAttribute="leading" secondItem="Pny-KQ-oJy" secondAttribute="trailing" constant="110" id="6wv-I2-YRw"/>
+                            <constraint firstItem="Pny-KQ-oJy" firstAttribute="leading" secondItem="0Tg-Gc-0ge" secondAttribute="trailing" constant="110" id="8Hz-F0-ugt"/>
+                            <constraint firstItem="pA5-Nc-vwx" firstAttribute="leading" secondItem="0V2-PP-xth" secondAttribute="trailing" constant="110" id="ANF-55-BJj"/>
+                            <constraint firstItem="EP4-cJ-LLf" firstAttribute="leading" secondItem="NDZ-Yl-5U1" secondAttribute="leading" constant="647" id="Amx-To-f6v"/>
+                            <constraint firstItem="SH3-Kl-w0T" firstAttribute="leading" secondItem="0V2-PP-xth" secondAttribute="leading" id="EQV-cz-cjg"/>
+                            <constraint firstItem="Rgg-Ya-5bp" firstAttribute="leading" secondItem="HBG-Ve-8Ew" secondAttribute="trailing" constant="110" id="FWX-Z6-CI6"/>
+                            <constraint firstItem="Gz0-hV-Oca" firstAttribute="top" secondItem="0Tg-Gc-0ge" secondAttribute="bottom" constant="115" id="MNa-hP-Hl5"/>
+                            <constraint firstItem="pA5-Nc-vwx" firstAttribute="top" secondItem="EP4-cJ-LLf" secondAttribute="bottom" constant="70" id="MwQ-S5-MrZ"/>
+                            <constraint firstItem="HBG-Ve-8Ew" firstAttribute="leading" secondItem="uUZ-hR-Chk" secondAttribute="trailing" constant="110" id="Oau-2K-BoF"/>
+                            <constraint firstItem="0Tg-Gc-0ge" firstAttribute="leading" secondItem="ika-3B-LFE" secondAttribute="trailing" constant="110" id="Ofv-Ux-i5D"/>
+                            <constraint firstItem="HBG-Ve-8Ew" firstAttribute="top" secondItem="dQa-6u-m4E" secondAttribute="bottom" constant="70" id="PMU-kz-ZyH"/>
+                            <constraint firstItem="Rgg-Ya-5bp" firstAttribute="top" secondItem="HBG-Ve-8Ew" secondAttribute="top" id="SrI-Xy-iAb"/>
+                            <constraint firstItem="0Tg-Gc-0ge" firstAttribute="centerX" secondItem="NDZ-Yl-5U1" secondAttribute="centerX" id="T4t-nt-eni"/>
+                            <constraint firstItem="uUZ-hR-Chk" firstAttribute="centerX" secondItem="NDZ-Yl-5U1" secondAttribute="centerX" id="bda-wD-Rmt"/>
+                            <constraint firstItem="Pny-KQ-oJy" firstAttribute="trailing" secondItem="HBG-Ve-8Ew" secondAttribute="trailing" id="bhh-2b-2nS"/>
+                            <constraint firstItem="EP4-cJ-LLf" firstAttribute="top" secondItem="3yV-tR-Hff" secondAttribute="bottom" constant="62" id="cUZ-ZW-r9L"/>
+                            <constraint firstItem="EP4-cJ-LLf" firstAttribute="baseline" secondItem="dQa-6u-m4E" secondAttribute="baseline" id="dj2-kO-Sbm"/>
+                            <constraint firstItem="pA5-Nc-vwx" firstAttribute="top" secondItem="0V2-PP-xth" secondAttribute="top" id="dv6-m0-NTc"/>
+                            <constraint firstItem="HBG-Ve-8Ew" firstAttribute="top" secondItem="uUZ-hR-Chk" secondAttribute="top" id="eGI-5I-zK3"/>
+                            <constraint firstItem="dQa-6u-m4E" firstAttribute="leading" secondItem="EP4-cJ-LLf" secondAttribute="trailing" constant="53" id="fkv-tN-5XP"/>
+                            <constraint firstItem="uUZ-hR-Chk" firstAttribute="leading" secondItem="pA5-Nc-vwx" secondAttribute="trailing" constant="110" id="iAW-SD-rWb"/>
+                            <constraint firstItem="0Tg-Gc-0ge" firstAttribute="centerX" secondItem="uUZ-hR-Chk" secondAttribute="centerX" id="jUI-UG-IoC"/>
+                            <constraint firstItem="0Tg-Gc-0ge" firstAttribute="trailing" secondItem="uUZ-hR-Chk" secondAttribute="trailing" id="kfz-qi-GTm"/>
+                            <constraint firstItem="3Un-sz-Onj" firstAttribute="trailing" secondItem="Rgg-Ya-5bp" secondAttribute="trailing" id="omO-l6-m1I"/>
+                            <constraint firstItem="ika-3B-LFE" firstAttribute="bottom" secondItem="SH3-Kl-w0T" secondAttribute="bottom" id="pQa-DG-09N"/>
+                            <constraint firstItem="ika-3B-LFE" firstAttribute="leading" secondItem="pA5-Nc-vwx" secondAttribute="leading" id="poB-gP-wVv"/>
+                            <constraint firstItem="Gz0-hV-Oca" firstAttribute="top" secondItem="SH3-Kl-w0T" secondAttribute="bottom" constant="115" id="ppu-Uq-qe3"/>
+                            <constraint firstItem="3Un-sz-Onj" firstAttribute="bottom" secondItem="Pny-KQ-oJy" secondAttribute="bottom" id="rev-i2-Kb8"/>
+                            <constraint firstItem="Gz0-hV-Oca" firstAttribute="top" secondItem="3Un-sz-Onj" secondAttribute="bottom" constant="115" id="rij-qm-eui"/>
+                            <constraint firstItem="ika-3B-LFE" firstAttribute="leading" secondItem="SH3-Kl-w0T" secondAttribute="trailing" constant="110" id="yvS-RS-gfo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUb-ew-wmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="7805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="az3-Uw-Qud">
+            <objects>
+                <viewController id="u6Q-2B-rHn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i8C-SP-dSz"/>
+                        <viewControllerLayoutGuide type="bottom" id="17b-0B-XE0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rj6-hR-NCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7C-tf-yV9">
+                                <rect key="frame" x="647" y="62" width="480" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="rJH-Tu-S4P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfi-c3-jTn">
+                                <rect key="frame" x="1180" y="62" width="109" height="40"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q3-gQ-iM3">
+                                <rect key="frame" x="190" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1fB-DB-QpA"/>
+                                    <constraint firstAttribute="height" constant="300" id="z1v-jw-G2n"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpb-UE-Inl">
+                                <rect key="frame" x="190" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5em-Ts-juK"/>
+                                    <constraint firstAttribute="width" constant="200" id="fX4-Ux-GSI"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtg-gY-uPQ">
+                                <rect key="frame" x="1270" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YId-NZ-P70"/>
+                                    <constraint firstAttribute="height" constant="300" id="coo-HJ-axt"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAF-Fk-O8n">
+                                <rect key="frame" x="460" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="EPh-Uu-RI5"/>
+                                    <constraint firstAttribute="width" constant="200" id="afb-UD-h2x"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0T-0x-mk8">
+                                <rect key="frame" x="1000" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DZN-pO-AbM"/>
+                                    <constraint firstAttribute="width" constant="200" id="zRq-mf-dBr"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-1w-woi">
+                                <rect key="frame" x="730" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="MIf-Dx-fVG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="R2f-ao-PrK"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uC-OV-6n5">
+                                <rect key="frame" x="1000" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="f5U-Z6-MXD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="j2e-Pk-pbd"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9A3-da-YGG">
+                                <rect key="frame" x="1270" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="eMS-bd-KPk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xGN-9Q-tGc"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtg-mi-Kf5">
+                                <rect key="frame" x="1540" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="f2q-91-LP7"/>
+                                    <constraint firstAttribute="width" constant="200" id="nyE-tG-x8h"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnF-Pb-TpN">
+                                <rect key="frame" x="1540" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1OP-8o-rPk"/>
+                                    <constraint firstAttribute="height" constant="300" id="dTQ-of-uVC"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu4-6f-s81">
+                                <rect key="frame" x="460" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dSc-dS-mbA"/>
+                                    <constraint firstAttribute="height" constant="300" id="yuX-ea-bHe"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yja-g3-fuV">
+                                <rect key="frame" x="730" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6ma-i8-GrQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="pmF-O0-Kpy"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wtg-mi-Kf5" firstAttribute="top" secondItem="QnF-Pb-TpN" secondAttribute="bottom" constant="90" id="Dez-B2-cZ9"/>
+                            <constraint firstItem="gtg-gY-uPQ" firstAttribute="leading" secondItem="9uC-OV-6n5" secondAttribute="trailing" constant="70" id="EmX-Cu-gBd"/>
+                            <constraint firstItem="K7C-tf-yV9" firstAttribute="baseline" secondItem="qfi-c3-jTn" secondAttribute="baseline" id="KLJ-4g-E8o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wtg-mi-Kf5" secondAttribute="trailing" constant="160" id="P9R-h5-fnl"/>
+                            <constraint firstItem="T0T-0x-mk8" firstAttribute="leading" secondItem="Yja-g3-fuV" secondAttribute="trailing" constant="70" id="Pc0-ig-WLM"/>
+                            <constraint firstItem="Lpe-1w-woi" firstAttribute="bottom" secondItem="rAF-Fk-O8n" secondAttribute="bottom" id="QVk-1E-0y8"/>
+                            <constraint firstItem="wtg-mi-Kf5" firstAttribute="bottom" secondItem="gtg-gY-uPQ" secondAttribute="bottom" id="QeI-vZ-DMx"/>
+                            <constraint firstItem="Wu4-6f-s81" firstAttribute="bottom" secondItem="Qpb-UE-Inl" secondAttribute="bottom" id="UJJ-EX-CS3"/>
+                            <constraint firstItem="9uC-OV-6n5" firstAttribute="bottom" secondItem="Lpe-1w-woi" secondAttribute="bottom" id="Uy5-VY-wuw"/>
+                            <constraint firstItem="QnF-Pb-TpN" firstAttribute="bottom" secondItem="9A3-da-YGG" secondAttribute="bottom" id="Vds-le-eZD"/>
+                            <constraint firstItem="wtg-mi-Kf5" firstAttribute="trailing" secondItem="QnF-Pb-TpN" secondAttribute="trailing" id="Wi2-tp-KQl"/>
+                            <constraint firstItem="K7C-tf-yV9" firstAttribute="leading" secondItem="rj6-hR-NCZ" secondAttribute="leading" constant="647" id="Yvs-4p-7lf"/>
+                            <constraint firstItem="Lpe-1w-woi" firstAttribute="leading" secondItem="rAF-Fk-O8n" secondAttribute="trailing" constant="70" id="ZpJ-x7-Wci"/>
+                            <constraint firstItem="qfi-c3-jTn" firstAttribute="leading" secondItem="K7C-tf-yV9" secondAttribute="trailing" constant="53" id="b3O-h1-kSK"/>
+                            <constraint firstItem="wtg-mi-Kf5" firstAttribute="leading" secondItem="gtg-gY-uPQ" secondAttribute="trailing" constant="70" id="dIS-ik-8JS"/>
+                            <constraint firstItem="K7C-tf-yV9" firstAttribute="top" secondItem="i8C-SP-dSz" secondAttribute="bottom" constant="62" id="e1C-en-7bC"/>
+                            <constraint firstItem="Wu4-6f-s81" firstAttribute="leading" secondItem="Qpb-UE-Inl" secondAttribute="trailing" constant="70" id="j2N-rn-wbU"/>
+                            <constraint firstItem="T0T-0x-mk8" firstAttribute="bottom" secondItem="Yja-g3-fuV" secondAttribute="bottom" id="jAe-Kd-Il6"/>
+                            <constraint firstItem="gtg-gY-uPQ" firstAttribute="bottom" secondItem="9uC-OV-6n5" secondAttribute="bottom" id="jOr-qG-LIL"/>
+                            <constraint firstItem="17b-0B-XE0" firstAttribute="top" secondItem="wtg-mi-Kf5" secondAttribute="bottom" constant="140" id="kQW-CG-Y8q"/>
+                            <constraint firstItem="rAF-Fk-O8n" firstAttribute="bottom" secondItem="6Q3-gQ-iM3" secondAttribute="bottom" id="kxZ-ux-RVH"/>
+                            <constraint firstItem="9A3-da-YGG" firstAttribute="bottom" secondItem="T0T-0x-mk8" secondAttribute="bottom" id="paF-E9-WoP"/>
+                            <constraint firstItem="Yja-g3-fuV" firstAttribute="bottom" secondItem="Wu4-6f-s81" secondAttribute="bottom" id="rDb-nB-D0v"/>
+                            <constraint firstItem="QnF-Pb-TpN" firstAttribute="leading" secondItem="9A3-da-YGG" secondAttribute="trailing" constant="70" id="rJc-CR-Gj6"/>
+                            <constraint firstItem="wtg-mi-Kf5" firstAttribute="trailing" secondItem="QnF-Pb-TpN" secondAttribute="trailing" id="uco-Gk-0Nt"/>
+                            <constraint firstItem="9A3-da-YGG" firstAttribute="leading" secondItem="T0T-0x-mk8" secondAttribute="trailing" constant="70" id="vEQ-uH-5jQ"/>
+                            <constraint firstItem="9uC-OV-6n5" firstAttribute="leading" secondItem="Lpe-1w-woi" secondAttribute="trailing" constant="70" id="x8S-Ka-P9p"/>
+                            <constraint firstItem="rAF-Fk-O8n" firstAttribute="leading" secondItem="6Q3-gQ-iM3" secondAttribute="trailing" constant="70" id="yY9-Cu-cRg"/>
+                            <constraint firstItem="Yja-g3-fuV" firstAttribute="leading" secondItem="Wu4-6f-s81" secondAttribute="trailing" constant="70" id="zKb-fw-0hN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKa-aL-rYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="9096"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JEE-a0-gqw">
+            <objects>
+                <viewController id="4f3-V5-gOc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UTp-5p-D6u"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ftz-AL-nac"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZ1-ob-LfI">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
+                                <rect key="frame" x="647" y="62" width="480" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="iFe-qI-x1E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwb-3n-B9i">
+                                <rect key="frame" x="1180" y="62" width="109" height="40"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6C-QX-aB0">
+                                <rect key="frame" x="380" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gas-cu-dav"/>
+                                    <constraint firstAttribute="width" constant="200" id="xUa-PB-4dF"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7u-pE-B5H">
+                                <rect key="frame" x="380" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="KRr-fY-Cn5"/>
+                                    <constraint firstAttribute="width" constant="200" id="fI8-L5-4hM"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-dl-F7s">
+                                <rect key="frame" x="1340" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bc4-JQ-EVx"/>
+                                    <constraint firstAttribute="height" constant="300" id="xj7-3y-Vra"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBl-bK-xTX">
+                                <rect key="frame" x="620" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="C3R-ea-qbk"/>
+                                    <constraint firstAttribute="width" constant="200" id="Dvf-5G-S9g"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFv-vJ-fcx">
+                                <rect key="frame" x="1100" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="e3K-z0-DuE"/>
+                                    <constraint firstAttribute="width" constant="200" id="nUD-5d-8um"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-UW-tiS">
+                                <rect key="frame" x="860" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="G8w-oO-7PM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="nxI-wY-jaI"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-FE-LVB">
+                                <rect key="frame" x="860" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="FIC-Cg-4YI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Wz1-Li-wlN"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zox-8U-Ne7">
+                                <rect key="frame" x="1100" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3Ke-nm-yla"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="5dI-TZ-XRR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-DR-etY">
+                                <rect key="frame" x="1340" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="cTw-Ip-uwO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pde-Vs-pRi"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2r-e4-aV4">
+                                <rect key="frame" x="140" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="R7g-Qg-LLt"/>
+                                    <constraint firstAttribute="height" constant="300" id="g6Y-HL-Prd"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-xO-Yk7">
+                                <rect key="frame" x="1580" y="640" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="piR-cA-Vou"/>
+                                    <constraint firstAttribute="height" constant="300" id="xC6-zK-mT0"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-eq-pmx">
+                                <rect key="frame" x="1580" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BKN-jy-fdh"/>
+                                    <constraint firstAttribute="width" constant="200" id="omJ-AP-SXa"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-EK-AyQ">
+                                <rect key="frame" x="620" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bro-Ma-Vd1"/>
+                                    <constraint firstAttribute="width" constant="200" id="rr0-0y-CUR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWN-cX-2TJ">
+                                <rect key="frame" x="140" y="250" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="3xl-Nb-WHb"/>
+                                    <constraint firstAttribute="width" constant="200" id="4dl-eT-SYS"/>
+                                    <constraint firstAttribute="height" constant="300" id="W66-67-1xG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="dpq-oX-I5J"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="V2f-UW-tiS" firstAttribute="bottom" secondItem="FBl-bK-xTX" secondAttribute="bottom" id="0Wp-Po-a6L"/>
+                            <constraint firstItem="dGs-DR-etY" firstAttribute="leading" secondItem="lFv-vJ-fcx" secondAttribute="trailing" constant="40" id="10t-wt-wlf"/>
+                            <constraint firstItem="EcV-xO-Yk7" firstAttribute="bottom" secondItem="SbZ-dl-F7s" secondAttribute="bottom" id="2AP-SK-yqD"/>
+                            <constraint firstItem="wBp-Cy-OcK" firstAttribute="top" secondItem="UTp-5p-D6u" secondAttribute="bottom" constant="62" id="4TQ-Q2-ccg"/>
+                            <constraint firstItem="FK6-FE-LVB" firstAttribute="bottom" secondItem="Ec5-EK-AyQ" secondAttribute="bottom" id="6Q0-3z-6Hz"/>
+                            <constraint firstItem="zox-8U-Ne7" firstAttribute="leading" secondItem="V2f-UW-tiS" secondAttribute="trailing" constant="40" id="74m-P3-jg4"/>
+                            <constraint firstItem="k7u-pE-B5H" firstAttribute="bottom" secondItem="yWN-cX-2TJ" secondAttribute="bottom" id="7hl-lU-9iA"/>
+                            <constraint firstItem="SbZ-dl-F7s" firstAttribute="bottom" secondItem="zox-8U-Ne7" secondAttribute="bottom" id="B4y-Ni-g7G"/>
+                            <constraint firstItem="EcV-xO-Yk7" firstAttribute="top" secondItem="MZu-eq-pmx" secondAttribute="bottom" constant="90" id="Cem-VS-t3Y"/>
+                            <constraint firstItem="V2f-UW-tiS" firstAttribute="leading" secondItem="FBl-bK-xTX" secondAttribute="trailing" constant="40" id="ExE-bL-BAV"/>
+                            <constraint firstItem="MZu-eq-pmx" firstAttribute="leading" secondItem="dGs-DR-etY" secondAttribute="trailing" constant="40" id="FtV-QB-csO"/>
+                            <constraint firstItem="EcV-xO-Yk7" firstAttribute="leading" secondItem="SbZ-dl-F7s" secondAttribute="trailing" constant="40" id="Hzw-iD-lNZ"/>
+                            <constraint firstItem="EcV-xO-Yk7" firstAttribute="trailing" secondItem="MZu-eq-pmx" secondAttribute="trailing" id="I5w-OD-fdL"/>
+                            <constraint firstItem="lFv-vJ-fcx" firstAttribute="bottom" secondItem="FK6-FE-LVB" secondAttribute="bottom" id="JIE-8d-Qv8"/>
+                            <constraint firstItem="wBp-Cy-OcK" firstAttribute="leading" secondItem="mZ1-ob-LfI" secondAttribute="leading" constant="647" id="Oai-Q4-wYV"/>
+                            <constraint firstItem="wBp-Cy-OcK" firstAttribute="baseline" secondItem="Pwb-3n-B9i" secondAttribute="baseline" id="Ooh-nv-4Wg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EcV-xO-Yk7" secondAttribute="trailing" constant="120" id="OyU-Yk-YCt"/>
+                            <constraint firstItem="EcV-xO-Yk7" firstAttribute="trailing" secondItem="MZu-eq-pmx" secondAttribute="trailing" id="QUa-0b-XDv"/>
+                            <constraint firstItem="Ec5-EK-AyQ" firstAttribute="leading" secondItem="k7u-pE-B5H" secondAttribute="trailing" constant="40" id="VVO-Io-qkt"/>
+                            <constraint firstItem="Pwb-3n-B9i" firstAttribute="leading" secondItem="wBp-Cy-OcK" secondAttribute="trailing" constant="53" id="Yu0-tX-jmT"/>
+                            <constraint firstItem="Ftz-AL-nac" firstAttribute="top" secondItem="EcV-xO-Yk7" secondAttribute="bottom" constant="140" id="Z3o-eM-YCU"/>
+                            <constraint firstItem="zox-8U-Ne7" firstAttribute="bottom" secondItem="V2f-UW-tiS" secondAttribute="bottom" id="ahY-Us-gYW"/>
+                            <constraint firstItem="dGs-DR-etY" firstAttribute="bottom" secondItem="lFv-vJ-fcx" secondAttribute="bottom" id="b0o-pz-gxf"/>
+                            <constraint firstItem="Ec5-EK-AyQ" firstAttribute="bottom" secondItem="k7u-pE-B5H" secondAttribute="bottom" id="ceY-EQ-Zzb"/>
+                            <constraint firstItem="M6C-QX-aB0" firstAttribute="bottom" secondItem="B2r-e4-aV4" secondAttribute="bottom" id="dtI-sz-k6g"/>
+                            <constraint firstItem="FBl-bK-xTX" firstAttribute="bottom" secondItem="M6C-QX-aB0" secondAttribute="bottom" id="gue-MP-mtq"/>
+                            <constraint firstItem="M6C-QX-aB0" firstAttribute="leading" secondItem="B2r-e4-aV4" secondAttribute="trailing" constant="40" id="gwE-gc-vWz"/>
+                            <constraint firstItem="k7u-pE-B5H" firstAttribute="leading" secondItem="yWN-cX-2TJ" secondAttribute="trailing" constant="40" id="nZB-pu-qxh"/>
+                            <constraint firstItem="MZu-eq-pmx" firstAttribute="bottom" secondItem="dGs-DR-etY" secondAttribute="bottom" id="ppz-rH-jeu"/>
+                            <constraint firstItem="FBl-bK-xTX" firstAttribute="leading" secondItem="M6C-QX-aB0" secondAttribute="trailing" constant="40" id="s1K-jZ-RFg"/>
+                            <constraint firstItem="SbZ-dl-F7s" firstAttribute="leading" secondItem="zox-8U-Ne7" secondAttribute="trailing" constant="40" id="vvY-pY-5oO"/>
+                            <constraint firstItem="FK6-FE-LVB" firstAttribute="leading" secondItem="Ec5-EK-AyQ" secondAttribute="trailing" constant="40" id="wrQ-OY-GVo"/>
+                            <constraint firstItem="lFv-vJ-fcx" firstAttribute="leading" secondItem="FK6-FE-LVB" secondAttribute="trailing" constant="40" id="z7a-5N-VzO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kV1-P9-yYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="10369"/>
         </scene>
     </scenes>
 </document>
