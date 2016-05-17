@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
 		37C076891CE24D2D00997545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C076871CE24D2D00997545 /* Main.storyboard */; };
 		37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C0768A1CE24D2D00997545 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C076831CE24D2D00997545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C076881CE24D2D00997545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B629C81CEA43A200E65EC1 /* celula */ = {
+			isa = PBXGroup;
+			children = (
+				37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */,
+			);
+			name = celula;
+			sourceTree = "<group>";
+		};
 		37C076771CE24D2D00997545 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		37C076821CE24D2D00997545 /* challengeTV */ = {
 			isa = PBXGroup;
 			children = (
+				37B629C81CEA43A200E65EC1 /* celula */,
 				37C076831CE24D2D00997545 /* AppDelegate.swift */,
 				A131DFE61CE3AFA70080654F /* InicialViewController.swift */,
 				A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */,
@@ -236,6 +247,7 @@
 				TargetAttributes = {
 					37C0767F1CE24D2D00997545 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 55Z8HFH9WB;
 					};
 				};
 			};
@@ -307,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */,
 				A131DFEF1CE3AFE40080654F /* JogoViewController.swift in Sources */,
 				A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */,
 				A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */,
@@ -418,10 +431,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = challengeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.challengeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,10 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = challengeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.challengeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
