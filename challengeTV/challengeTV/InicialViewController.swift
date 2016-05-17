@@ -10,26 +10,27 @@ import UIKit
 
 class InicialViewController: UIViewController {
 
+    @IBOutlet weak var jogosButton: UIButton!
+    @IBOutlet weak var instrucoesButton: UIButton!
+    @IBOutlet weak var imgDemo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        if instrucoesButton.selected == true {
+            print("entrou")
+            imgDemo.image = UIImage(named: "milkshake.png")
+        } else if jogosButton.selected == true {
+            print("entrou")
+            imgDemo.image = UIImage(named: "bala3.png")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

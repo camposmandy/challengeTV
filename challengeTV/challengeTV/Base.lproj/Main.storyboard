@@ -187,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="853" y="26"/>
         </scene>
-        <!--View Controller-->
+        <!--Inicial View Controller-->
         <scene sceneID="I1c-Io-yz1">
             <objects>
-                <viewController id="osL-do-noh" sceneMemberID="viewController">
+                <viewController id="osL-do-noh" customClass="InicialViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lH7-OQ-lyK"/>
                         <viewControllerLayoutGuide type="bottom" id="FFQ-gR-cpR"/>
@@ -199,6 +199,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1920" id="7kD-r7-67u"/>
+                                    <constraint firstAttribute="height" constant="1080" id="BLU-bw-OZo"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
                                 <rect key="frame" x="1232" y="435" width="548" height="445"/>
                                 <constraints>
@@ -251,12 +258,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="120" id="CwB-tV-c8O"/>
                             <constraint firstItem="hMV-dx-r1W" firstAttribute="centerY" secondItem="SQ8-dl-77j" secondAttribute="centerY" id="OB8-jN-e4V"/>
                             <constraint firstItem="SQ8-dl-77j" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="60" id="RNe-JB-HH0"/>
+                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="centerY" secondItem="hAw-Gu-he7" secondAttribute="centerY" id="U6b-G9-JLG"/>
                             <constraint firstItem="hMV-dx-r1W" firstAttribute="leading" secondItem="SQ8-dl-77j" secondAttribute="trailing" constant="65" id="WPO-Ce-QVt"/>
                             <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="200" id="in4-c2-ZcQ"/>
+                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="centerX" secondItem="hAw-Gu-he7" secondAttribute="centerX" id="kGV-Jd-9r3"/>
                             <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leadingMargin" constant="90" id="zeN-v5-bgT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oVR-x9-bs1"/>
+                    <connections>
+                        <outlet property="imgDemo" destination="hhL-3v-7ZT" id="9uL-JA-3pK"/>
+                        <outlet property="instrucoesButton" destination="OIh-8C-M9g" id="b7i-Jx-1nc"/>
+                        <outlet property="jogosButton" destination="pdj-47-AXs" id="HeQ-Ek-Gad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo1-wx-WQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,8 +288,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-wg-KrQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1920" id="RNF-qd-Mml"/>
+                                    <constraint firstAttribute="height" constant="1080" id="y8c-3v-Fbd"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMn-TQ-iL1">
-                                <rect key="frame" x="810" y="60" width="301" height="66"/>
+                                <rect key="frame" x="810" y="100" width="301" height="66"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -316,11 +337,15 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="lHB-GY-unS" firstAttribute="leading" secondItem="JIt-09-wT4" secondAttribute="leadingMargin" constant="90" id="6dz-XP-w2h"/>
+                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" id="6ne-OL-Ewt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lHB-GY-unS" secondAttribute="trailing" constant="90" id="9ct-E9-DHs"/>
+                            <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="hsa-wg-KrQ" secondAttribute="bottom" id="Bk4-pR-7mR"/>
                             <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="lHB-GY-unS" secondAttribute="bottom" constant="60" id="PC0-fu-XXd"/>
                             <constraint firstItem="OMn-TQ-iL1" firstAttribute="centerX" secondItem="JIt-09-wT4" secondAttribute="centerX" id="YWY-U9-C8i"/>
-                            <constraint firstItem="OMn-TQ-iL1" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" constant="60" id="p7R-jJ-6hw"/>
+                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="centerX" secondItem="JIt-09-wT4" secondAttribute="centerX" id="aS4-Jt-YKR"/>
+                            <constraint firstItem="OMn-TQ-iL1" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" constant="100" id="p7R-jJ-6hw"/>
                             <constraint firstItem="lHB-GY-unS" firstAttribute="top" secondItem="o97-do-CVE" secondAttribute="bottom" constant="50" id="uE6-sy-djX"/>
+                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="centerY" secondItem="JIt-09-wT4" secondAttribute="centerY" id="wko-5f-pBg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1187,4 +1212,7 @@
             <point key="canvasLocation" x="870" y="10369"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fundo" width="5667" height="4000"/>
+    </resources>
 </document>

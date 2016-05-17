@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */ = {isa = PBXBuildFile; fileRef = 374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
 		37C076891CE24D2D00997545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C076871CE24D2D00997545 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaAnimais.png; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C076831CE24D2D00997545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		A131DFA01CE3AEED0080654F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */,
 				A131DFA31CE3AF100080654F /* Doces */,
 				A131DFA21CE3AF090080654F /* Frutas */,
 				A131DFA11CE3AF000080654F /* Animais */,
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */,
 				A131DFB31CE3AF2C0080654F /* girafa.png in Resources */,
 				A131DFCB1CE3AF400080654F /* milkshake.png in Resources */,
 				A131DFC81CE3AF400080654F /* chocolate.png in Resources */,

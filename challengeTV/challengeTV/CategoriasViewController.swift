@@ -11,7 +11,7 @@ import UIKit
 class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var  categorias = ["abacaxi.png", "Frutas.png", "Frutas2.png", "pirulito", "donut"]
+    var  categorias = ["CategoriaAnimais.png", "CategoriaAnimais.png", "Frutas2.png", "pirulito", "donut"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
