@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -210,53 +210,43 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="1920" id="7kD-r7-67u"/>
-                                    <constraint firstAttribute="height" constant="1080" id="BLU-bw-OZo"/>
-                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
                                 <rect key="frame" x="1232" y="435" width="548" height="445"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="445" id="4KE-hE-2kg"/>
-                                    <constraint firstAttribute="width" constant="548" id="gWD-DR-z0c"/>
+                                    <constraint firstAttribute="width" constant="548" id="lEy-rO-jaD"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g">
                                 <rect key="frame" x="110" y="539" width="388" height="94"/>
                                 <color key="backgroundColor" red="0.86274509803921573" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="rEk-oa-8ek"/>
-                                    <constraint firstAttribute="height" constant="90" id="zwg-kI-Vpq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="INSTRUCOES"/>
-                                <connections>
-                                    <segue destination="UWM-nY-qYG" kind="show" id="6Cb-mT-HkD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs">
-                                <rect key="frame" x="110" y="683" width="388" height="94"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="Vlf-MB-kR2"/>
-                                    <constraint firstAttribute="height" constant="90" id="ngA-6Y-aUN"/>
+                                    <constraint firstAttribute="width" constant="388" id="Txx-6B-Fee"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="JOGOS"/>
                                 <connections>
-                                    <segue destination="mlS-9S-Q4W" kind="show" id="0nF-bg-E5b"/>
+                                    <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs">
+                                <rect key="frame" x="110" y="683" width="388" height="94"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="INSTRUÇÕES"/>
+                                <connections>
+                                    <segue destination="Fcv-oL-r9t" kind="show" id="s7n-vx-ICO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-dl-77j">
                                 <rect key="frame" x="110" y="205" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="ZEb-wU-0Gd"/>
-                                    <constraint firstAttribute="width" constant="150" id="dps-eE-8dh"/>
+                                    <constraint firstAttribute="width" constant="150" id="HJe-0i-Mku"/>
+                                    <constraint firstAttribute="height" constant="150" id="YjQ-hK-Cm5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Best Memory Game Ever" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-dx-r1W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Best Memory Game Ever" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-dx-r1W">
                                 <rect key="frame" x="325" y="275" width="401" height="37"/>
                                 <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,21 +254,29 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="120" id="CwB-tV-c8O"/>
-                            <constraint firstItem="hMV-dx-r1W" firstAttribute="centerY" secondItem="SQ8-dl-77j" secondAttribute="centerY" id="OB8-jN-e4V"/>
-                            <constraint firstItem="SQ8-dl-77j" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="60" id="RNe-JB-HH0"/>
-                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="centerY" secondItem="hAw-Gu-he7" secondAttribute="centerY" id="U6b-G9-JLG"/>
-                            <constraint firstItem="hMV-dx-r1W" firstAttribute="leading" secondItem="SQ8-dl-77j" secondAttribute="trailing" constant="65" id="WPO-Ce-QVt"/>
-                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="200" id="in4-c2-ZcQ"/>
-                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="centerX" secondItem="hAw-Gu-he7" secondAttribute="centerX" id="kGV-Jd-9r3"/>
-                            <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leadingMargin" constant="90" id="zeN-v5-bgT"/>
+                            <constraint firstAttribute="trailing" secondItem="M8F-yQ-4x9" secondAttribute="trailing" id="153-tH-TWa"/>
+                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="200" id="6DJ-M9-zCX"/>
+                            <constraint firstItem="SQ8-dl-77j" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="60" id="6UH-mv-2Au"/>
+                            <constraint firstItem="OIh-8C-M9g" firstAttribute="leading" secondItem="pdj-47-AXs" secondAttribute="leading" id="95W-Gb-Vts"/>
+                            <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leadingMargin" constant="90" id="EEj-Et-CtJ"/>
+                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="bottom" secondItem="FFQ-gR-cpR" secondAttribute="top" id="F1i-rW-UlL"/>
+                            <constraint firstItem="hhL-3v-7ZT" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="290" id="IRn-S0-ahs"/>
+                            <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="OIh-8C-M9g" secondAttribute="leading" id="M5r-TB-phH"/>
+                            <constraint firstItem="hMV-dx-r1W" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="130" id="OOi-8c-K2r"/>
+                            <constraint firstItem="OIh-8C-M9g" firstAttribute="trailing" secondItem="pdj-47-AXs" secondAttribute="trailing" id="SAP-0d-mVR"/>
+                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leading" id="b3V-5Z-FDp"/>
+                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="303" id="f6T-Xh-iEB"/>
+                            <constraint firstItem="pdj-47-AXs" firstAttribute="top" secondItem="OIh-8C-M9g" secondAttribute="bottom" constant="50" id="gkN-lI-Yld"/>
+                            <constraint firstAttribute="trailing" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="140" id="sV7-Wt-SVY"/>
+                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="top" secondItem="hAw-Gu-he7" secondAttribute="top" id="wYH-IL-pdZ"/>
+                            <constraint firstItem="hMV-dx-r1W" firstAttribute="leading" secondItem="SQ8-dl-77j" secondAttribute="trailing" constant="65" id="wlZ-Ru-8Y3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oVR-x9-bs1"/>
                     <connections>
                         <outlet property="imgDemo" destination="hhL-3v-7ZT" id="9uL-JA-3pK"/>
-                        <outlet property="instrucoesButton" destination="OIh-8C-M9g" id="b7i-Jx-1nc"/>
-                        <outlet property="jogosButton" destination="pdj-47-AXs" id="HeQ-Ek-Gad"/>
+                        <outlet property="instrucoes" destination="pdj-47-AXs" id="ZiQ-VA-4s5"/>
+                        <outlet property="jogos" destination="OIh-8C-M9g" id="W44-aM-TS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo1-wx-WQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1224,4 +1222,7 @@
     <resources>
         <image name="fundo" width="5667" height="4000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="s7n-vx-ICO"/>
+    </inferredMetricsTieBreakers>
 </document>
