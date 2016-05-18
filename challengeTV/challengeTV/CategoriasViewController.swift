@@ -11,7 +11,7 @@ import UIKit
 class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var  categorias = ["CategoriaAnimais.png", "CategoriaAnimais.png", "Frutas2.png", "pirulito", "donut"]
+    var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +59,14 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         
         if let indexPath = context.nextFocusedIndexPath,
             let cell = collectionView.cellForItemAtIndexPath(indexPath) {
-//            cell.contentView.layer.borderWidth = 3.0
-//            cell.contentView.layer.borderColor = UIColor.blackColor().CGColor
+            let celula = collectionView.dequeueReusableCellWithReuseIdentifier("celula", forIndexPath: indexPath) as! CategoriaCollectionViewCell
+            
+            celula.img.adjustsImageWhenAncestorFocused = true
+            
             cell.contentView.layer.shadowColor = UIColor.blackColor().CGColor
             cell.contentView.layer.shadowRadius = 10.0
-            cell.contentView.layer.shadowOpacity = 0.9
-            cell.contentView.layer.shadowOffset = CGSize(width: 20, height: 20)
+            cell.contentView.layer.shadowOpacity = 1
+            cell.contentView.layer.shadowOffset = CGSizeZero
             collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
         }
     }

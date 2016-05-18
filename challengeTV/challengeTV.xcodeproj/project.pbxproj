@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371C39F31CECD89300BBE2BA /* CategoriaFrutas.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */; };
+		371C39F41CECD89300BBE2BA /* CategoriaNumeros.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */; };
 		374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */ = {isa = PBXBuildFile; fileRef = 374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaFrutas.png; sourceTree = "<group>"; };
+		371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaNumeros.png; sourceTree = "<group>"; };
 		374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaAnimais.png; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */,
+				371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */,
+				371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */,
 				A131DFA31CE3AF100080654F /* Doces */,
 				A131DFA21CE3AF090080654F /* Frutas */,
 				A131DFA11CE3AF000080654F /* Animais */,
@@ -288,6 +294,7 @@
 				A131DFDC1CE3AF530080654F /* banana.png in Resources */,
 				A131DFE21CE3AF530080654F /* mamao.png in Resources */,
 				A131DFDB1CE3AF530080654F /* abacaxi.png in Resources */,
+				371C39F41CECD89300BBE2BA /* CategoriaNumeros.png in Resources */,
 				A131DFB61CE3AF2C0080654F /* pinguim.png in Resources */,
 				A131DFB21CE3AF2C0080654F /* gato.png in Resources */,
 				A131DFB41CE3AF2C0080654F /* onça.png in Resources */,
@@ -309,6 +316,7 @@
 				A131DFC91CE3AF400080654F /* cupcake.png in Resources */,
 				A131DFE01CE3AF530080654F /* limao2.png in Resources */,
 				A131DFCF1CE3AF400080654F /* sundae.png in Resources */,
+				371C39F31CECD89300BBE2BA /* CategoriaFrutas.png in Resources */,
 				A131DFB91CE3AF2C0080654F /* vaca.png in Resources */,
 				A131DFE11CE3AF530080654F /* maça2.png in Resources */,
 				A131DFCC1CE3AF400080654F /* pipoca.png in Resources */,

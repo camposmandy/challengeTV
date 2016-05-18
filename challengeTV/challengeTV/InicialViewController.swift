@@ -10,21 +10,13 @@ import UIKit
 
 class InicialViewController: UIViewController {
 
-    @IBOutlet weak var jogosButton: UIButton!
-    @IBOutlet weak var instrucoesButton: UIButton!
+    @IBOutlet weak var instrucoes: UIButton!
+    @IBOutlet weak var jogos: UIButton!
     @IBOutlet weak var imgDemo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        if instrucoesButton.selected == true {
-            print("entrou")
-            imgDemo.image = UIImage(named: "milkshake.png")
-        } else if jogosButton.selected == true {
-            print("entrou")
-            imgDemo.image = UIImage(named: "bala3.png")
-        }
         
     }
 
@@ -32,5 +24,13 @@ class InicialViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
 
+        if jogos.focused == true{
+            imgDemo.image = UIImage(named: "chocolate.png")
+        } else if instrucoes.focused == true{
+            imgDemo.image = UIImage(named: "biscoito.png")
+        }
+    }
 }
