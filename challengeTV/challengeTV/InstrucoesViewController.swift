@@ -8,12 +8,15 @@
 
 import UIKit
 
-class InstrucoesViewController: UIViewController {
+class InstrucoesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    @IBOutlet weak var collectionInstrucoes: UICollectionView!
+    var instrucoes = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.collectionInstrucoes.delegate = self
+        self.collectionInstrucoes.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +24,62 @@ class InstrucoesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - Collection
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
-    */
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return instrucoes.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionInstrucoes.dequeueReusableCellWithReuseIdentifier("cellInstrucoes", forIndexPath: indexPath) as! InstrucoesCollectionViewCell
+        
+        cell.imgInstrucoes.image = UIImage(named: instrucoes[indexPath.row])
+        
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        print("mari linda")
+    }
+    
+    func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        
+        if let previousIndexPath = context.previouslyFocusedIndexPath,
+            let cell = collectionInstrucoes.cellForItemAtIndexPath(previousIndexPath) {
+            cell.contentView.layer.borderWidth = 0.0
+            cell.contentView.layer.shadowRadius = 0.0
+            cell.contentView.layer.shadowOpacity = 0
+        }
+        
+        if let indexPath = context.nextFocusedIndexPath,
+            let cell = collectionInstrucoes.cellForItemAtIndexPath(indexPath) {
+            let celula = collectionInstrucoes.dequeueReusableCellWithReuseIdentifier("cellInstrucoes", forIndexPath: indexPath) as! InstrucoesCollectionViewCell
+            
+            celula.imgInstrucoes.adjustsImageWhenAncestorFocused = true
+            
+            cell.contentView.layer.shadowColor = UIColor.blackColor().CGColor
+            cell.contentView.layer.shadowRadius = 10.0
+            cell.contentView.layer.shadowOpacity = 1
+            cell.contentView.layer.shadowOffset = CGSizeZero
+            collectionInstrucoes.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
