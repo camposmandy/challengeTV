@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		371C39F31CECD89300BBE2BA /* CategoriaFrutas.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */; };
 		371C39F41CECD89300BBE2BA /* CategoriaNumeros.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */; };
+		371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */; };
+		3736DD991CEE53DE003B22ED /* Panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736DD981CEE53DE003B22ED /* Panda.png */; };
 		374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */ = {isa = PBXBuildFile; fileRef = 374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
@@ -20,7 +22,6 @@
 		A131DFB21CE3AF2C0080654F /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA71CE3AF2C0080654F /* gato.png */; };
 		A131DFB31CE3AF2C0080654F /* girafa.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA81CE3AF2C0080654F /* girafa.png */; };
 		A131DFB41CE3AF2C0080654F /* onça.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA91CE3AF2C0080654F /* onça.png */; };
-		A131DFB51CE3AF2C0080654F /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAA1CE3AF2C0080654F /* panda.png */; };
 		A131DFB61CE3AF2C0080654F /* pinguim.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAB1CE3AF2C0080654F /* pinguim.png */; };
 		A131DFB71CE3AF2C0080654F /* porco2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAC1CE3AF2C0080654F /* porco2.png */; };
 		A131DFB81CE3AF2C0080654F /* tartaruga.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAD1CE3AF2C0080654F /* tartaruga.png */; };
@@ -57,6 +58,8 @@
 /* Begin PBXFileReference section */
 		371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaFrutas.png; sourceTree = "<group>"; };
 		371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaNumeros.png; sourceTree = "<group>"; };
+		371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelUmViewController.swift; sourceTree = "<group>"; };
+		3736DD981CEE53DE003B22ED /* Panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panda.png; sourceTree = "<group>"; };
 		374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaAnimais.png; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +73,6 @@
 		A131DFA71CE3AF2C0080654F /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
 		A131DFA81CE3AF2C0080654F /* girafa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girafa.png; sourceTree = "<group>"; };
 		A131DFA91CE3AF2C0080654F /* onça.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onça.png"; sourceTree = "<group>"; };
-		A131DFAA1CE3AF2C0080654F /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda.png; sourceTree = "<group>"; };
 		A131DFAB1CE3AF2C0080654F /* pinguim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinguim.png; sourceTree = "<group>"; };
 		A131DFAC1CE3AF2C0080654F /* porco2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco2.png; sourceTree = "<group>"; };
 		A131DFAD1CE3AF2C0080654F /* tartaruga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tartaruga.png; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */,
 				A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */,
 				A131DFEC1CE3AFD70080654F /* NivelViewController.swift */,
+				371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */,
 				A131DFEE1CE3AFE40080654F /* JogoViewController.swift */,
 				A131DFA01CE3AEED0080654F /* Imagens */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
@@ -160,6 +163,7 @@
 		A131DFA01CE3AEED0080654F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				3736DD981CEE53DE003B22ED /* Panda.png */,
 				374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */,
 				371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */,
 				371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */,
@@ -179,7 +183,6 @@
 				A131DFA71CE3AF2C0080654F /* gato.png */,
 				A131DFA81CE3AF2C0080654F /* girafa.png */,
 				A131DFA91CE3AF2C0080654F /* onça.png */,
-				A131DFAA1CE3AF2C0080654F /* panda.png */,
 				A131DFAB1CE3AF2C0080654F /* pinguim.png */,
 				A131DFAC1CE3AF2C0080654F /* porco2.png */,
 				A131DFAD1CE3AF2C0080654F /* tartaruga.png */,
@@ -285,6 +288,7 @@
 			files = (
 				374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */,
 				A131DFB31CE3AF2C0080654F /* girafa.png in Resources */,
+				3736DD991CEE53DE003B22ED /* Panda.png in Resources */,
 				A131DFCB1CE3AF400080654F /* milkshake.png in Resources */,
 				A131DFC81CE3AF400080654F /* chocolate.png in Resources */,
 				37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */,
@@ -303,7 +307,6 @@
 				A131DFE51CE3AF530080654F /* uva.png in Resources */,
 				A131DFCD1CE3AF400080654F /* pirulito.png in Resources */,
 				A131DFE41CE3AF530080654F /* morango2.png in Resources */,
-				A131DFB51CE3AF2C0080654F /* panda.png in Resources */,
 				A131DFDE1CE3AF530080654F /* coco2.png in Resources */,
 				A131DFAF1CE3AF2C0080654F /* cachorro.png in Resources */,
 				A131DFB11CE3AF2C0080654F /* elefante.png in Resources */,
@@ -336,6 +339,7 @@
 				A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */,
 				A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */,
 				37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */,
+				371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */,
 				A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */,
 				A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */,
 			);
