@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -139,7 +139,7 @@
                                     <constraint firstAttribute="width" constant="548" id="lEy-rO-jaD"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="110" y="539" width="388" height="94"/>
                                 <color key="backgroundColor" red="0.86274509803921573" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -152,7 +152,7 @@
                                     <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="110" y="683" width="388" height="94"/>
                                 <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -310,7 +310,7 @@
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="191" y="465" width="450" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="u0y-QA-8ZJ"/>
@@ -321,7 +321,7 @@
                                     <segue destination="Jns-5a-Pc6" kind="show" id="ca2-Fq-xjk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="735" y="465" width="450" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="LSM-se-BEr"/>
@@ -333,7 +333,7 @@
                                     <segue destination="FhU-KX-0tY" kind="show" id="t0D-cV-4k1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="1295" y="465" width="450" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="OLR-Wc-sLe"/>
@@ -344,7 +344,7 @@
                                     <segue destination="4f3-V5-gOc" kind="show" id="acs-Bl-yep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="500" y="673" width="450" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="Czr-Vb-iqe"/>
@@ -355,7 +355,7 @@
                                     <segue destination="gqp-Wi-W55" kind="show" id="FAe-iX-IYt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="1003" y="671" width="450" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="KYZ-Tr-4cp"/>
@@ -556,10 +556,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-4v-lDl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-4v-lDl">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
                                 <rect key="frame" x="647" y="62" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="480" id="Cpc-Sn-kb5"/>
@@ -568,7 +568,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-6u-m4E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-6u-m4E">
                                 <rect key="frame" x="1180" y="62" width="109" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -583,7 +583,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-PP-xth">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-PP-xth">
                                 <rect key="frame" x="115" y="172" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="U3Y-LX-M0c"/>
@@ -610,7 +610,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-hR-Chk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-hR-Chk">
                                 <rect key="frame" x="835" y="172" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="bxa-N0-z1Z"/>
@@ -628,7 +628,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-Ya-5bp">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-Ya-5bp">
                                 <rect key="frame" x="1555" y="172" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="CuG-8F-rNd"/>
@@ -637,7 +637,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Nc-vwx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Nc-vwx">
                                 <rect key="frame" x="475" y="172" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="mrP-Rm-RfJ"/>
@@ -655,7 +655,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Ve-8Ew">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Ve-8Ew">
                                 <rect key="frame" x="1195" y="172" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="1cP-1D-9Wt"/>
@@ -719,10 +719,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="xlN-9f-ROa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="xlN-9f-ROa">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1072"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
                                 <rect key="frame" x="647" y="62" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="480" id="iFe-qI-x1E"/>
@@ -731,7 +731,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwb-3n-B9i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwb-3n-B9i">
                                 <rect key="frame" x="1180" y="62" width="109" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -921,10 +921,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-fy-lF9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-fy-lF9">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
                                 <rect key="frame" x="647" y="62" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="480" id="SKT-v7-ixM"/>
@@ -933,7 +933,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcP-nz-odV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcP-nz-odV">
                                 <rect key="frame" x="1180" y="62" width="109" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1171,10 +1171,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-Kv-Cf3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-Kv-Cf3">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
                                 <rect key="frame" x="647" y="62" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="480" id="6Ik-D7-DTP"/>
@@ -1183,7 +1183,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c24-7T-kyq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c24-7T-kyq">
                                 <rect key="frame" x="1180" y="62" width="109" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

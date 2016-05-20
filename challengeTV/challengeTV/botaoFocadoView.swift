@@ -26,7 +26,7 @@ class botaoFocadoView: UIButton {
         if context.previouslyFocusedView == self {
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                context.previouslyFocusedView?.transform = CGAffineTransformMakeScale(1.0, 1.0)
             })
         }
     }
