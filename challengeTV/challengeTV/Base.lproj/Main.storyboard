@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -139,24 +139,27 @@
                                     <constraint firstAttribute="width" constant="548" id="lEy-rO-jaD"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="110" y="539" width="388" height="94"/>
-                                <color key="backgroundColor" red="0.86274509803921573" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="110" y="555" width="388" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="388" id="Txx-6B-Fee"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="JOGOS"/>
+                                <state key="normal" title="JOGOS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="110" y="683" width="388" height="94"/>
-                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="110" y="691" width="388" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="INSTRUÇÕES"/>
+                                <state key="normal" title="INSTRUÇÕES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="Fcv-oL-r9t" kind="show" id="s7n-vx-ICO"/>
                                 </connections>
@@ -229,8 +232,8 @@
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-GY-unS">
-                                <rect key="frame" x="110" y="195" width="1700" height="825"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-GY-unS">
+                                <rect key="frame" x="0.0" y="195" width="1920" height="825"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YKo-BY-7lf">
                                     <size key="itemSize" width="773" height="459"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -266,9 +269,7 @@
                             </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="lHB-GY-unS" firstAttribute="leading" secondItem="JIt-09-wT4" secondAttribute="leadingMargin" constant="90" id="6dz-XP-w2h"/>
                             <constraint firstItem="hsa-wg-KrQ" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" id="6ne-OL-Ewt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lHB-GY-unS" secondAttribute="trailing" constant="90" id="9ct-E9-DHs"/>
                             <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="hsa-wg-KrQ" secondAttribute="bottom" id="Bk4-pR-7mR"/>
                             <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="lHB-GY-unS" secondAttribute="bottom" constant="60" id="PC0-fu-XXd"/>
                             <constraint firstItem="OMn-TQ-iL1" firstAttribute="centerX" secondItem="JIt-09-wT4" secondAttribute="centerX" id="YWY-U9-C8i"/>
@@ -305,13 +306,9 @@
                                     <constraint firstAttribute="width" constant="1920" id="iwd-LX-w7k"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DA CATEGORIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
-                                <rect key="frame" x="685" y="205" width="551" height="66"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="191" y="465" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="u0y-QA-8ZJ"/>
                                 </constraints>
@@ -321,8 +318,9 @@
                                     <segue destination="Jns-5a-Pc6" kind="show" id="ca2-Fq-xjk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="735" y="465" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="LSM-se-BEr"/>
                                     <constraint firstAttribute="height" constant="86" id="vx8-ii-A5n"/>
@@ -333,8 +331,9 @@
                                     <segue destination="FhU-KX-0tY" kind="show" id="t0D-cV-4k1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="1295" y="465" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="OLR-Wc-sLe"/>
                                 </constraints>
@@ -344,8 +343,9 @@
                                     <segue destination="4f3-V5-gOc" kind="show" id="acs-Bl-yep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="500" y="673" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="Czr-Vb-iqe"/>
                                 </constraints>
@@ -355,8 +355,9 @@
                                     <segue destination="gqp-Wi-W55" kind="show" id="FAe-iX-IYt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="1003" y="671" width="450" height="90"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="KYZ-Tr-4cp"/>
                                 </constraints>
@@ -370,6 +371,11 @@
                                 <rect key="frame" x="693" y="301" width="535" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DA CATEGORIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
+                                <rect key="frame" x="685" y="205" width="551" height="66"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
