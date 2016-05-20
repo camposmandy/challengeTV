@@ -54,6 +54,7 @@
 		A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEC1CE3AFD70080654F /* NivelViewController.swift */; };
 		A131DFEF1CE3AFE40080654F /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEE1CE3AFE40080654F /* JogoViewController.swift */; };
 		A18FD27F1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */; };
+		A1D4A87C1CEF7DB600F94FC5 /* botaoFocadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		A131DFEC1CE3AFD70080654F /* NivelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelViewController.swift; sourceTree = "<group>"; };
 		A131DFEE1CE3AFE40080654F /* JogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
 		A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = botaoFocadoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */,
 				A131DFEC1CE3AFD70080654F /* NivelViewController.swift */,
 				371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */,
+				A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */,
 				A131DFEE1CE3AFE40080654F /* JogoViewController.swift */,
 				A131DFA01CE3AEED0080654F /* Imagens */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D4A87C1CEF7DB600F94FC5 /* botaoFocadoView.swift in Sources */,
 				37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */,
 				A131DFEF1CE3AFE40080654F /* JogoViewController.swift in Sources */,
 				A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */,
