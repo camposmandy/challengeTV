@@ -53,6 +53,7 @@
 		A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */; };
 		A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEC1CE3AFD70080654F /* NivelViewController.swift */; };
 		A131DFEF1CE3AFE40080654F /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEE1CE3AFE40080654F /* JogoViewController.swift */; };
+		A18FD27F1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
 		A131DFEC1CE3AFD70080654F /* NivelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelViewController.swift; sourceTree = "<group>"; };
 		A131DFEE1CE3AFE40080654F /* JogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
+		A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */,
+				A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */,
 			);
 			name = celula;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */,
 				A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */,
 				A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */,
+				A18FD27F1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
