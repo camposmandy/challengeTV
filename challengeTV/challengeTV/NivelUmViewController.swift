@@ -42,13 +42,15 @@ class NivelUmViewController: UIViewController {
     
     @IBAction func animacaoCarta(sender: AnyObject) { //animação dos botões quando selecionados.
         status = false
+        let img = self.imagem(sender as! UIButton).foto
         //enquanto houver animação todas as cartas estão sem interação
         interacao()
         //adiciona o indice do botão que foi selecionado
         selecionados.append(self.imagem(sender as! UIButton).indice)
         UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
             }) { (finished) in
-                sender.setBackgroundImage(UIImage(named: self.imagem(sender as! UIButton).foto), forState: .Normal)
+                
+                sender.setBackgroundImage(UIImage(named: img), forState: .Normal)
                 self.jogo(sender as! UIButton)
         }
     }
