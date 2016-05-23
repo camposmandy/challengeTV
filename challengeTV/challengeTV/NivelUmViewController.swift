@@ -12,16 +12,23 @@ class NivelUmViewController: UIViewController {
     
     var managerJogo = JogoViewController()
     var opcoesCarta = [String]() //imagens das cartas
+    var cartas = [UIButton]()
     var retorno = [String]()
     var status = Bool()
     var selecionados = [Int]()
     
-    @IBOutlet var cartas: [UIButton] = []
+    @IBOutlet weak var carta1: UIButton!
+    @IBOutlet weak var carta2: UIButton!
+    @IBOutlet weak var carta3: UIButton!
+    @IBOutlet weak var carta4: UIButton!
+    @IBOutlet weak var carta5: UIButton!
+    @IBOutlet weak var carta6: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        opcoesCarta = ["Panda.png", "cupcake.png", "cupcake.png", "Bala.png", "Bala.png", "Panda.png"]
+        opcoesCarta = ["Panda.png", "Cachorro.png", "Gato.png", "Cachorro.png", "Gato.png", "Panda.png"]
+        cartas = [carta1, carta2, carta3, carta4, carta5, carta6]
         retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
     
@@ -51,7 +58,7 @@ class NivelUmViewController: UIViewController {
         
         if selecionados.count == 1 {
             for c in cartas {
-                if c == carta.tag{
+                if c == carta{
                     c.userInteractionEnabled = false
                 } else {
                     c.userInteractionEnabled = true
@@ -89,13 +96,11 @@ class NivelUmViewController: UIViewController {
         for j in cartas{
             if j == b {
                 j.userInteractionEnabled = false
-                // j.removeFromSuperview()
-            } else{
-                status = true
-                interacao()
             }
         }
         
+        status = true
+        interacao()
         selecionados.removeAll()
     }
     
@@ -113,7 +118,7 @@ class NivelUmViewController: UIViewController {
         var i = 0
         var j = 0
         for carta in cartas{
-            if sender.tag == carta.tag {
+            if sender == carta {
                 indice = self.retorno[self.cartas.indexOf(carta)!]
                 j = i
             }
