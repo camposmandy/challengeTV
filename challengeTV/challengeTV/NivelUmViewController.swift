@@ -12,29 +12,19 @@ class NivelUmViewController: UIViewController {
     
     var managerJogo = JogoViewController()
     var opcoesCarta = [String]() //imagens das cartas
-    var cartas = [UIButton]() //array dos botões
     var retorno = [String]()
     var status = Bool()
     var selecionados = [Int]()
     
-    @IBOutlet weak var carta1: UIButton!
-    @IBOutlet weak var carta2: UIButton!
-    @IBOutlet weak var carta3: UIButton!
-    @IBOutlet weak var carta4: UIButton!
-    @IBOutlet weak var carta5: UIButton!
-    @IBOutlet weak var carta6: UIButton!
+    @IBOutlet var cartas: [UIButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cartas = [carta1, carta2, carta3, carta4, carta5, carta6]
-        opcoesCarta = ["Panda.png", "cupcake.png", "cupcake.png", "Panda.png", "Panda.png", "cupcake.png"]
+        opcoesCarta = ["Panda.png", "cupcake.png", "cupcake.png", "Bala.png", "Bala.png", "Panda.png"]
         retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
-        
-        carta1.imageView?.adjustsImageWhenAncestorFocused = true //teste de focused
-
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,16 +42,16 @@ class NivelUmViewController: UIViewController {
             sender.setBackgroundImage(UIImage(named: img), forState: .Normal)
         }
         UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
-            }) { (finished) in
-                self.jogo(sender as! UIButton)
+        }) { (finished) in
+            self.jogo(sender as! UIButton)
         }
     }
     
     func jogo(carta: UIButton){ // compara se as cartas soteadas são iguais
-
+        
         if selecionados.count == 1 {
             for c in cartas {
-                if c == carta{
+                if c == carta.tag{
                     c.userInteractionEnabled = false
                 } else {
                     c.userInteractionEnabled = true
@@ -88,25 +78,42 @@ class NivelUmViewController: UIViewController {
     }
     
     func acerto(){
-        animacaoAcerto(cartas[selecionados[0]])
-        animacaoAcerto(cartas[selecionados[1]])
+        let b = UIButton()
+        for i in selecionados{
+            animacaoAcerto(cartas[i])
+            let indice = cartas.indexOf(cartas[i])
+            cartas.removeAtIndex(indice!)
+            cartas.insert(b, atIndex: indice!)
+        }
+        
+        for j in cartas{
+            if j == b {
+                j.userInteractionEnabled = false
+                // j.removeFromSuperview()
+            } else{
+                status = true
+                interacao()
+            }
+        }
         
         selecionados.removeAll()
     }
     
     func erro(){
-        animacaoErro(cartas[selecionados[0]])
-        animacaoErro(cartas[selecionados[1]])
+        for i in selecionados{
+            animacaoErro(cartas[i])
+        }
         status = true
+        interacao()
         selecionados.removeAll()
     }
-
+    
     func imagem(sender: UIButton) -> (foto: String, indice: Int){ // retorna a imagem do botão selecionado
         var indice = ""
         var i = 0
         var j = 0
         for carta in cartas{
-            if sender == carta {
+            if sender.tag == carta.tag {
                 indice = self.retorno[self.cartas.indexOf(carta)!]
                 j = i
             }

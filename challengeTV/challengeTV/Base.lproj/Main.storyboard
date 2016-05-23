@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -415,69 +415,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
                                 <rect key="frame" x="645" y="60" width="480" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Aqb-k6-h2g"/>
-                                    <constraint firstAttribute="width" constant="480" id="dmi-7X-Z5T"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Z2-vXD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Z2-vXD">
                                 <rect key="frame" x="1180" y="60" width="110" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="Z31-Xg-ZOU"/>
-                                    <constraint firstAttribute="height" constant="40" id="xnq-Xc-WtK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-kK-iIY">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-kK-iIY">
                                 <rect key="frame" x="1260" y="620" width="300" height="400"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="R9U-1q-Qh4"/>
-                                    <constraint firstAttribute="height" constant="400" id="v26-fg-0Kn"/>
-                                </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="Jns-5a-Pc6" eventType="primaryActionTriggered" id="mwJ-L7-06G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-To-mW7">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-To-mW7">
                                 <rect key="frame" x="810" y="620" width="300" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="gbw-RM-tpk"/>
-                                    <constraint firstAttribute="height" constant="400" id="nBc-Vh-iAD"/>
-                                </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="Jns-5a-Pc6" eventType="primaryActionTriggered" id="A15-lL-DUR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-dE-7TP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-dE-7TP">
                                 <rect key="frame" x="1260" y="152" width="300" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="8Rx-5z-DPc"/>
-                                    <constraint firstAttribute="height" constant="400" id="XQJ-mk-E0W"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eR7-HL-LFC"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="oWy-U2-lTS"/>
-                                </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="Jns-5a-Pc6" eventType="primaryActionTriggered" id="H9l-Nw-BEE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-oU-d4U">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-oU-d4U">
                                 <rect key="frame" x="810" y="152" width="300" height="400"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
@@ -485,19 +463,15 @@
                                     <action selector="animacaoCarta:" destination="Jns-5a-Pc6" eventType="primaryActionTriggered" id="Fml-2c-Vud"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-NT-SUS">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-NT-SUS">
                                 <rect key="frame" x="360" y="620" width="300" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="1ul-Sk-uK7"/>
-                                    <constraint firstAttribute="height" constant="400" id="hmq-nI-xAL"/>
-                                </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="Jns-5a-Pc6" eventType="primaryActionTriggered" id="yiI-uQ-aag"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-wq-LLa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-wq-LLa">
                                 <rect key="frame" x="360" y="152" width="300" height="400"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
@@ -506,44 +480,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="ZER-ar-H6L" firstAttribute="centerX" secondItem="MW0-oU-d4U" secondAttribute="centerX" id="032-RU-I8I"/>
-                            <constraint firstItem="LqS-To-mW7" firstAttribute="centerX" secondItem="KNB-cE-SEr" secondAttribute="centerX" id="084-GN-nR1"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="trailing" secondItem="ukV-NT-SUS" secondAttribute="trailing" id="5BO-lo-gC6"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="top" secondItem="MW0-oU-d4U" secondAttribute="top" id="77s-vn-C0o"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="firstBaseline" secondItem="MW0-oU-d4U" secondAttribute="baseline" id="AWO-12-szV"/>
-                            <constraint firstItem="5vH-Z2-vXD" firstAttribute="top" secondItem="KNB-cE-SEr" secondAttribute="topMargin" constant="60" id="BC2-OG-V1q"/>
-                            <constraint firstItem="LqS-To-mW7" firstAttribute="bottom" secondItem="ukV-NT-SUS" secondAttribute="bottom" id="Cxo-Qm-1Ul"/>
-                            <constraint firstItem="MW0-oU-d4U" firstAttribute="trailing" secondItem="LqS-To-mW7" secondAttribute="trailing" id="DOn-iY-FwN"/>
-                            <constraint firstItem="wFB-kK-iIY" firstAttribute="leading" secondItem="LqS-To-mW7" secondAttribute="trailing" constant="150" id="EhD-V6-ryD"/>
-                            <constraint firstItem="LqS-To-mW7" firstAttribute="leading" secondItem="ukV-NT-SUS" secondAttribute="trailing" constant="150" id="G5x-yZ-sXA"/>
-                            <constraint firstItem="LqS-To-mW7" firstAttribute="top" secondItem="MW0-oU-d4U" secondAttribute="bottom" constant="68" id="GdJ-za-YNg"/>
-                            <constraint firstItem="ZER-ar-H6L" firstAttribute="bottom" secondItem="UgU-Fb-a1X" secondAttribute="top" id="Inj-9w-c2W"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="baseline" secondItem="JbI-dE-7TP" secondAttribute="firstBaseline" id="LbZ-wG-gRB"/>
-                            <constraint firstItem="jmn-yG-ivD" firstAttribute="top" secondItem="KNB-cE-SEr" secondAttribute="topMargin" constant="60" id="MB5-9I-JBZ"/>
-                            <constraint firstItem="wFB-kK-iIY" firstAttribute="trailing" secondItem="JbI-dE-7TP" secondAttribute="trailing" id="S4a-UV-fPN"/>
-                            <constraint firstItem="ZER-ar-H6L" firstAttribute="leading" secondItem="KNB-cE-SEr" secondAttribute="leading" id="Ul2-q1-vXw"/>
-                            <constraint firstItem="ukV-NT-SUS" firstAttribute="top" secondItem="SVK-wq-LLa" secondAttribute="bottom" constant="68" id="X2h-ZL-jda"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="leading" secondItem="ukV-NT-SUS" secondAttribute="leading" id="ZFM-T0-2t7"/>
-                            <constraint firstItem="wFB-kK-iIY" firstAttribute="bottom" secondItem="LqS-To-mW7" secondAttribute="bottom" id="ar0-5j-0TT"/>
-                            <constraint firstItem="MW0-oU-d4U" firstAttribute="top" secondItem="d2b-av-hL3" secondAttribute="bottom" constant="7" id="ddo-t5-5T8"/>
-                            <constraint firstItem="ZER-ar-H6L" firstAttribute="top" secondItem="KNB-cE-SEr" secondAttribute="top" id="fN6-r6-HcN"/>
-                            <constraint firstItem="jmn-yG-ivD" firstAttribute="leading" secondItem="KNB-cE-SEr" secondAttribute="leadingMargin" constant="625" id="gtm-XG-Ayz"/>
-                            <constraint firstItem="MW0-oU-d4U" firstAttribute="baseline" secondItem="JbI-dE-7TP" secondAttribute="baseline" id="hzI-NC-3ny"/>
-                            <constraint firstItem="UgU-Fb-a1X" firstAttribute="top" secondItem="LqS-To-mW7" secondAttribute="bottom" constant="60" id="oup-c8-Agl"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="top" secondItem="JbI-dE-7TP" secondAttribute="top" id="qJb-tT-tWn"/>
-                            <constraint firstItem="MW0-oU-d4U" firstAttribute="leading" secondItem="LqS-To-mW7" secondAttribute="leading" id="wOz-AE-4nE"/>
-                            <constraint firstItem="5vH-Z2-vXD" firstAttribute="leading" secondItem="jmn-yG-ivD" secondAttribute="trailing" constant="55" id="wae-gb-8FY"/>
-                            <constraint firstItem="SVK-wq-LLa" firstAttribute="baseline" secondItem="MW0-oU-d4U" secondAttribute="firstBaseline" id="xKa-tH-967"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="carta1" destination="SVK-wq-LLa" id="47B-0m-Ckw"/>
-                        <outlet property="carta2" destination="MW0-oU-d4U" id="LGH-oy-SjB"/>
-                        <outlet property="carta3" destination="JbI-dE-7TP" id="Pch-W2-kPs"/>
-                        <outlet property="carta4" destination="ukV-NT-SUS" id="XgZ-na-xul"/>
-                        <outlet property="carta5" destination="LqS-To-mW7" id="GjK-BY-sBy"/>
-                        <outlet property="carta6" destination="wFB-kK-iIY" id="16l-pc-LfZ"/>
+                        <outletCollection property="cartas" destination="SVK-wq-LLa" collectionClass="NSMutableArray" id="rnb-6O-3i7"/>
+                        <outletCollection property="cartas" destination="MW0-oU-d4U" collectionClass="NSMutableArray" id="afi-zn-47Z"/>
+                        <outletCollection property="cartas" destination="JbI-dE-7TP" collectionClass="NSMutableArray" id="iO1-Yu-a1J"/>
+                        <outletCollection property="cartas" destination="LqS-To-mW7" collectionClass="NSMutableArray" id="i8Y-r1-o6c"/>
+                        <outletCollection property="cartas" destination="wFB-kK-iIY" collectionClass="NSMutableArray" id="L6P-ny-ezm"/>
+                        <outletCollection property="cartas" destination="ukV-NT-SUS" collectionClass="NSMutableArray" id="6tx-PM-YUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EK3-a8-fKc" userLabel="First Responder" sceneMemberID="firstResponder"/>

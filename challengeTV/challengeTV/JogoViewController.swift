@@ -13,14 +13,16 @@ class JogoViewController: NSObject {
 
     var cartas = [String]()
 
-        //Tem a função de embaralhar as cartas do jogos para não estarem sempre na mesma posição.
-    func embaralhar(c: Array<String>) -> Array<String> {
-        var cartasEmbaralhadas: Array<String> = []
-        for i in c{
-                let randomico = Int( arc4random() % UInt32(c.count))
-                print(i)
-                cartasEmbaralhadas.append(c[randomico])
+    //Tem a função de embaralhar as cartas do jogos para não estarem sempre na mesma posição.
+    func embaralhar(c: [String]) -> [String] {
+        var cartas = c
+        
+        for i in 0..<c.count {
+            let j = Int(arc4random_uniform(UInt32(cartas.count)))
+            if j != i {
+                swap(&cartas[i], &cartas[j])
+            }
         }
-        return cartasEmbaralhadas
+        return cartas
     }
 }
