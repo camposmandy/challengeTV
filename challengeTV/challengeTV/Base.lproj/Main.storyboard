@@ -346,7 +346,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="1045" y="683" width="450" height="86"/>
+                                <rect key="frame" x="1015" y="683" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="aiN-2B-RTm"/>
@@ -369,7 +369,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="485" y="683" width="450" height="86"/>
+                                <rect key="frame" x="455" y="683" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="Luu-un-JKR"/>
@@ -387,7 +387,7 @@
                             <constraint firstItem="iKz-yz-6ug" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="Bxg-fG-3NZ"/>
                             <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="UXg-Te-YGt" secondAttribute="centerX" id="CxH-bc-Idf"/>
                             <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerY" secondItem="f49-tQ-1S2" secondAttribute="centerY" id="Cyp-kj-K8z"/>
-                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" constant="-250" id="FqF-4E-9xc"/>
+                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" constant="-280" id="FqF-4E-9xc"/>
                             <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="HX6-6u-jcf"/>
                             <constraint firstItem="Jw9-NG-NUT" firstAttribute="leading" secondItem="utc-UI-46Z" secondAttribute="trailing" constant="110" id="ZhH-bR-c6Q"/>
                             <constraint firstItem="cTo-ph-8hb" firstAttribute="leading" secondItem="1rV-Fa-pAd" secondAttribute="trailing" constant="110" id="bGa-IY-esp"/>
@@ -689,6 +689,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUb-ew-wmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3975" y="2231"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qY7-oO-UDX">
+            <objects>
+                <viewController id="ODY-Xc-jyv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZRf-aB-HPs"/>
+                        <viewControllerLayoutGuide type="bottom" id="VL8-VO-Xws"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MzV-hb-VRd">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARABÉNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
+                                <rect key="frame" x="840" y="120" width="241" height="66"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-fM-7tj" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="220" y="400" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="r80-aj-2We"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Jogar Novamente"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="220" y="586" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="50e-Jl-tKd"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Níveis"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="220" y="772" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="HJn-ns-Tul"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Menu"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoAprender" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
+                                <rect key="frame" x="1009" y="378" width="791" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="791" id="1Jk-AT-REI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="791" id="nQM-Tj-bbc"/>
+                                    <constraint firstAttribute="height" constant="501" id="vJj-zh-icP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sNn-de-14t" firstAttribute="top" secondItem="dbh-cz-1Lz" secondAttribute="bottom" constant="100" id="0Pr-Kg-91R"/>
+                            <constraint firstItem="smB-i7-Fz4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" id="4Yk-ul-u9i"/>
+                            <constraint firstItem="dbh-cz-1Lz" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="JYe-vF-amv"/>
+                            <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="dbh-cz-1Lz" secondAttribute="centerY" id="Job-Lr-NDM"/>
+                            <constraint firstItem="smB-i7-Fz4" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leading" id="Lue-AJ-R0v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="100" id="PTm-kJ-ArA"/>
+                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="400" id="XBF-o5-hO1"/>
+                            <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="120" id="aXv-90-5fR"/>
+                            <constraint firstItem="smB-i7-Fz4" firstAttribute="bottom" secondItem="VL8-VO-Xws" secondAttribute="top" id="hNC-pR-jyM"/>
+                            <constraint firstItem="4hu-E5-ge4" firstAttribute="centerX" secondItem="MzV-hb-VRd" secondAttribute="centerX" id="kJw-dz-JLr"/>
+                            <constraint firstItem="sNn-de-14t" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="lvW-ur-vow"/>
+                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leadingMargin" constant="200" id="o0V-4E-3hi"/>
+                            <constraint firstAttribute="trailing" secondItem="smB-i7-Fz4" secondAttribute="trailing" id="r58-20-ita"/>
+                            <constraint firstItem="dbh-cz-1Lz" firstAttribute="top" secondItem="8Fo-fM-7tj" secondAttribute="bottom" constant="100" id="uUG-72-R7s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVi-dz-nmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6404" y="3446"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JEE-a0-gqw">
@@ -1416,6 +1494,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BotãoAprender" width="791" height="501"/>
         <image name="Parte de tras" width="426" height="626"/>
         <image name="fundo" width="5667" height="4000"/>
     </resources>
