@@ -41,10 +41,6 @@ class InstrucoesViewController: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        print("mari linda")
-    }
-    
     func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         
         if let previousIndexPath = context.previouslyFocusedIndexPath,
