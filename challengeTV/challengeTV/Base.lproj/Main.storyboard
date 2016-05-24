@@ -133,12 +133,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
-                                <rect key="frame" x="1232" y="435" width="548" height="445"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="548" id="lEy-rO-jaD"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="110" y="555" width="388" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,22 +171,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
+                                <rect key="frame" x="976" y="429" width="791" height="501"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="791" id="dSL-yy-vB8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="M8F-yQ-4x9" secondAttribute="trailing" id="153-tH-TWa"/>
-                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="200" id="6DJ-M9-zCX"/>
                             <constraint firstItem="SQ8-dl-77j" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="60" id="6UH-mv-2Au"/>
                             <constraint firstItem="OIh-8C-M9g" firstAttribute="leading" secondItem="pdj-47-AXs" secondAttribute="leading" id="95W-Gb-Vts"/>
                             <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leadingMargin" constant="90" id="EEj-Et-CtJ"/>
                             <constraint firstItem="M8F-yQ-4x9" firstAttribute="bottom" secondItem="FFQ-gR-cpR" secondAttribute="top" id="F1i-rW-UlL"/>
-                            <constraint firstItem="hhL-3v-7ZT" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="290" id="IRn-S0-ahs"/>
+                            <constraint firstAttribute="trailing" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="153" id="Je1-cq-dhk"/>
                             <constraint firstItem="SQ8-dl-77j" firstAttribute="leading" secondItem="OIh-8C-M9g" secondAttribute="leading" id="M5r-TB-phH"/>
                             <constraint firstItem="hMV-dx-r1W" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="130" id="OOi-8c-K2r"/>
                             <constraint firstItem="OIh-8C-M9g" firstAttribute="trailing" secondItem="pdj-47-AXs" secondAttribute="trailing" id="SAP-0d-mVR"/>
                             <constraint firstItem="M8F-yQ-4x9" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leading" id="b3V-5Z-FDp"/>
                             <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="303" id="f6T-Xh-iEB"/>
                             <constraint firstItem="pdj-47-AXs" firstAttribute="top" secondItem="OIh-8C-M9g" secondAttribute="bottom" constant="50" id="gkN-lI-Yld"/>
-                            <constraint firstAttribute="trailing" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="140" id="sV7-Wt-SVY"/>
+                            <constraint firstItem="hhL-3v-7ZT" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="284" id="i07-6K-qId"/>
+                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="150" id="lub-5V-yhe"/>
                             <constraint firstItem="M8F-yQ-4x9" firstAttribute="top" secondItem="hAw-Gu-he7" secondAttribute="top" id="wYH-IL-pdZ"/>
                             <constraint firstItem="hMV-dx-r1W" firstAttribute="leading" secondItem="SQ8-dl-77j" secondAttribute="trailing" constant="65" id="wlZ-Ru-8Y3"/>
                         </constraints>
@@ -418,13 +418,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
                                 <rect key="frame" x="645" y="60" width="480" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Z2-vXD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Z2-vXD">
                                 <rect key="frame" x="1180" y="60" width="110" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -482,6 +482,12 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="carta1" destination="wFB-kK-iIY" id="ITE-OO-dCR"/>
+                        <outlet property="carta2" destination="LqS-To-mW7" id="MxA-5r-IEX"/>
+                        <outlet property="carta3" destination="JbI-dE-7TP" id="JZt-UQ-fjh"/>
+                        <outlet property="carta4" destination="MW0-oU-d4U" id="Jba-Fz-Ih3"/>
+                        <outlet property="carta5" destination="ukV-NT-SUS" id="uZp-Aq-KOz"/>
+                        <outlet property="carta6" destination="SVK-wq-LLa" id="nE4-pn-tLD"/>
                         <outletCollection property="cartas" destination="SVK-wq-LLa" collectionClass="NSMutableArray" id="rnb-6O-3i7"/>
                         <outletCollection property="cartas" destination="MW0-oU-d4U" collectionClass="NSMutableArray" id="afi-zn-47Z"/>
                         <outletCollection property="cartas" destination="JbI-dE-7TP" collectionClass="NSMutableArray" id="iO1-Yu-a1J"/>

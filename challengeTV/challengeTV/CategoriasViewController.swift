@@ -12,7 +12,7 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
 
     @IBOutlet weak var collectionView: UICollectionView!
     var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
-    
+    var categoria = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,7 +45,8 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("selecionou")
+        let i = indexPath.row
+        categoria = categorias[i]
     }
  
     func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator:UIFocusAnimationCoordinator) {

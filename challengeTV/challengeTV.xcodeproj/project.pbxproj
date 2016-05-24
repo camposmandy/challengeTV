@@ -7,47 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371C39F31CECD89300BBE2BA /* CategoriaFrutas.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */; };
-		371C39F41CECD89300BBE2BA /* CategoriaNumeros.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */; };
 		371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */; };
-		3736DD991CEE53DE003B22ED /* Panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736DD981CEE53DE003B22ED /* Panda.png */; };
-		374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */ = {isa = PBXBuildFile; fileRef = 374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
 		37C076891CE24D2D00997545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C076871CE24D2D00997545 /* Main.storyboard */; };
 		37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C0768A1CE24D2D00997545 /* Assets.xcassets */; };
-		A131DFAF1CE3AF2C0080654F /* cachorro.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA41CE3AF2C0080654F /* cachorro.png */; };
-		A131DFB01CE3AF2C0080654F /* coelho.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA51CE3AF2C0080654F /* coelho.png */; };
-		A131DFB11CE3AF2C0080654F /* elefante.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA61CE3AF2C0080654F /* elefante.png */; };
-		A131DFB21CE3AF2C0080654F /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA71CE3AF2C0080654F /* gato.png */; };
-		A131DFB31CE3AF2C0080654F /* girafa.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA81CE3AF2C0080654F /* girafa.png */; };
-		A131DFB41CE3AF2C0080654F /* onça.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFA91CE3AF2C0080654F /* onça.png */; };
-		A131DFB61CE3AF2C0080654F /* pinguim.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAB1CE3AF2C0080654F /* pinguim.png */; };
-		A131DFB71CE3AF2C0080654F /* porco2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAC1CE3AF2C0080654F /* porco2.png */; };
-		A131DFB81CE3AF2C0080654F /* tartaruga.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAD1CE3AF2C0080654F /* tartaruga.png */; };
-		A131DFB91CE3AF2C0080654F /* vaca.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFAE1CE3AF2C0080654F /* vaca.png */; };
-		A131DFC51CE3AF400080654F /* bala.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBA1CE3AF400080654F /* bala.png */; };
-		A131DFC61CE3AF400080654F /* bala3.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBB1CE3AF400080654F /* bala3.png */; };
-		A131DFC71CE3AF400080654F /* biscoito.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBC1CE3AF400080654F /* biscoito.png */; };
-		A131DFC81CE3AF400080654F /* chocolate.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBD1CE3AF400080654F /* chocolate.png */; };
-		A131DFC91CE3AF400080654F /* cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBE1CE3AF400080654F /* cupcake.png */; };
-		A131DFCA1CE3AF400080654F /* donut.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFBF1CE3AF400080654F /* donut.png */; };
-		A131DFCB1CE3AF400080654F /* milkshake.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFC01CE3AF400080654F /* milkshake.png */; };
-		A131DFCC1CE3AF400080654F /* pipoca.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFC11CE3AF400080654F /* pipoca.png */; };
-		A131DFCD1CE3AF400080654F /* pirulito.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFC21CE3AF400080654F /* pirulito.png */; };
-		A131DFCE1CE3AF400080654F /* sorvete2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFC31CE3AF400080654F /* sorvete2.png */; };
-		A131DFCF1CE3AF400080654F /* sundae.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFC41CE3AF400080654F /* sundae.png */; };
-		A131DFDB1CE3AF530080654F /* abacaxi.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD01CE3AF530080654F /* abacaxi.png */; };
-		A131DFDC1CE3AF530080654F /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD11CE3AF530080654F /* banana.png */; };
-		A131DFDD1CE3AF530080654F /* cereja.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD21CE3AF530080654F /* cereja.png */; };
-		A131DFDE1CE3AF530080654F /* coco2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD31CE3AF530080654F /* coco2.png */; };
-		A131DFDF1CE3AF530080654F /* laranja3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD41CE3AF530080654F /* laranja3.jpg */; };
-		A131DFE01CE3AF530080654F /* limao2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD51CE3AF530080654F /* limao2.png */; };
-		A131DFE11CE3AF530080654F /* maça2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD61CE3AF530080654F /* maça2.png */; };
-		A131DFE21CE3AF530080654F /* mamao.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD71CE3AF530080654F /* mamao.png */; };
-		A131DFE31CE3AF530080654F /* melancia.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD81CE3AF530080654F /* melancia.png */; };
-		A131DFE41CE3AF530080654F /* morango2.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFD91CE3AF530080654F /* morango2.png */; };
-		A131DFE51CE3AF530080654F /* uva.png in Resources */ = {isa = PBXBuildFile; fileRef = A131DFDA1CE3AF530080654F /* uva.png */; };
 		A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE61CE3AFA70080654F /* InicialViewController.swift */; };
 		A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */; };
 		A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */; };
@@ -58,49 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaFrutas.png; sourceTree = "<group>"; };
-		371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaNumeros.png; sourceTree = "<group>"; };
 		371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelUmViewController.swift; sourceTree = "<group>"; };
-		3736DD981CEE53DE003B22ED /* Panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panda.png; sourceTree = "<group>"; };
-		374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CategoriaAnimais.png; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C076831CE24D2D00997545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C076881CE24D2D00997545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37C0768A1CE24D2D00997545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C0768C1CE24D2D00997545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A131DFA41CE3AF2C0080654F /* cachorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cachorro.png; sourceTree = "<group>"; };
-		A131DFA51CE3AF2C0080654F /* coelho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coelho.png; sourceTree = "<group>"; };
-		A131DFA61CE3AF2C0080654F /* elefante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elefante.png; sourceTree = "<group>"; };
-		A131DFA71CE3AF2C0080654F /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
-		A131DFA81CE3AF2C0080654F /* girafa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girafa.png; sourceTree = "<group>"; };
-		A131DFA91CE3AF2C0080654F /* onça.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onça.png"; sourceTree = "<group>"; };
-		A131DFAB1CE3AF2C0080654F /* pinguim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinguim.png; sourceTree = "<group>"; };
-		A131DFAC1CE3AF2C0080654F /* porco2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco2.png; sourceTree = "<group>"; };
-		A131DFAD1CE3AF2C0080654F /* tartaruga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tartaruga.png; sourceTree = "<group>"; };
-		A131DFAE1CE3AF2C0080654F /* vaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vaca.png; sourceTree = "<group>"; };
-		A131DFBA1CE3AF400080654F /* bala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bala.png; sourceTree = "<group>"; };
-		A131DFBB1CE3AF400080654F /* bala3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bala3.png; sourceTree = "<group>"; };
-		A131DFBC1CE3AF400080654F /* biscoito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biscoito.png; sourceTree = "<group>"; };
-		A131DFBD1CE3AF400080654F /* chocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chocolate.png; sourceTree = "<group>"; };
-		A131DFBE1CE3AF400080654F /* cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcake.png; sourceTree = "<group>"; };
-		A131DFBF1CE3AF400080654F /* donut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donut.png; sourceTree = "<group>"; };
-		A131DFC01CE3AF400080654F /* milkshake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milkshake.png; sourceTree = "<group>"; };
-		A131DFC11CE3AF400080654F /* pipoca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipoca.png; sourceTree = "<group>"; };
-		A131DFC21CE3AF400080654F /* pirulito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pirulito.png; sourceTree = "<group>"; };
-		A131DFC31CE3AF400080654F /* sorvete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sorvete2.png; sourceTree = "<group>"; };
-		A131DFC41CE3AF400080654F /* sundae.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sundae.png; sourceTree = "<group>"; };
-		A131DFD01CE3AF530080654F /* abacaxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abacaxi.png; sourceTree = "<group>"; };
-		A131DFD11CE3AF530080654F /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
-		A131DFD21CE3AF530080654F /* cereja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereja.png; sourceTree = "<group>"; };
-		A131DFD31CE3AF530080654F /* coco2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coco2.png; sourceTree = "<group>"; };
-		A131DFD41CE3AF530080654F /* laranja3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laranja3.jpg; sourceTree = "<group>"; };
-		A131DFD51CE3AF530080654F /* limao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = limao2.png; sourceTree = "<group>"; };
-		A131DFD61CE3AF530080654F /* maça2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maça2.png"; sourceTree = "<group>"; };
-		A131DFD71CE3AF530080654F /* mamao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mamao.png; sourceTree = "<group>"; };
-		A131DFD81CE3AF530080654F /* melancia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melancia.png; sourceTree = "<group>"; };
-		A131DFD91CE3AF530080654F /* morango2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morango2.png; sourceTree = "<group>"; };
-		A131DFDA1CE3AF530080654F /* uva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uva.png; sourceTree = "<group>"; };
 		A131DFE61CE3AFA70080654F /* InicialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicialViewController.swift; sourceTree = "<group>"; };
 		A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
@@ -158,79 +86,11 @@
 				371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */,
 				A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */,
 				A131DFEE1CE3AFE40080654F /* JogoViewController.swift */,
-				A131DFA01CE3AEED0080654F /* Imagens */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
 				37C0768A1CE24D2D00997545 /* Assets.xcassets */,
 				37C0768C1CE24D2D00997545 /* Info.plist */,
 			);
 			path = challengeTV;
-			sourceTree = "<group>";
-		};
-		A131DFA01CE3AEED0080654F /* Imagens */ = {
-			isa = PBXGroup;
-			children = (
-				3736DD981CEE53DE003B22ED /* Panda.png */,
-				374CCAF71CEB8F9600683F84 /* CategoriaAnimais.png */,
-				371C39F11CECD89300BBE2BA /* CategoriaFrutas.png */,
-				371C39F21CECD89300BBE2BA /* CategoriaNumeros.png */,
-				A131DFA31CE3AF100080654F /* Doces */,
-				A131DFA21CE3AF090080654F /* Frutas */,
-				A131DFA11CE3AF000080654F /* Animais */,
-			);
-			name = Imagens;
-			sourceTree = "<group>";
-		};
-		A131DFA11CE3AF000080654F /* Animais */ = {
-			isa = PBXGroup;
-			children = (
-				A131DFA41CE3AF2C0080654F /* cachorro.png */,
-				A131DFA51CE3AF2C0080654F /* coelho.png */,
-				A131DFA61CE3AF2C0080654F /* elefante.png */,
-				A131DFA71CE3AF2C0080654F /* gato.png */,
-				A131DFA81CE3AF2C0080654F /* girafa.png */,
-				A131DFA91CE3AF2C0080654F /* onça.png */,
-				A131DFAB1CE3AF2C0080654F /* pinguim.png */,
-				A131DFAC1CE3AF2C0080654F /* porco2.png */,
-				A131DFAD1CE3AF2C0080654F /* tartaruga.png */,
-				A131DFAE1CE3AF2C0080654F /* vaca.png */,
-			);
-			name = Animais;
-			sourceTree = "<group>";
-		};
-		A131DFA21CE3AF090080654F /* Frutas */ = {
-			isa = PBXGroup;
-			children = (
-				A131DFD01CE3AF530080654F /* abacaxi.png */,
-				A131DFD11CE3AF530080654F /* banana.png */,
-				A131DFD21CE3AF530080654F /* cereja.png */,
-				A131DFD31CE3AF530080654F /* coco2.png */,
-				A131DFD41CE3AF530080654F /* laranja3.jpg */,
-				A131DFD51CE3AF530080654F /* limao2.png */,
-				A131DFD61CE3AF530080654F /* maça2.png */,
-				A131DFD71CE3AF530080654F /* mamao.png */,
-				A131DFD81CE3AF530080654F /* melancia.png */,
-				A131DFD91CE3AF530080654F /* morango2.png */,
-				A131DFDA1CE3AF530080654F /* uva.png */,
-			);
-			name = Frutas;
-			sourceTree = "<group>";
-		};
-		A131DFA31CE3AF100080654F /* Doces */ = {
-			isa = PBXGroup;
-			children = (
-				A131DFBA1CE3AF400080654F /* bala.png */,
-				A131DFBB1CE3AF400080654F /* bala3.png */,
-				A131DFBC1CE3AF400080654F /* biscoito.png */,
-				A131DFBD1CE3AF400080654F /* chocolate.png */,
-				A131DFBE1CE3AF400080654F /* cupcake.png */,
-				A131DFBF1CE3AF400080654F /* donut.png */,
-				A131DFC01CE3AF400080654F /* milkshake.png */,
-				A131DFC11CE3AF400080654F /* pipoca.png */,
-				A131DFC21CE3AF400080654F /* pirulito.png */,
-				A131DFC31CE3AF400080654F /* sorvete2.png */,
-				A131DFC41CE3AF400080654F /* sundae.png */,
-			);
-			name = Doces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,44 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374CCAF81CEB8F9600683F84 /* CategoriaAnimais.png in Resources */,
-				A131DFB31CE3AF2C0080654F /* girafa.png in Resources */,
-				3736DD991CEE53DE003B22ED /* Panda.png in Resources */,
-				A131DFCB1CE3AF400080654F /* milkshake.png in Resources */,
-				A131DFC81CE3AF400080654F /* chocolate.png in Resources */,
 				37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */,
-				A131DFE31CE3AF530080654F /* melancia.png in Resources */,
 				37C076891CE24D2D00997545 /* Main.storyboard in Resources */,
-				A131DFCE1CE3AF400080654F /* sorvete2.png in Resources */,
-				A131DFDC1CE3AF530080654F /* banana.png in Resources */,
-				A131DFE21CE3AF530080654F /* mamao.png in Resources */,
-				A131DFDB1CE3AF530080654F /* abacaxi.png in Resources */,
-				371C39F41CECD89300BBE2BA /* CategoriaNumeros.png in Resources */,
-				A131DFB61CE3AF2C0080654F /* pinguim.png in Resources */,
-				A131DFB21CE3AF2C0080654F /* gato.png in Resources */,
-				A131DFB41CE3AF2C0080654F /* onça.png in Resources */,
-				A131DFDF1CE3AF530080654F /* laranja3.jpg in Resources */,
-				A131DFCA1CE3AF400080654F /* donut.png in Resources */,
-				A131DFE51CE3AF530080654F /* uva.png in Resources */,
-				A131DFCD1CE3AF400080654F /* pirulito.png in Resources */,
-				A131DFE41CE3AF530080654F /* morango2.png in Resources */,
-				A131DFDE1CE3AF530080654F /* coco2.png in Resources */,
-				A131DFAF1CE3AF2C0080654F /* cachorro.png in Resources */,
-				A131DFB11CE3AF2C0080654F /* elefante.png in Resources */,
-				A131DFB71CE3AF2C0080654F /* porco2.png in Resources */,
-				A131DFB01CE3AF2C0080654F /* coelho.png in Resources */,
-				A131DFC71CE3AF400080654F /* biscoito.png in Resources */,
-				A131DFC51CE3AF400080654F /* bala.png in Resources */,
-				A131DFC61CE3AF400080654F /* bala3.png in Resources */,
-				A131DFB81CE3AF2C0080654F /* tartaruga.png in Resources */,
-				A131DFC91CE3AF400080654F /* cupcake.png in Resources */,
-				A131DFE01CE3AF530080654F /* limao2.png in Resources */,
-				A131DFCF1CE3AF400080654F /* sundae.png in Resources */,
-				371C39F31CECD89300BBE2BA /* CategoriaFrutas.png in Resources */,
-				A131DFB91CE3AF2C0080654F /* vaca.png in Resources */,
-				A131DFE11CE3AF530080654F /* maça2.png in Resources */,
-				A131DFCC1CE3AF400080654F /* pipoca.png in Resources */,
-				A131DFDD1CE3AF530080654F /* cereja.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

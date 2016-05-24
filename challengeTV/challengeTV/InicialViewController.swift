@@ -28,9 +28,9 @@ class InicialViewController: UIViewController {
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
 
         if jogos.focused == true{
-            imgDemo.image = UIImage(named: "chocolate.png")
+            imgDemo.image = UIImage(named: "BotãoJogar.png")
         } else if instrucoes.focused == true{
-            imgDemo.image = UIImage(named: "biscoito.png")
+            imgDemo.image = UIImage(named: "BotãoAprender.png")
         }
     }
 }
