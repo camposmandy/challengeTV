@@ -16,6 +16,7 @@ class NivelUmViewController: UIViewController {
     var retorno = [String]()
     var status = Bool()
     var selecionados = [Int]()
+    var b = UIButton()
     
     @IBOutlet weak var carta1: UIButton!
     @IBOutlet weak var carta2: UIButton!
@@ -38,6 +39,7 @@ class NivelUmViewController: UIViewController {
     }
     
     @IBAction func animacaoCarta(sender: AnyObject) { //animação dos botões quando selecionados.
+        if sender.tag != 100 {
         status = false
         let img = self.imagem(sender as! UIButton).foto
         //enquanto houver animação todas as cartas estão sem interação
@@ -51,6 +53,7 @@ class NivelUmViewController: UIViewController {
         UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
         }) { (finished) in
             self.jogo(sender as! UIButton)
+        }
         }
     }
     
@@ -85,20 +88,11 @@ class NivelUmViewController: UIViewController {
     }
     
     func acerto(){
-        let b = UIButton()
         for i in selecionados{
+            cartas[i].tag = 100
             animacaoAcerto(cartas[i])
-            let indice = cartas.indexOf(cartas[i])
-            cartas.removeAtIndex(indice!)
-            cartas.insert(b, atIndex: indice!)
         }
-        
-        for j in cartas{
-            if j == b {
-                j.userInteractionEnabled = false
-            }
-        }
-        
+
         status = true
         interacao()
         selecionados.removeAll()
