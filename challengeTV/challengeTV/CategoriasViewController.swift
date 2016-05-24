@@ -1,15 +1,7 @@
-//
-//  CategoriasViewController.swift
-//  challengeTV
-//
-//  Created by Ana Elisa Pessoa Aguiar on 11/05/16.
-//  Copyright © 2016 Amanda Campos. All rights reserved.
-//
-
 import UIKit
 
 class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
     var categoria = ""
@@ -18,16 +10,16 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Collection
-
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -48,7 +40,7 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         let i = indexPath.row
         categoria = categorias[i]
     }
- 
+    
     func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator:UIFocusAnimationCoordinator) {
         
         if let previousIndexPath = context.previouslyFocusedIndexPath,

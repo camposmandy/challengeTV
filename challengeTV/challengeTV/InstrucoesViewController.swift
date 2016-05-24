@@ -11,7 +11,7 @@ import UIKit
 class InstrucoesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionInstrucoes: UICollectionView!
-    var instrucoes = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
+    var instrucoes = ["Instrucao1.png", "Instrucao2.png", "Instrucao3.png"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
