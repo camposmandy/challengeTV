@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="osL-do-noh">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="ODY-Xc-jyv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -711,7 +711,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-fM-7tj" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="220" y="400" width="450" height="86"/>
+                                <rect key="frame" x="250" y="400" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="r80-aj-2We"/>
@@ -720,7 +720,7 @@
                                 <state key="normal" title="Jogar Novamente"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="220" y="586" width="450" height="86"/>
+                                <rect key="frame" x="250" y="586" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="50e-Jl-tKd"/>
@@ -729,7 +729,7 @@
                                 <state key="normal" title="Níveis"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="220" y="772" width="450" height="86"/>
+                                <rect key="frame" x="250" y="772" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="HJn-ns-Tul"/>
@@ -738,10 +738,9 @@
                                 <state key="normal" title="Menu"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoAprender" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
-                                <rect key="frame" x="1009" y="378" width="791" height="501"/>
+                                <rect key="frame" x="909" y="378" width="791" height="501"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="791" id="1Jk-AT-REI"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="791" id="nQM-Tj-bbc"/>
                                     <constraint firstAttribute="height" constant="501" id="vJj-zh-icP"/>
                                 </constraints>
                             </imageView>
@@ -752,13 +751,13 @@
                             <constraint firstItem="dbh-cz-1Lz" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="JYe-vF-amv"/>
                             <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="dbh-cz-1Lz" secondAttribute="centerY" id="Job-Lr-NDM"/>
                             <constraint firstItem="smB-i7-Fz4" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leading" id="Lue-AJ-R0v"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="100" id="PTm-kJ-ArA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="200" id="PTm-kJ-ArA"/>
                             <constraint firstItem="8Fo-fM-7tj" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="400" id="XBF-o5-hO1"/>
                             <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="120" id="aXv-90-5fR"/>
                             <constraint firstItem="smB-i7-Fz4" firstAttribute="bottom" secondItem="VL8-VO-Xws" secondAttribute="top" id="hNC-pR-jyM"/>
                             <constraint firstItem="4hu-E5-ge4" firstAttribute="centerX" secondItem="MzV-hb-VRd" secondAttribute="centerX" id="kJw-dz-JLr"/>
                             <constraint firstItem="sNn-de-14t" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="lvW-ur-vow"/>
-                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leadingMargin" constant="200" id="o0V-4E-3hi"/>
+                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leadingMargin" constant="230" id="o0V-4E-3hi"/>
                             <constraint firstAttribute="trailing" secondItem="smB-i7-Fz4" secondAttribute="trailing" id="r58-20-ita"/>
                             <constraint firstItem="dbh-cz-1Lz" firstAttribute="top" secondItem="8Fo-fM-7tj" secondAttribute="bottom" constant="100" id="uUG-72-R7s"/>
                         </constraints>
