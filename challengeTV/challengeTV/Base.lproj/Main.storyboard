@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -303,18 +302,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-yz-6ug">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-yz-6ug">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1080" id="UDl-XI-8qE"/>
-                                    <constraint firstAttribute="width" constant="1920" id="iwd-LX-w7k"/>
+                                    <constraint firstAttribute="height" constant="1080" id="aBk-iX-X0l"/>
+                                    <constraint firstAttribute="width" constant="1920" id="j7V-aX-Xjl"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="191" y="465" width="450" height="86"/>
+                                <rect key="frame" x="175" y="497" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="u0y-QA-8ZJ"/>
+                                    <constraint firstAttribute="width" constant="450" id="Z4n-Iw-1p8"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 1"/>
@@ -323,11 +322,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="735" y="465" width="450" height="86"/>
+                                <rect key="frame" x="735" y="497" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="LSM-se-BEr"/>
-                                    <constraint firstAttribute="height" constant="86" id="vx8-ii-A5n"/>
+                                    <constraint firstAttribute="width" constant="450" id="joP-kY-ha0"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 2"/>
@@ -336,10 +334,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="1295" y="465" width="450" height="86"/>
+                                <rect key="frame" x="1295" y="497" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="OLR-Wc-sLe"/>
+                                    <constraint firstAttribute="width" constant="450" id="QUk-ch-Qs0"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 3"/>
@@ -347,23 +345,11 @@
                                     <segue destination="4f3-V5-gOc" kind="show" id="acs-Bl-yep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="500" y="673" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="Czr-Vb-iqe"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Nível 4"/>
-                                <connections>
-                                    <segue destination="gqp-Wi-W55" kind="show" id="FAe-iX-IYt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="1003" y="671" width="450" height="90"/>
+                                <rect key="frame" x="1045" y="683" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="KYZ-Tr-4cp"/>
+                                    <constraint firstAttribute="width" constant="450" id="aiN-2B-RTm"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 5"/>
@@ -372,34 +358,47 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um nível para jogar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
-                                <rect key="frame" x="693" y="301" width="535" height="40"/>
+                                <rect key="frame" x="693" y="371" width="535" height="40"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DA CATEGORIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
-                                <rect key="frame" x="685" y="205" width="551" height="66"/>
+                                <rect key="frame" x="685" y="275" width="551" height="66"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <rect key="frame" x="485" y="683" width="450" height="86"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="Luu-un-JKR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Nível 4"/>
+                                <connections>
+                                    <segue destination="gqp-Wi-W55" kind="show" id="FAe-iX-IYt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="PbU-hU-ooa" firstAttribute="top" secondItem="cTo-ph-8hb" secondAttribute="bottom" constant="319" id="28m-Uw-n0U"/>
-                            <constraint firstItem="qGn-vg-Y3r" firstAttribute="baseline" secondItem="Jw9-NG-NUT" secondAttribute="baseline" id="9ld-4m-Eis"/>
-                            <constraint firstItem="cTo-ph-8hb" firstAttribute="baseline" secondItem="1rV-Fa-pAd" secondAttribute="firstBaseline" id="ALQ-HX-6Cb"/>
-                            <constraint firstItem="UXg-Te-YGt" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="E8G-wL-rNa"/>
-                            <constraint firstItem="utc-UI-46Z" firstAttribute="leading" secondItem="f49-tQ-1S2" secondAttribute="leading" constant="191" id="KHx-ui-TgD"/>
-                            <constraint firstAttribute="trailing" secondItem="qGn-vg-Y3r" secondAttribute="trailing" constant="175" id="QiJ-rZ-TwX"/>
-                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="leading" secondItem="utc-UI-46Z" secondAttribute="trailing" constant="94" id="Yo6-05-WBS"/>
-                            <constraint firstItem="cTo-ph-8hb" firstAttribute="leading" secondItem="1rV-Fa-pAd" secondAttribute="trailing" constant="53" id="bUb-41-DB9"/>
-                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="top" secondItem="5xU-7s-i48" secondAttribute="bottom" constant="60" id="cKf-O1-OuR"/>
-                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="leading" secondItem="f49-tQ-1S2" secondAttribute="leading" constant="500" id="d1l-HY-Clb"/>
-                            <constraint firstItem="UXg-Te-YGt" firstAttribute="top" secondItem="iBX-Sy-ZAU" secondAttribute="bottom" constant="30" id="fNp-gg-8qP"/>
-                            <constraint firstItem="utc-UI-46Z" firstAttribute="baseline" secondItem="Jw9-NG-NUT" secondAttribute="baseline" id="g78-pV-m0e"/>
-                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="ncK-jm-yXg"/>
-                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="baseline" secondItem="cTo-ph-8hb" secondAttribute="firstBaseline" id="vGx-SL-9U5"/>
-                            <constraint firstItem="utc-UI-46Z" firstAttribute="top" secondItem="5xU-7s-i48" secondAttribute="bottom" constant="320" id="y9t-nN-VFi"/>
-                            <constraint firstItem="PbU-hU-ooa" firstAttribute="top" secondItem="1rV-Fa-pAd" secondAttribute="bottom" constant="321" id="yWj-fi-eSu"/>
+                            <constraint firstItem="qGn-vg-Y3r" firstAttribute="leading" secondItem="Jw9-NG-NUT" secondAttribute="trailing" constant="110" id="24X-Vo-rcS"/>
+                            <constraint firstItem="iKz-yz-6ug" firstAttribute="centerY" secondItem="f49-tQ-1S2" secondAttribute="centerY" id="4c1-b7-GDz"/>
+                            <constraint firstItem="iKz-yz-6ug" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="Bxg-fG-3NZ"/>
+                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="UXg-Te-YGt" secondAttribute="centerX" id="CxH-bc-Idf"/>
+                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerY" secondItem="f49-tQ-1S2" secondAttribute="centerY" id="Cyp-kj-K8z"/>
+                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" constant="-250" id="FqF-4E-9xc"/>
+                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="HX6-6u-jcf"/>
+                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="leading" secondItem="utc-UI-46Z" secondAttribute="trailing" constant="110" id="ZhH-bR-c6Q"/>
+                            <constraint firstItem="cTo-ph-8hb" firstAttribute="leading" secondItem="1rV-Fa-pAd" secondAttribute="trailing" constant="110" id="bGa-IY-esp"/>
+                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="bcf-GR-69U"/>
+                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="top" secondItem="5xU-7s-i48" secondAttribute="bottom" constant="130" id="d51-Cg-qx1"/>
+                            <constraint firstItem="UXg-Te-YGt" firstAttribute="top" secondItem="iBX-Sy-ZAU" secondAttribute="bottom" constant="30" id="l5w-As-b4Q"/>
+                            <constraint firstItem="UXg-Te-YGt" firstAttribute="centerX" secondItem="Jw9-NG-NUT" secondAttribute="centerX" id="nUP-Zs-HaW"/>
+                            <constraint firstItem="cTo-ph-8hb" firstAttribute="bottom" secondItem="1rV-Fa-pAd" secondAttribute="bottom" id="oK2-Pd-ED2"/>
+                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="top" secondItem="utc-UI-46Z" secondAttribute="top" id="p3g-N2-fxC"/>
+                            <constraint firstItem="qGn-vg-Y3r" firstAttribute="top" secondItem="utc-UI-46Z" secondAttribute="top" id="tNA-bL-29B"/>
+                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="top" secondItem="Jw9-NG-NUT" secondAttribute="bottom" constant="100" id="z5u-JJ-d3A"/>
                         </constraints>
                     </view>
                 </viewController>
