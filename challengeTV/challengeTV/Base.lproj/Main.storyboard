@@ -503,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="901" y="5181"/>
         </scene>
-        <!--View Controller-->
+        <!--Nivel Dois View Controller-->
         <scene sceneID="gIX-fJ-Y7R">
             <objects>
-                <viewController id="FhU-KX-0tY" sceneMemberID="viewController">
+                <viewController id="FhU-KX-0tY" customClass="NivelDoisViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3yV-tR-Hff"/>
                         <viewControllerLayoutGuide type="bottom" id="Gz0-hV-Oca"/>
@@ -522,51 +522,81 @@
                                 <rect key="frame" x="115" y="615" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="UiP-eJ-dYu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-PP-xth">
                                 <rect key="frame" x="115" y="172" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="51L-eB-8pI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ika-3B-LFE">
                                 <rect key="frame" x="475" y="615" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="T1h-cV-221"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tg-Gc-0ge">
                                 <rect key="frame" x="835" y="615" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="RXk-Tt-uFn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-hR-Chk">
                                 <rect key="frame" x="835" y="172" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="fqi-DP-wXq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Un-sz-Onj">
                                 <rect key="frame" x="1555" y="615" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="a1g-Jx-Mdz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-Ya-5bp">
                                 <rect key="frame" x="1555" y="172" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="fXm-fh-Gso"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Nc-vwx">
                                 <rect key="frame" x="475" y="172" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="aDB-on-HKd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-KQ-oJy">
                                 <rect key="frame" x="1195" y="615" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="t7P-o4-Vju"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Ve-8Ew">
                                 <rect key="frame" x="1195" y="172" width="250" height="350"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="icR-ca-ak4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
                                 <rect key="frame" x="780" y="70" width="480" height="40"/>
@@ -581,6 +611,18 @@
                             <constraint firstItem="SFN-4v-lDl" firstAttribute="bottom" secondItem="Gz0-hV-Oca" secondAttribute="top" id="hxg-yL-RCv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carta1" destination="0V2-PP-xth" id="vHU-6c-6X6"/>
+                        <outlet property="carta10" destination="3Un-sz-Onj" id="Jjc-kF-0ey"/>
+                        <outlet property="carta2" destination="SH3-Kl-w0T" id="KnS-r4-jRX"/>
+                        <outlet property="carta3" destination="pA5-Nc-vwx" id="IFx-xf-Mjm"/>
+                        <outlet property="carta4" destination="ika-3B-LFE" id="heM-o3-AaS"/>
+                        <outlet property="carta5" destination="uUZ-hR-Chk" id="PV2-fP-UCx"/>
+                        <outlet property="carta6" destination="0Tg-Gc-0ge" id="jp7-9o-k6L"/>
+                        <outlet property="carta7" destination="HBG-Ve-8Ew" id="Lcm-GI-Qrh"/>
+                        <outlet property="carta8" destination="Pny-KQ-oJy" id="Pgj-P3-FSi"/>
+                        <outlet property="carta9" destination="Rgg-Ya-5bp" id="uf1-EL-JOP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUb-ew-wmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -663,10 +705,10 @@
             </objects>
             <point key="canvasLocation" x="6404" y="3446"/>
         </scene>
-        <!--View Controller-->
+        <!--Nivel Tres View Controller-->
         <scene sceneID="JEE-a0-gqw">
             <objects>
-                <viewController id="4f3-V5-gOc" sceneMemberID="viewController">
+                <viewController id="4f3-V5-gOc" customClass="NivelTresViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UTp-5p-D6u"/>
                         <viewControllerLayoutGuide type="bottom" id="Ftz-AL-nac"/>
@@ -682,71 +724,113 @@
                                 <rect key="frame" x="380" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="jG9-iM-Y8H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7u-pE-B5H">
                                 <rect key="frame" x="380" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="JLh-4b-0gj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-dl-F7s">
                                 <rect key="frame" x="1340" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="NEt-JD-NGG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBl-bK-xTX">
                                 <rect key="frame" x="620" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="3dF-mS-NZa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFv-vJ-fcx">
                                 <rect key="frame" x="1100" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="fdV-R8-yRx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-UW-tiS">
                                 <rect key="frame" x="860" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="nIj-Is-TIT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-FE-LVB">
                                 <rect key="frame" x="860" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="1x4-Yp-2Ys"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zox-8U-Ne7">
                                 <rect key="frame" x="1100" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="sP5-EI-6Dd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-DR-etY">
                                 <rect key="frame" x="1340" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="MY3-Qk-gbz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2r-e4-aV4">
                                 <rect key="frame" x="140" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="pjS-yW-PPy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-xO-Yk7">
                                 <rect key="frame" x="1580" y="640" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="KVB-aE-3TA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-eq-pmx">
                                 <rect key="frame" x="1580" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="Ajz-L7-8vk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-EK-AyQ">
                                 <rect key="frame" x="620" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="DCu-dq-WUc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWN-cX-2TJ">
                                 <rect key="frame" x="140" y="250" width="200" height="300"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="Pdv-WU-gdF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
                                 <rect key="frame" x="784" y="63" width="480" height="40"/>
@@ -761,15 +845,31 @@
                             <constraint firstItem="xlN-9f-ROa" firstAttribute="top" secondItem="mZ1-ob-LfI" secondAttribute="top" id="z5B-j9-fYf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carta1" destination="yWN-cX-2TJ" id="3Nf-WE-i3t"/>
+                        <outlet property="carta10" destination="zox-8U-Ne7" id="4H6-fb-C7D"/>
+                        <outlet property="carta11" destination="dGs-DR-etY" id="79W-bE-xFm"/>
+                        <outlet property="carta12" destination="SbZ-dl-F7s" id="QIb-Dl-7iz"/>
+                        <outlet property="carta13" destination="MZu-eq-pmx" id="13B-hu-wYf"/>
+                        <outlet property="carta14" destination="EcV-xO-Yk7" id="g6M-ba-ANY"/>
+                        <outlet property="carta2" destination="B2r-e4-aV4" id="Qqe-Ap-1LN"/>
+                        <outlet property="carta3" destination="k7u-pE-B5H" id="VtV-r2-KDS"/>
+                        <outlet property="carta4" destination="M6C-QX-aB0" id="K4y-hg-qyx"/>
+                        <outlet property="carta5" destination="Ec5-EK-AyQ" id="m4p-4c-dVh"/>
+                        <outlet property="carta6" destination="FBl-bK-xTX" id="g0J-Tl-92E"/>
+                        <outlet property="carta7" destination="FK6-FE-LVB" id="pAQ-Fg-FDY"/>
+                        <outlet property="carta8" destination="V2f-UW-tiS" id="cSH-lB-02M"/>
+                        <outlet property="carta9" destination="lFv-vJ-fcx" id="VM5-A6-JxK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kV1-P9-yYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3975" y="3431"/>
         </scene>
-        <!--View Controller-->
+        <!--Nivel Quatro View Controller-->
         <scene sceneID="Pal-5T-lMB">
             <objects>
-                <viewController id="gqp-Wi-W55" sceneMemberID="viewController">
+                <viewController id="gqp-Wi-W55" customClass="NivelQuatroViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v6r-hI-TpO"/>
                         <viewControllerLayoutGuide type="bottom" id="fPF-Wi-i6g"/>
@@ -957,15 +1057,35 @@
                             <constraint firstItem="2b1-fy-lF9" firstAttribute="leading" secondItem="p37-dW-5XH" secondAttribute="leading" id="tE3-aU-73Z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carta1" destination="1HT-sd-Vfw" id="dZe-x6-eXG"/>
+                        <outlet property="carta10" destination="oes-Gk-fMR" id="8HF-7I-0Ih"/>
+                        <outlet property="carta11" destination="kU1-9r-M6d" id="wMG-uA-Lpt"/>
+                        <outlet property="carta12" destination="Oav-m0-hKb" id="s0r-z9-IWI"/>
+                        <outlet property="carta13" destination="yLx-az-YGg" id="n7F-bs-OKw"/>
+                        <outlet property="carta14" destination="wjd-m2-4iw" id="dAQ-ZO-Qlp"/>
+                        <outlet property="carta15" destination="XR0-lo-Aug" id="rcz-0i-Egi"/>
+                        <outlet property="carta16" destination="b2m-V9-CSs" id="bDM-7f-qbj"/>
+                        <outlet property="carta17" destination="pVg-ir-yY4" id="Zhy-c8-1rL"/>
+                        <outlet property="carta18" destination="R9o-IJ-amO" id="4YW-t8-gIR"/>
+                        <outlet property="carta2" destination="wp6-QJ-h87" id="b6e-kQ-Wum"/>
+                        <outlet property="carta3" destination="79r-6w-pFH" id="pby-LN-kiP"/>
+                        <outlet property="carta4" destination="nNI-zL-Xii" id="RQh-vK-PiP"/>
+                        <outlet property="carta5" destination="IOP-nM-fYZ" id="3HY-4N-cUI"/>
+                        <outlet property="carta6" destination="zWR-k2-dii" id="gba-U7-0Wz"/>
+                        <outlet property="carta7" destination="5v5-kc-yvt" id="TKy-72-W0h"/>
+                        <outlet property="carta8" destination="U7Q-7f-KJA" id="5QR-Bn-SJ0"/>
+                        <outlet property="carta9" destination="LkG-9O-UNe" id="Fay-as-iDK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJL-0Z-99Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3969" y="4661"/>
         </scene>
-        <!--View Controller-->
+        <!--Nivel Cinco View Controller-->
         <scene sceneID="DIH-Y4-oKs">
             <objects>
-                <viewController id="X0y-Ec-Tyw" sceneMemberID="viewController">
+                <viewController id="X0y-Ec-Tyw" customClass="NivelCincoViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nxh-qc-XIb"/>
                         <viewControllerLayoutGuide type="bottom" id="R9Q-FP-IHa"/>
@@ -985,6 +1105,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="jK7-nk-2eN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-sY-xN2">
                                 <rect key="frame" x="1425" y="450" width="170" height="270"/>
@@ -994,6 +1117,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="R0d-Mu-yUD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-4t-2dw">
                                 <rect key="frame" x="1640" y="450" width="170" height="270"/>
@@ -1003,6 +1129,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="XtL-Et-ama"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-aX-6dw">
                                 <rect key="frame" x="1210" y="749" width="170" height="270"/>
@@ -1012,6 +1141,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="n9Z-nc-XzE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOo-00-d1c">
                                 <rect key="frame" x="995" y="749" width="170" height="270"/>
@@ -1021,6 +1153,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="43J-YR-oUP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-8H-kOF">
                                 <rect key="frame" x="995" y="450" width="170" height="270"/>
@@ -1030,6 +1165,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="n2u-og-zN7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqk-9t-58h">
                                 <rect key="frame" x="1210" y="450" width="170" height="270"/>
@@ -1039,6 +1177,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="kVW-8C-h6v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzL-kF-NnS">
                                 <rect key="frame" x="780" y="749" width="170" height="270"/>
@@ -1048,6 +1189,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="Arl-Gm-I9p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-As-pEy">
                                 <rect key="frame" x="780" y="450" width="170" height="270"/>
@@ -1057,6 +1201,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="fJm-vG-ZhK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-fr-J9d">
                                 <rect key="frame" x="565" y="749" width="170" height="270"/>
@@ -1066,6 +1213,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="iTy-y3-ttx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-Bk-yuQ">
                                 <rect key="frame" x="350" y="749" width="170" height="270"/>
@@ -1075,6 +1225,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="u55-jz-GHY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3co-BU-Q3h">
                                 <rect key="frame" x="350" y="450" width="170" height="270"/>
@@ -1084,6 +1237,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="4g0-QD-2ve"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-qi-eVp">
                                 <rect key="frame" x="565" y="450" width="170" height="270"/>
@@ -1093,6 +1249,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="koz-TD-6R1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-dD-mBs">
                                 <rect key="frame" x="135" y="450" width="170" height="270"/>
@@ -1102,6 +1261,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="LFv-pf-lRL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
                                 <rect key="frame" x="858" y="60" width="480" height="40"/>
@@ -1117,6 +1279,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="qgh-tx-dHk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-dc-den">
                                 <rect key="frame" x="995" y="153" width="170" height="270"/>
@@ -1126,6 +1291,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="y2c-qh-jpb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-2y-vX5">
                                 <rect key="frame" x="1210" y="153" width="170" height="270"/>
@@ -1135,6 +1303,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="59D-1h-fWK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-3q-zLs">
                                 <rect key="frame" x="780" y="153" width="170" height="270"/>
@@ -1144,6 +1315,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="8oy-Qh-INW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-85-WX2">
                                 <rect key="frame" x="565" y="153" width="170" height="270"/>
@@ -1153,6 +1327,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="cDO-4M-hog"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-vy-rtc">
                                 <rect key="frame" x="350" y="153" width="170" height="270"/>
@@ -1162,6 +1339,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="wCk-9M-13d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -1183,6 +1363,28 @@
                             <constraint firstItem="ePZ-As-pEy" firstAttribute="top" secondItem="HB3-3q-zLs" secondAttribute="bottom" constant="30" id="yuN-px-3ce"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carta1" destination="rsK-dD-mBs" id="XKU-6F-Vfu"/>
+                        <outlet property="carta10" destination="JzL-kF-NnS" id="hks-sJ-hcw"/>
+                        <outlet property="carta11" destination="Ipz-dc-den" id="4BP-qC-bSt"/>
+                        <outlet property="carta12" destination="9ZE-8H-kOF" id="yek-dr-BLr"/>
+                        <outlet property="carta13" destination="DOo-00-d1c" id="0HJ-VG-4x7"/>
+                        <outlet property="carta14" destination="CyE-2y-vX5" id="2et-hX-0P4"/>
+                        <outlet property="carta15" destination="iqk-9t-58h" id="nay-0p-cwC"/>
+                        <outlet property="carta16" destination="9FW-aX-6dw" id="AA1-vg-1Qv"/>
+                        <outlet property="carta17" destination="x0m-W6-qZQ" id="ErT-No-Xhj"/>
+                        <outlet property="carta18" destination="RB0-sY-xN2" id="Vra-lE-pBw"/>
+                        <outlet property="carta19" destination="BE3-oV-cSq" id="DDo-PG-448"/>
+                        <outlet property="carta2" destination="QEy-vy-rtc" id="PZh-dD-Gs2"/>
+                        <outlet property="carta20" destination="tEq-4t-2dw" id="b3Q-ZG-tib"/>
+                        <outlet property="carta3" destination="3co-BU-Q3h" id="NdD-fY-Icy"/>
+                        <outlet property="carta4" destination="RTm-Bk-yuQ" id="IJo-bE-73J"/>
+                        <outlet property="carta5" destination="Isq-85-WX2" id="fR7-ba-sGB"/>
+                        <outlet property="carta6" destination="ULG-qi-eVp" id="ZmB-WD-vYo"/>
+                        <outlet property="carta7" destination="tUk-fr-J9d" id="RR4-Lf-uqg"/>
+                        <outlet property="carta8" destination="HB3-3q-zLs" id="xjz-Kw-sGy"/>
+                        <outlet property="carta9" destination="ePZ-As-pEy" id="p8x-1v-n3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgw-ov-7EU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
