@@ -10,11 +10,11 @@ import UIKit
 
 class NivelUmViewController: UIViewController {
     
-    var managerJogo = JogoViewController()
+    var JManager = JogoManager()
     var opcoesCarta = [String]() //imagens das cartas
+    var nomeCategoria = String()
     var cartas = [UIButton]()
     var retorno = [String]()
-    var status = Bool()
     var selecionados = [Int]()
     var b = UIButton()
     
@@ -28,9 +28,16 @@ class NivelUmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        opcoesCarta = ["Panda.png", "Cachorro.png", "Gato.png", "Cachorro.png", "Gato.png", "Panda.png"]
+        if nomeCategoria == "Animais"{
+        opcoesCarta = ["Cachorro.png", "Elefante.png", "Gato.png","Cachorro.png", "Elefante.png", "Gato.png"]
+        } else if nomeCategoria == "Frutas"{
+            opcoesCarta = ["Banana.png", "Cereja.png", "Coco.png", "Banana.png", "Cereja.png", "Coco.png"]
+        } else {
+            opcoesCarta = ["1.png", "2.png", "3.png", "1-1.png", "2-1.png", "3-1.png"]
+        }
+        
         cartas = [carta1, carta2, carta3, carta4, carta5, carta6]
-        retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
+        retorno = JManager.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,20 +47,21 @@ class NivelUmViewController: UIViewController {
     
     @IBAction func animacaoCarta(sender: AnyObject) { //animação dos botões quando selecionados.
         if sender.tag != 100 {
-        status = false
-        let img = self.imagem(sender as! UIButton).foto
-        //enquanto houver animação todas as cartas estão sem interação
-        interacao()
-        //adiciona o indice do botão que foi selecionado
-        selecionados.append(self.imagem(sender as! UIButton).indice)
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 25), dispatch_get_main_queue()) {
-            sender.setBackgroundImage(UIImage(named: img), forState: .Normal)
-        }
-        UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
-        }) { (finished) in
-            self.jogo(sender as! UIButton)
-        }
+            let img = self.imagem(sender as! UIButton).foto
+            
+            //enquanto houver animação todas as cartas estão sem interação
+            JManager.interacao(cartas, status: false)
+            
+            //adiciona o indice do botão que foi selecionado
+            selecionados.append(self.imagem(sender as! UIButton).indice)
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 25), dispatch_get_main_queue()) {
+                sender.setBackgroundImage(UIImage(named: img), forState: .Normal)
+            }
+            UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
+            }) { (finished) in
+                self.jogo(sender as! UIButton)
+            }
         }
     }
     
@@ -69,41 +77,38 @@ class NivelUmViewController: UIViewController {
             }
         } else if selecionados.count == 2 {
             //compara as cartas pelo nome da foto
-            if self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto{
+            var comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto
+            if nomeCategoria == "Números"{
+               comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString("-1.png", withString: ".png") || self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString(".png", withString: "-1.png") == self.imagem(cartas[selecionados[0]]).foto
+            }
+            
+            if comparacao == true{
                 //acertou
                 acerto()
-                print("uhul")
+                
             } else {
                 //errou
                 NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
-                print("quase :(")
             }
-        }
-    }
-    
-    func interacao(){
-        for c in cartas{
-            c.userInteractionEnabled = status
         }
     }
     
     func acerto(){
         for i in selecionados{
             cartas[i].tag = 100
-            animacaoAcerto(cartas[i])
+            JManager.animacaoAcerto(cartas[i])
         }
 
-        status = true
-        interacao()
+        JManager.interacao(cartas, status: true)
         selecionados.removeAll()
     }
     
     func erro(){
         for i in selecionados{
-            animacaoErro(cartas[i])
+            JManager.animacaoErro(cartas[i])
         }
-        status = true
-        interacao()
+
+        JManager.interacao(cartas, status: true)
         selecionados.removeAll()
     }
     
@@ -119,27 +124,5 @@ class NivelUmViewController: UIViewController {
             i+=1
         }
         return (indice, j)
-    }
-    
-    func animacaoAcerto(sender: UIButton){
-        UIView.beginAnimations("teste", context: nil)
-        UIView.setAnimationDuration(1.0)
-        sender.transform = CGAffineTransformMakeScale(1.8, 1.8)
-        sender.alpha = 1.0
-        UIView.commitAnimations()
-        
-        UIView.beginAnimations("teste", context: nil)
-        UIView.setAnimationDuration(1.0)
-        sender.transform = CGAffineTransformMakeScale(1, 1)
-        sender.alpha = 1.0
-        UIView.commitAnimations()
-    }
-    
-    func animacaoErro(sender: UIButton){
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 250), dispatch_get_main_queue()) {
-            sender.setBackgroundImage(UIImage(named: "Parte de tras"), forState: .Normal)
-        }
-        UIView.transitionWithView(sender, duration: 0.5, options: .TransitionFlipFromLeft, animations: {
-            }, completion: nil)
     }
 }

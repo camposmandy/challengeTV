@@ -9,11 +9,23 @@
 import UIKit
 
 class NivelViewController: UIViewController {
-
+    
+    var c = String()
+    
+    @IBOutlet weak var categoria: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if c == "CategoriaAnimais.png"{
+            c = "Animais"
+        } else if c == "CategoriaFrutas.png"{
+            c = "Frutas"
+        } else {
+            c = "Números"
+        }
+        
+        categoria.text = c
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +33,10 @@ class NivelViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        let vc = segue.destinationViewController as! NivelUmViewController
+        vc.nomeCategoria = c
     }
-    */
-
 }

@@ -1,3 +1,4 @@
+
 //
 //  CategoriasViewController.swift
 //  challengeTV
@@ -12,13 +13,12 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
 
     @IBOutlet weak var collectionView: UICollectionView!
     var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
-    var categoria = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +27,6 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     // MARK: - Collection
-
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -44,11 +43,6 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let i = indexPath.row
-        categoria = categorias[i]
-    }
- 
     func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator:UIFocusAnimationCoordinator) {
         
         if let previousIndexPath = context.previouslyFocusedIndexPath,
@@ -70,5 +64,13 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.contentView.layer.shadowOffset = CGSizeZero
             collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            let vc = segue.destinationViewController as! NivelViewController
+            let celula = sender as! UICollectionViewCell
+            let indexPath = collectionView.indexPathForCell(celula)
+            let userPost = categorias[(indexPath?.row)!]
+            vc.c = userPost
     }
 }
