@@ -11,6 +11,7 @@ import UIKit
 class NivelDoisViewController: UIViewController {
 
     var managerJogo = Jogo()
+    var nomeCategoria = String()
     var opcoesCarta = [String]() //imagens das cartas
     var cartas = [UIButton]()
     var retorno = [String]()
@@ -27,8 +28,9 @@ class NivelDoisViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning()
-    {       super.didReceiveMemoryWarning()     }
+    override func didReceiveMemoryWarning(){
+        super.didReceiveMemoryWarning()
+    }
     
     @IBAction func animacaoCarta(sender: AnyObject) { //animação dos botões quando selecionados.
         if sender.tag != 100 {

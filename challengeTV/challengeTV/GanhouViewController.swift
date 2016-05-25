@@ -16,11 +16,19 @@ class GanhouViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(GanhouViewController.tapped))
+        tapRecognizer.allowedPressTypes = [NSNumber(integer:UIPressType.Menu.rawValue)]
+        self.view.addGestureRecognizer(tapRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tapped(){
+        print("show")
     }
     
     override func viewDidAppear(animated: Bool){
@@ -32,4 +40,13 @@ class GanhouViewController: UIViewController {
         bolas?.startSnow()
     }
 
+    @IBAction func menu(sender: AnyObject) {
+        
+    }
+    @IBAction func niveis(sender: AnyObject) {
+        
+    }
+    @IBAction func jogarNovamente(sender: AnyObject) {
+        
+    }
 }

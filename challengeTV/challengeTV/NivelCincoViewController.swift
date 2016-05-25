@@ -11,6 +11,7 @@ import UIKit
 class NivelCincoViewController: UIViewController {
 
     var managerJogo = Jogo()
+    var nomeCategoria = String()
     var opcoesCarta = [String]() //imagens das cartas
     var cartas = [UIButton]()
     var retorno = [String]()

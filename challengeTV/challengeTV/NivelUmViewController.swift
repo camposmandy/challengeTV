@@ -17,7 +17,6 @@ class NivelUmViewController: UIViewController {
     var retorno = [String]()
     var selecionados = [Int]()
     var b = UIButton()
-
     
     @IBOutlet weak var carta1: UIButton!
     @IBOutlet weak var carta2: UIButton!
@@ -67,7 +66,7 @@ class NivelUmViewController: UIViewController {
     }
     
     func jogo(carta: UIButton){ // compara se as cartas soteadas são iguais
-        
+        var c = 0
         if selecionados.count == 1 {
             for c in cartas {
                 if c == carta{
@@ -85,7 +84,6 @@ class NivelUmViewController: UIViewController {
             
             if comparacao == true{
                 //acertou
-                var c = 0
                 acerto()
                 print(cartas.count, c)
                 for i in cartas{
@@ -94,14 +92,15 @@ class NivelUmViewController: UIViewController {
                     }
                 }
                 print(cartas.count, c)
-
-                if cartas.count == c{
-                    JManager.ganhouJogo(view)
-                }
                 
             } else {
                 //errou
                 NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
+            }
+            
+            if cartas.count == c{
+                let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Parabens") as! GanhouViewController
+                self.navigationController?.pushViewController(chamada, animated: true)
             }
         }
     }

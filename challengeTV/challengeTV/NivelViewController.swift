@@ -36,7 +36,24 @@ class NivelViewController: UIViewController {
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        if segue.identifier == "um"{
         let vc = segue.destinationViewController as! NivelUmViewController
-        vc.nomeCategoria = c
+            vc.nomeCategoria = c
+        } else if segue.identifier == "dois"{
+            let vc = segue.destinationViewController as! NivelDoisViewController
+            vc.nomeCategoria = c
+            
+        }  else if segue.identifier == "tres"{
+            let vc = segue.destinationViewController as! NivelTresViewController
+            vc.nomeCategoria = c
+
+        } else if segue.identifier == "quatro"{
+            let vc = segue.destinationViewController as! NivelQuatroViewController
+            vc.nomeCategoria = c
+
+        } else {
+            let vc = segue.destinationViewController as! NivelCincoViewController
+            vc.nomeCategoria = c
+        }
     }
 }
