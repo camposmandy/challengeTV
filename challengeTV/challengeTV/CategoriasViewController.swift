@@ -10,7 +10,7 @@
 import UIKit
 
 class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
 
@@ -20,12 +20,12 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Collection
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -50,6 +50,12 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.contentView.layer.borderWidth = 0.0
             cell.contentView.layer.shadowRadius = 0.0
             cell.contentView.layer.shadowOpacity = 0
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                
+                context.previouslyFocusedView?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            })
+            
         }
         
         if let indexPath = context.nextFocusedIndexPath,
@@ -63,6 +69,11 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.contentView.layer.shadowOpacity = 1
             cell.contentView.layer.shadowOffset = CGSizeZero
             collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                
+                context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.13, 1.13)
+            })
         }
     }
     
