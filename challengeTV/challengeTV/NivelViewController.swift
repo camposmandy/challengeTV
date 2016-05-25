@@ -35,8 +35,8 @@ class NivelViewController: UIViewController {
     
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-        let vc = segue.destinationViewController as! NivelUmViewController
-        vc.nomeCategoria = c
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+//        let vc = segue.destinationViewController as! NivelUmViewController
+//        vc.nomeCategoria = c
+//    }
 }
