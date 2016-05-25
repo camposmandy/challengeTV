@@ -10,7 +10,7 @@ import UIKit
 
 class NivelDoisViewController: UIViewController {
 
-    var managerJogo = JogoViewController()
+    var managerJogo = Jogo()
     var opcoesCarta = [String]() //imagens das cartas
     var cartas = [UIButton]()
     var retorno = [String]()

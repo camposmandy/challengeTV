@@ -23,8 +23,7 @@ class GanhouViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool)
-    {
+    override func viewDidAppear(animated: Bool){
         super.viewDidAppear(animated)
         
         bolas = BolasBasqueteCaindo(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))

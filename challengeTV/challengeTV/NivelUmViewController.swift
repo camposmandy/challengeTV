@@ -10,13 +10,14 @@ import UIKit
 
 class NivelUmViewController: UIViewController {
     
-    var JManager = JogoManager()
+    var JManager = Jogo()
     var opcoesCarta = [String]() //imagens das cartas
     var nomeCategoria = String()
     var cartas = [UIButton]()
     var retorno = [String]()
     var selecionados = [Int]()
     var b = UIButton()
+
     
     @IBOutlet weak var carta1: UIButton!
     @IBOutlet weak var carta2: UIButton!
@@ -84,7 +85,19 @@ class NivelUmViewController: UIViewController {
             
             if comparacao == true{
                 //acertou
+                var c = 0
                 acerto()
+                print(cartas.count, c)
+                for i in cartas{
+                    if i.tag == 100{
+                     c+=1
+                    }
+                }
+                print(cartas.count, c)
+
+                if cartas.count == c{
+                    JManager.ganhouJogo(view)
+                }
                 
             } else {
                 //errou

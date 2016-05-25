@@ -8,7 +8,7 @@
 
 import UIKit
 
-public let kkDefaultFlakeFileName               = "Instrucao2"
+public let kkDefaultFlakeFileName               = "confete"
 public let kkDefaultFlakesCount                 = 200
 public let kkDefaultFlakeWidth: Float           = 40.0
 public let kkDefaultFlakeHeight: Float          = 46.0
@@ -50,14 +50,14 @@ public class BolasBasqueteCaindo: UIView {
     
     public func createFlakes() {
         flakesArray = [UIImageView]()
-        var flakeImage: UIImage = UIImage(named: flakeFileName!)!
-        for var i: Int = 0; i < flakesCount!; i++ {
+        let flakeImage: UIImage = UIImage(named: flakeFileName!)!
+        for i: Int in 0 ..< flakesCount! {
             var vz: Float = 1.0 * Float(rand()) / Float(RAND_MAX)
             vz = vz < flakeMinimumSize! ? flakeMinimumSize! : vz
             vz = vz > flakeMaximumSize! ? flakeMaximumSize! : vz
             
-            var vw = flakeWidth! * vz
-            var vh = flakeHeight! * vz
+            let vw = flakeWidth! * vz
+            let vh = flakeHeight! * vz
             
             var vx = Float(frame.size.width) * Float(rand()) / Float(RAND_MAX)
             var vy = Float(frame.size.height) * 1.5 * Float(rand()) / Float(RAND_MAX)
@@ -65,8 +65,8 @@ public class BolasBasqueteCaindo: UIView {
             vy += Float(frame.size.height)
             vx -= vw
             
-            var imageFrame = CGRectMake(CGFloat(vx), CGFloat(vy), CGFloat(vw), CGFloat(vh))
-            var imageView: UIImageView = UIImageView(image: flakeImage)
+            let imageFrame = CGRectMake(CGFloat(vx), CGFloat(vy), CGFloat(vw), CGFloat(vh))
+            let imageView: UIImageView = UIImageView(image: flakeImage)
             imageView.frame = imageFrame
             imageView.userInteractionEnabled = false
             flakesArray?.append(imageView)
@@ -80,12 +80,12 @@ public class BolasBasqueteCaindo: UIView {
         }
         backgroundColor = UIColor.clearColor()
         
-        var rotAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.y")
+        let rotAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.y")
         rotAnimation.repeatCount = Float.infinity
         rotAnimation.autoreverses = false
         rotAnimation.toValue = 6.28318530718
         
-        var theAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.y")
+        let theAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.y")
         theAnimation.repeatCount = Float.infinity
         theAnimation.autoreverses = false
         
@@ -95,7 +95,7 @@ public class BolasBasqueteCaindo: UIView {
             let endypos = frame.size.height
             p.y = endypos
             v.center = p
-            var timeInterval: Float = (animationDurationMax! - animationDurationMin!) * Float(rand()) / Float(RAND_MAX)
+            let timeInterval: Float = (animationDurationMax! - animationDurationMin!) * Float(rand()) / Float(RAND_MAX)
             theAnimation.duration = CFTimeInterval(timeInterval + animationDurationMin!)
             theAnimation.fromValue = -startypos
             v.layer.addAnimation(theAnimation, forKey: "transform.translation.y")
@@ -112,9 +112,6 @@ public class BolasBasqueteCaindo: UIView {
         flakesArray = nil
     }
     
-    deinit {
-    }
-    
-    
+    deinit { }
     
 }

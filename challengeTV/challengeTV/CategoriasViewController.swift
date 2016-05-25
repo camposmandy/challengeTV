@@ -13,12 +13,14 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     var  categorias = ["CategoriaAnimais.png", "CategoriaFrutas.png", "CategoriaNumeros.png"]
-
+    var categoria = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,6 +29,7 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     // MARK: - Collection
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -41,6 +44,11 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.img.image = UIImage(named: categorias[indexPath.row])
         
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let i = indexPath.row
+        categoria = categorias[i]
     }
     
     func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator:UIFocusAnimationCoordinator) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3706D1111CF6146800926E53 /* Jogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706D1101CF6146800926E53 /* Jogo.swift */; };
 		371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
@@ -16,7 +17,7 @@
 		A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */; };
 		A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */; };
 		A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEC1CE3AFD70080654F /* NivelViewController.swift */; };
-		A131DFEF1CE3AFE40080654F /* JogoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEE1CE3AFE40080654F /* JogoManager.swift */; };
+		A13595851CF4EFCE0041920F /* Animacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13595841CF4EFCE0041920F /* Animacao.swift */; };
 		A18FD27F1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */; };
 		A1C538B81CF4CCF2001FA4D6 /* NivelDoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C538B71CF4CCF2001FA4D6 /* NivelDoisViewController.swift */; };
 		A1C538BB1CF4CD0E001FA4D6 /* NivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C538BA1CF4CD0E001FA4D6 /* NivelTresViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3706D1101CF6146800926E53 /* Jogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jogo.swift; sourceTree = "<group>"; };
 		371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelUmViewController.swift; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +40,7 @@
 		A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
 		A131DFEC1CE3AFD70080654F /* NivelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelViewController.swift; sourceTree = "<group>"; };
-		A131DFEE1CE3AFE40080654F /* JogoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JogoManager.swift; sourceTree = "<group>"; };
+		A13595841CF4EFCE0041920F /* Animacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animacao.swift; sourceTree = "<group>"; };
 		A18FD27E1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1C538B71CF4CCF2001FA4D6 /* NivelDoisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelDoisViewController.swift; sourceTree = "<group>"; };
 		A1C538BA1CF4CD0E001FA4D6 /* NivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelTresViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		37C076821CE24D2D00997545 /* challengeTV */ = {
 			isa = PBXGroup;
 			children = (
+				A1C538B91CF4CCF9001FA4D6 /* Fases */,
 				37B629C81CEA43A200E65EC1 /* celula */,
 				37C076831CE24D2D00997545 /* AppDelegate.swift */,
 				A131DFE61CE3AFA70080654F /* InicialViewController.swift */,
@@ -94,9 +97,9 @@
 				A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */,
 				A131DFEC1CE3AFD70080654F /* NivelViewController.swift */,
 				A1C538C01CF4CFA3001FA4D6 /* GanhouViewController.swift */,
-				A1C538B91CF4CCF9001FA4D6 /* Fases */,
 				A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */,
-				A131DFEE1CE3AFE40080654F /* JogoManager.swift */,
+				A13595841CF4EFCE0041920F /* Animacao.swift */,
+				3706D1101CF6146800926E53 /* Jogo.swift */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
 				37C0768A1CE24D2D00997545 /* Assets.xcassets */,
 				37C0768C1CE24D2D00997545 /* Info.plist */,
@@ -189,7 +192,10 @@
 			files = (
 				A1D4A87C1CEF7DB600F94FC5 /* botaoFocadoView.swift in Sources */,
 				37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */,
-				A131DFEF1CE3AFE40080654F /* JogoManager.swift in Sources */,
+				A13595851CF4EFCE0041920F /* Animacao.swift in Sources */,
+				A1C538BD1CF4CD1E001FA4D6 /* NivelQuatroViewController.swift in Sources */,
+				3706D1111CF6146800926E53 /* Jogo.swift in Sources */,
+				A1C538B81CF4CCF2001FA4D6 /* NivelDoisViewController.swift in Sources */,
 				A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */,
 				A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */,
 				37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */,
