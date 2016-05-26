@@ -42,11 +42,19 @@ class GanhouViewController: UIViewController {
 
     @IBAction func menu(sender: AnyObject) {
         
+        self.navigationController?.popToRootViewControllerAnimated(false)
+        
     }
     @IBAction func niveis(sender: AnyObject) {
         
+        for viewController in self.navigationController!.viewControllers {
+            if let _ = viewController as? NivelViewController {
+                self.navigationController?.popToViewController(viewController, animated: false)
+            }
+        }
+        
     }
     @IBAction func jogarNovamente(sender: AnyObject) {
-        
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

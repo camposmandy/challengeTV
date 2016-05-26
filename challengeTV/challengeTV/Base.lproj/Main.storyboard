@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="osL-do-noh">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -317,7 +317,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 1"/>
                                 <connections>
-                                    <segue destination="Jns-5a-Pc6" kind="show" id="ca2-Fq-xjk"/>
+                                    <segue destination="Jns-5a-Pc6" kind="show" identifier="um" id="ca2-Fq-xjk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
@@ -329,7 +329,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 2"/>
                                 <connections>
-                                    <segue destination="FhU-KX-0tY" kind="show" id="t0D-cV-4k1"/>
+                                    <segue destination="FhU-KX-0tY" kind="show" identifier="dois" id="t0D-cV-4k1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
@@ -341,7 +341,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 3"/>
                                 <connections>
-                                    <segue destination="4f3-V5-gOc" kind="show" id="acs-Bl-yep"/>
+                                    <segue destination="4f3-V5-gOc" kind="show" identifier="tres" id="acs-Bl-yep"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
@@ -353,7 +353,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 5"/>
                                 <connections>
-                                    <segue destination="X0y-Ec-Tyw" kind="show" id="h52-xB-jir"/>
+                                    <segue destination="X0y-Ec-Tyw" kind="show" identifier="cinco" id="h52-xB-jir"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um nível para jogar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
@@ -376,7 +376,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 4"/>
                                 <connections>
-                                    <segue destination="gqp-Wi-W55" kind="show" id="FAe-iX-IYt"/>
+                                    <segue destination="gqp-Wi-W55" kind="show" identifier="quatro" id="FAe-iX-IYt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -628,10 +628,10 @@
             </objects>
             <point key="canvasLocation" x="3975" y="2231"/>
         </scene>
-        <!--View Controller-->
+        <!--Ganhou View Controller-->
         <scene sceneID="qY7-oO-UDX">
             <objects>
-                <viewController id="ODY-Xc-jyv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Parabens" id="ODY-Xc-jyv" customClass="GanhouViewController" customModule="challengeTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRf-aB-HPs"/>
                         <viewControllerLayoutGuide type="bottom" id="VL8-VO-Xws"/>
@@ -656,6 +656,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Jogar Novamente"/>
+                                <connections>
+                                    <action selector="jogarNovamente:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="YjR-jf-Iig"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="250" y="586" width="450" height="86"/>
@@ -665,6 +668,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Níveis"/>
+                                <connections>
+                                    <action selector="niveis:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="Hln-mU-8NB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="250" y="772" width="450" height="86"/>
@@ -674,6 +680,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="menu:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="ufN-J5-WPM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoAprender" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
                                 <rect key="frame" x="909" y="378" width="791" height="501"/>
@@ -895,6 +904,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="uT0-Mx-Ois"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2m-V9-CSs">
                                 <rect key="frame" x="1425" y="145" width="170" height="270"/>
@@ -904,6 +916,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="SGe-ii-wAX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-9r-M6d">
                                 <rect key="frame" x="985" y="450" width="170" height="270"/>
@@ -913,6 +928,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="ITB-og-V8q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oes-Gk-fMR">
                                 <rect key="frame" x="985" y="145" width="170" height="270"/>
@@ -922,6 +940,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="hLH-66-hWP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-m2-4iw">
                                 <rect key="frame" x="1205" y="450" width="170" height="270"/>
@@ -931,6 +952,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="i82-3M-b9Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLx-az-YGg">
                                 <rect key="frame" x="1205" y="145" width="170" height="270"/>
@@ -940,6 +964,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="C0P-72-tZc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7Q-7f-KJA">
                                 <rect key="frame" x="765" y="450" width="170" height="270"/>
@@ -949,6 +976,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="kLu-Qp-eff"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-kc-yvt">
                                 <rect key="frame" x="765" y="145" width="170" height="270"/>
@@ -958,6 +988,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="Jfm-S6-VDs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOP-nM-fYZ">
                                 <rect key="frame" x="545" y="450" width="170" height="270"/>
@@ -967,6 +1000,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="sF5-X8-01d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNI-zL-Xii">
                                 <rect key="frame" x="545" y="145" width="170" height="270"/>
@@ -976,6 +1012,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="K4F-oE-L04"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-QJ-h87">
                                 <rect key="frame" x="325" y="450" width="170" height="270"/>
@@ -985,6 +1024,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="kad-5w-0e2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-sd-Vfw">
                                 <rect key="frame" x="325" y="145" width="170" height="270"/>
@@ -994,6 +1036,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="ELi-by-wyN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-IJ-amO">
                                 <rect key="frame" x="1425" y="753" width="170" height="270"/>
@@ -1003,6 +1048,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="1lf-Th-hEc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-lo-Aug">
                                 <rect key="frame" x="1210" y="753" width="170" height="270"/>
@@ -1012,6 +1060,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="9kC-so-4p7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oav-m0-hKb">
                                 <rect key="frame" x="985" y="753" width="170" height="270"/>
@@ -1021,6 +1072,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="vgu-wD-n2u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-9O-UNe">
                                 <rect key="frame" x="765" y="753" width="170" height="270"/>
@@ -1030,6 +1084,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="tK1-ho-hc5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWR-k2-dii">
                                 <rect key="frame" x="545" y="753" width="170" height="270"/>
@@ -1039,6 +1096,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="bnW-rR-EfT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-6w-pFH">
                                 <rect key="frame" x="325" y="753" width="170" height="270"/>
@@ -1048,6 +1108,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
+                                <connections>
+                                    <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="F1C-Wh-9D9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

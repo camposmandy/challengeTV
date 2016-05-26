@@ -13,7 +13,7 @@ class NivelDoisViewController: UIViewController {
     var managerJogo = Jogo()
     var nomeCategoria = String()
     var opcoesCarta = [String]() //imagens das cartas
-    var nomeCategoria = String()
+//    var nomeCategoria = String()
     var cartas = [UIButton]()
     var retorno = [String]()
     var selecionados = [Int]()
@@ -43,12 +43,7 @@ class NivelDoisViewController: UIViewController {
         }
         
         cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10]
-        retorno = JManager.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
 
     override func didReceiveMemoryWarning(){
@@ -60,7 +55,7 @@ class NivelDoisViewController: UIViewController {
             let img = self.imagem(sender as! UIButton).foto
             
             //enquanto houver animação todas as cartas estão sem interação
-            JManager.interacao(cartas, status: false)
+            managerJogo.interacao(cartas, status: false)
             
             //adiciona o indice do botão que foi selecionado
             selecionados.append(self.imagem(sender as! UIButton).indice)
@@ -76,6 +71,8 @@ class NivelDoisViewController: UIViewController {
     }
     
     func jogo(carta: UIButton){ // compara se as cartas soteadas são iguais
+        
+        var c = 0
         
         if selecionados.count == 1 {
             for c in cartas {
@@ -94,7 +91,6 @@ class NivelDoisViewController: UIViewController {
             
             if comparacao == true{
                 //acertou
-                var c = 0
                 acerto()
                 print(cartas.count, c)
                 for i in cartas{
@@ -102,15 +98,17 @@ class NivelDoisViewController: UIViewController {
                         c+=1
                     }
                 }
-                print(cartas.count, c)
                 
-                if cartas.count == c{
-                    JManager.ganhouJogo(view)
-                }
+                print(cartas.count, c)
                 
             } else {
                 //errou
                 NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
+            }
+            
+            if cartas.count == c {
+                let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Parabens") as! GanhouViewController
+                self.navigationController?.pushViewController(chamada, animated: true)
             }
         }
     }
@@ -118,19 +116,19 @@ class NivelDoisViewController: UIViewController {
     func acerto(){
         for i in selecionados{
             cartas[i].tag = 100
-            JManager.animacaoAcerto(cartas[i])
+            managerJogo.animacaoAcerto(cartas[i])
         }
         
-        JManager.interacao(cartas, status: true)
+        managerJogo.interacao(cartas, status: true)
         selecionados.removeAll()
     }
     
     func erro(){
         for i in selecionados{
-            JManager.animacaoErro(cartas[i])
+            managerJogo.animacaoErro(cartas[i])
         }
         
-        JManager.interacao(cartas, status: true)
+        managerJogo.interacao(cartas, status: true)
         selecionados.removeAll()
     }
     
