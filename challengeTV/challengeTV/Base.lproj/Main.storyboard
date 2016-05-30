@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="ODY-Xc-jyv">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -37,8 +37,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INSTRUÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1As-6u-iGx">
-                                <rect key="frame" x="809" y="159" width="303" height="70"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                                <rect key="frame" x="810" y="163" width="302" height="66"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-qq-aTV">
@@ -228,9 +228,9 @@
                                     <constraint firstAttribute="height" constant="1080" id="y8c-3v-Fbd"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMn-TQ-iL1">
-                                <rect key="frame" x="810" y="100" width="301" height="66"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CATEGORIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMn-TQ-iL1">
+                                <rect key="frame" x="806" y="100" width="310" height="66"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-GY-unS">
@@ -356,15 +356,15 @@
                                     <segue destination="X0y-Ec-Tyw" kind="show" identifier="cinco" id="h52-xB-jir"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um nível para jogar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
-                                <rect key="frame" x="693" y="371" width="535" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Escolha um nível para jogar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
+                                <rect key="frame" x="764" y="371" width="394" height="40"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DA CATEGORIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
-                                <rect key="frame" x="685" y="275" width="551" height="66"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOME DA CATEGORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
+                                <rect key="frame" x="699" y="275" width="524" height="66"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
@@ -423,9 +423,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Nível:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
-                                <rect key="frame" x="645" y="60" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Nível:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
+                                <rect key="frame" x="916" y="60" width="89" height="40"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -600,7 +600,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
                                 <rect key="frame" x="780" y="70" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -640,16 +640,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARABÉNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
-                                <rect key="frame" x="840" y="120" width="241" height="66"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                                <rect key="frame" x="831" y="70" width="259" height="66"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-fM-7tj" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="250" y="400" width="450" height="86"/>
+                                <rect key="frame" x="250" y="300" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="r80-aj-2We"/>
@@ -661,7 +661,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="250" y="586" width="450" height="86"/>
+                                <rect key="frame" x="250" y="486" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="50e-Jl-tKd"/>
@@ -673,7 +673,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="250" y="772" width="450" height="86"/>
+                                <rect key="frame" x="250" y="672" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="HJn-ns-Tul"/>
@@ -685,7 +685,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoAprender" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
-                                <rect key="frame" x="909" y="378" width="791" height="501"/>
+                                <rect key="frame" x="909" y="278" width="791" height="501"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="791" id="1Jk-AT-REI"/>
                                     <constraint firstAttribute="height" constant="501" id="vJj-zh-icP"/>
@@ -694,15 +694,11 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="sNn-de-14t" firstAttribute="top" secondItem="dbh-cz-1Lz" secondAttribute="bottom" constant="100" id="0Pr-Kg-91R"/>
-                            <constraint firstItem="smB-i7-Fz4" firstAttribute="bottom" secondItem="VL8-VO-Xws" secondAttribute="top" id="5Kp-60-C7M"/>
-                            <constraint firstItem="smB-i7-Fz4" firstAttribute="centerX" secondItem="4hu-E5-ge4" secondAttribute="centerX" id="9vD-lF-7DW"/>
                             <constraint firstItem="dbh-cz-1Lz" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="JYe-vF-amv"/>
                             <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="dbh-cz-1Lz" secondAttribute="centerY" id="Job-Lr-NDM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="200" id="PTm-kJ-ArA"/>
-                            <constraint firstItem="smB-i7-Fz4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" id="TXo-J0-kZ8"/>
-                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="400" id="XBF-o5-hO1"/>
-                            <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="120" id="aXv-90-5fR"/>
-                            <constraint firstItem="smB-i7-Fz4" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leading" id="iye-O6-XJD"/>
+                            <constraint firstItem="8Fo-fM-7tj" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="300" id="XBF-o5-hO1"/>
+                            <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="70" id="aXv-90-5fR"/>
                             <constraint firstItem="4hu-E5-ge4" firstAttribute="centerX" secondItem="MzV-hb-VRd" secondAttribute="centerX" id="kJw-dz-JLr"/>
                             <constraint firstItem="sNn-de-14t" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="lvW-ur-vow"/>
                             <constraint firstItem="8Fo-fM-7tj" firstAttribute="leading" secondItem="MzV-hb-VRd" secondAttribute="leadingMargin" constant="230" id="o0V-4E-3hi"/>
@@ -843,7 +839,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
                                 <rect key="frame" x="784" y="63" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -892,7 +888,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
                                 <rect key="frame" x="797" y="57" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1330,7 +1326,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
                                 <rect key="frame" x="858" y="60" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
