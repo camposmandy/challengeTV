@@ -423,8 +423,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Nível:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
-                                <rect key="frame" x="916" y="60" width="89" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Nível: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
+                                <rect key="frame" x="901" y="60" width="119" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -598,7 +598,7 @@
                                     <action selector="animacaoCarta:" destination="FhU-KX-0tY" eventType="primaryActionTriggered" id="icR-ca-ak4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
                                 <rect key="frame" x="780" y="70" width="480" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -640,15 +640,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARABÉNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PARABÉNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
                                 <rect key="frame" x="831" y="70" width="259" height="66"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-fM-7tj" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-fM-7tj" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="250" y="300" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -660,7 +660,7 @@
                                     <action selector="jogarNovamente:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="YjR-jf-Iig"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="250" y="486" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -672,7 +672,7 @@
                                     <action selector="niveis:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="Hln-mU-8NB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
                                 <rect key="frame" x="250" y="672" width="450" height="86"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -839,7 +839,7 @@
                                     <action selector="animacaoCarta:" destination="4f3-V5-gOc" eventType="primaryActionTriggered" id="Pdv-WU-gdF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
                                 <rect key="frame" x="784" y="63" width="480" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -888,7 +888,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-fy-lF9">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
                                 <rect key="frame" x="797" y="57" width="480" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1326,7 +1326,7 @@
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="LFv-pf-lRL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
                                 <rect key="frame" x="858" y="60" width="480" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
