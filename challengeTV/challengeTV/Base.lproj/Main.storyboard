@@ -684,11 +684,11 @@
                                     <action selector="menu:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="ufN-J5-WPM"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotãoAprender" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
-                                <rect key="frame" x="909" y="378" width="791" height="501"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganhou" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
+                                <rect key="frame" x="964" y="223" width="871" height="581"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="791" id="1Jk-AT-REI"/>
-                                    <constraint firstAttribute="height" constant="501" id="vJj-zh-icP"/>
+                                    <constraint firstAttribute="width" constant="871" id="1Jk-AT-REI"/>
+                                    <constraint firstAttribute="height" constant="581" id="vJj-zh-icP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -697,8 +697,8 @@
                             <constraint firstItem="smB-i7-Fz4" firstAttribute="bottom" secondItem="VL8-VO-Xws" secondAttribute="top" id="5Kp-60-C7M"/>
                             <constraint firstItem="smB-i7-Fz4" firstAttribute="centerX" secondItem="4hu-E5-ge4" secondAttribute="centerX" id="9vD-lF-7DW"/>
                             <constraint firstItem="dbh-cz-1Lz" firstAttribute="leading" secondItem="8Fo-fM-7tj" secondAttribute="leading" id="JYe-vF-amv"/>
-                            <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="dbh-cz-1Lz" secondAttribute="centerY" id="Job-Lr-NDM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="200" id="PTm-kJ-ArA"/>
+                            <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="dbh-cz-1Lz" secondAttribute="centerY" constant="-115.5" id="Job-Lr-NDM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="65" id="PTm-kJ-ArA"/>
                             <constraint firstItem="smB-i7-Fz4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" id="TXo-J0-kZ8"/>
                             <constraint firstItem="8Fo-fM-7tj" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="400" id="XBF-o5-hO1"/>
                             <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="120" id="aXv-90-5fR"/>
@@ -1455,7 +1455,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BotãoAprender" width="791" height="501"/>
+        <image name="Ganhou" width="1280" height="768"/>
         <image name="Parte de tras" width="426" height="626"/>
         <image name="fundo" width="5667" height="4000"/>
     </resources>
