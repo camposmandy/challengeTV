@@ -11,6 +11,8 @@ import UIKit
 class GanhouViewController: UIViewController {
     
     var bolas: BolasBasqueteCaindo?
+    var confete: Animacao2?
+    var confetee: Animacao3?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,16 @@ class GanhouViewController: UIViewController {
         bolas?.flakesCount = 100
         view.insertSubview(bolas!, atIndex: 1)
         bolas?.startSnow()
+        
+        confete = Animacao2(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
+        confete?.flakesCount = 100
+        view.insertSubview(confete!, atIndex: 1)
+        confete?.startSnow()
+        
+        confetee = Animacao3(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
+        confetee?.flakesCount = 100
+        view.insertSubview(confetee!, atIndex: 1)
+        confetee?.startSnow()
     }
 
     @IBAction func menu(sender: AnyObject) {
