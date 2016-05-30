@@ -13,6 +13,8 @@
 		37C076841CE24D2D00997545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C076831CE24D2D00997545 /* AppDelegate.swift */; };
 		37C076891CE24D2D00997545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C076871CE24D2D00997545 /* Main.storyboard */; };
 		37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C0768A1CE24D2D00997545 /* Assets.xcassets */; };
+		A11787481CFCAC4600EFA9E5 /* Animacao2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11787471CFCAC4600EFA9E5 /* Animacao2.swift */; };
+		A117874A1CFCADB200EFA9E5 /* Animacao3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11787491CFCADB200EFA9E5 /* Animacao3.swift */; };
 		A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE61CE3AFA70080654F /* InicialViewController.swift */; };
 		A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */; };
 		A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */; };
@@ -36,6 +38,8 @@
 		37C076881CE24D2D00997545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37C0768A1CE24D2D00997545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C0768C1CE24D2D00997545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A11787471CFCAC4600EFA9E5 /* Animacao2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animacao2.swift; sourceTree = "<group>"; };
+		A11787491CFCADB200EFA9E5 /* Animacao3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animacao3.swift; sourceTree = "<group>"; };
 		A131DFE61CE3AFA70080654F /* InicialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicialViewController.swift; sourceTree = "<group>"; };
 		A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				A1C538C01CF4CFA3001FA4D6 /* GanhouViewController.swift */,
 				A1D4A87B1CEF7DB600F94FC5 /* botaoFocadoView.swift */,
 				A13595841CF4EFCE0041920F /* Animacao.swift */,
+				A11787471CFCAC4600EFA9E5 /* Animacao2.swift */,
+				A11787491CFCADB200EFA9E5 /* Animacao3.swift */,
 				3706D1101CF6146800926E53 /* Jogo.swift */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
 				37C0768A1CE24D2D00997545 /* Assets.xcassets */,
@@ -194,6 +200,7 @@
 				37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */,
 				A13595851CF4EFCE0041920F /* Animacao.swift in Sources */,
 				A1C538BD1CF4CD1E001FA4D6 /* NivelQuatroViewController.swift in Sources */,
+				A11787481CFCAC4600EFA9E5 /* Animacao2.swift in Sources */,
 				3706D1111CF6146800926E53 /* Jogo.swift in Sources */,
 				A1C538B81CF4CCF2001FA4D6 /* NivelDoisViewController.swift in Sources */,
 				A131DFED1CE3AFD70080654F /* NivelViewController.swift in Sources */,
@@ -205,6 +212,7 @@
 				A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */,
 				A1C538C11CF4CFA3001FA4D6 /* GanhouViewController.swift in Sources */,
 				A18FD27F1CEE2D98008108E6 /* InstrucoesCollectionViewCell.swift in Sources */,
+				A117874A1CFCADB200EFA9E5 /* Animacao3.swift in Sources */,
 				A1C538BB1CF4CD0E001FA4D6 /* NivelTresViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
