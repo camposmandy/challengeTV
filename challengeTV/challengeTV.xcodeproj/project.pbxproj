@@ -15,6 +15,7 @@
 		37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C0768A1CE24D2D00997545 /* Assets.xcassets */; };
 		A11787481CFCAC4600EFA9E5 /* Animacao2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11787471CFCAC4600EFA9E5 /* Animacao2.swift */; };
 		A117874A1CFCADB200EFA9E5 /* Animacao3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11787491CFCADB200EFA9E5 /* Animacao3.swift */; };
+		A129989C1CFF1515003F1118 /* Memorizando.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A129989B1CFF1515003F1118 /* Memorizando.mp3 */; };
 		A131DFE71CE3AFA70080654F /* InicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE61CE3AFA70080654F /* InicialViewController.swift */; };
 		A131DFE91CE3AFB50080654F /* InstrucoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */; };
 		A131DFEB1CE3AFC50080654F /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */; };
@@ -40,6 +41,7 @@
 		37C0768C1CE24D2D00997545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11787471CFCAC4600EFA9E5 /* Animacao2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animacao2.swift; sourceTree = "<group>"; };
 		A11787491CFCADB200EFA9E5 /* Animacao3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animacao3.swift; sourceTree = "<group>"; };
+		A129989B1CFF1515003F1118 /* Memorizando.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Memorizando.mp3; sourceTree = "<group>"; };
 		A131DFE61CE3AFA70080654F /* InicialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicialViewController.swift; sourceTree = "<group>"; };
 		A131DFE81CE3AFB50080654F /* InstrucoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrucoesViewController.swift; sourceTree = "<group>"; };
 		A131DFEA1CE3AFC50080654F /* CategoriasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A11787471CFCAC4600EFA9E5 /* Animacao2.swift */,
 				A11787491CFCADB200EFA9E5 /* Animacao3.swift */,
 				3706D1101CF6146800926E53 /* Jogo.swift */,
+				A129989B1CFF1515003F1118 /* Memorizando.mp3 */,
 				37C076871CE24D2D00997545 /* Main.storyboard */,
 				37C0768A1CE24D2D00997545 /* Assets.xcassets */,
 				37C0768C1CE24D2D00997545 /* Info.plist */,
@@ -186,6 +189,7 @@
 			files = (
 				37C0768B1CE24D2D00997545 /* Assets.xcassets in Resources */,
 				37C076891CE24D2D00997545 /* Main.storyboard in Resources */,
+				A129989C1CFF1515003F1118 /* Memorizando.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class InicialViewController: UIViewController {
 
@@ -14,10 +15,12 @@ class InicialViewController: UIViewController {
     @IBOutlet weak var jogos: UIButton!
     @IBOutlet weak var imgDemo: UIImageView!
     
+    var musicaDeFundo: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        tocarmusica()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,4 +36,21 @@ class InicialViewController: UIViewController {
             imgDemo.image = UIImage(named: "BotãoAprender.png")
         }
     }
+    
+    func tocarmusica() {
+        let url = NSBundle.mainBundle().URLForResource("Memorizando", withExtension: "mp3")!
+        
+        do {
+            musicaDeFundo = try AVAudioPlayer(contentsOfURL: url)
+            guard let player = musicaDeFundo else { return }
+            
+            player.numberOfLoops = -1
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
+    
 }
