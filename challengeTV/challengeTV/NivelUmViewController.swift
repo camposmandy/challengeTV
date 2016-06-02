@@ -29,7 +29,7 @@ class NivelUmViewController: UIViewController {
         super.viewDidLoad()
         
         if nomeCategoria == "Animais"{
-        opcoesCarta = ["Cachorro.png", "Elefante.png", "Gato.png","Cachorro.png", "Elefante.png", "Gato.png"]
+            opcoesCarta = ["Cachorro.png", "Elefante.png", "Gato.png","Cachorro.png", "Elefante.png", "Gato.png"]
         } else if nomeCategoria == "Frutas"{
             opcoesCarta = ["Banana.png", "Cereja.png", "Coco.png", "Banana.png", "Cereja.png", "Coco.png"]
         } else {
@@ -79,7 +79,7 @@ class NivelUmViewController: UIViewController {
             //compara as cartas pelo nome da foto
             var comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto
             if nomeCategoria == "Números"{
-               comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString("-1.png", withString: ".png") || self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString(".png", withString: "-1.png") == self.imagem(cartas[selecionados[0]]).foto
+                comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString("-1.png", withString: ".png") || self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString(".png", withString: "-1.png") == self.imagem(cartas[selecionados[0]]).foto
             }
             
             if comparacao == true{
@@ -88,7 +88,7 @@ class NivelUmViewController: UIViewController {
                 print(cartas.count, c)
                 for i in cartas{
                     if i.tag == 100{
-                     c+=1
+                        c+=1
                     }
                 }
                 print(cartas.count, c)
@@ -110,7 +110,7 @@ class NivelUmViewController: UIViewController {
             cartas[i].tag = 100
             JManager.animacaoAcerto(cartas[i])
         }
-
+        
         JManager.interacao(cartas, status: true)
         selecionados.removeAll()
     }
@@ -119,7 +119,7 @@ class NivelUmViewController: UIViewController {
         for i in selecionados{
             JManager.animacaoErro(cartas[i])
         }
-
+        
         JManager.interacao(cartas, status: true)
         selecionados.removeAll()
     }
