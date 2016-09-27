@@ -10,20 +10,26 @@ import UIKit
 
 class GanhouViewController: UIViewController {
     
-    var bolas: BolasBasqueteCaindo?
-    var confete: Animacao2?
-    var confetee: Animacao3?
-
+    /* MARK: - Outlet */
+    @IBOutlet weak var mensagemFimJogo: UILabel!
+    
+    /* MARK: - Variaveis */
+    var confetes : Animacao?
+    var score    : String!
+    var mensagem : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Mensagem e tempo (falta o tempo)
+        mensagemFimJogo.text = mensagem
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(GanhouViewController.tapped))
-        tapRecognizer.allowedPressTypes = [NSNumber(integer:UIPressType.Menu.rawValue)]
+        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue as Int)]
+        
         self.view.addGestureRecognizer(tapRecognizer)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,40 +39,28 @@ class GanhouViewController: UIViewController {
         print("show")
     }
     
-    override func viewDidAppear(animated: Bool){
+    override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         
-        bolas = BolasBasqueteCaindo(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
-        bolas?.flakesCount = 100
-        view.insertSubview(bolas!, atIndex: 1)
-        bolas?.startSnow()
-        
-        confete = Animacao2(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
-        confete?.flakesCount = 100
-        view.insertSubview(confete!, atIndex: 1)
-        confete?.startSnow()
-        
-        confetee = Animacao3(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
-        confetee?.flakesCount = 100
-        view.insertSubview(confetee!, atIndex: 1)
-        confetee?.startSnow()
+        confetes = Animacao(frame: CGRect(x: 0, y: 0, width: view.frame.size.width * 2, height: view.frame.size.height * 2))
+        confetes?.flakesCount = 300
+        view.insertSubview(confetes!, at: 1)
+        confetes?.startSnow()
     }
-
-    @IBAction func menu(sender: AnyObject) {
-        
-        self.navigationController?.popToRootViewControllerAnimated(false)
-        
+    
+    @IBAction func menu(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: false)
     }
-    @IBAction func niveis(sender: AnyObject) {
-        
+    
+    @IBAction func niveis(_ sender: AnyObject) {
         for viewController in self.navigationController!.viewControllers {
             if let _ = viewController as? NivelViewController {
-                self.navigationController?.popToViewController(viewController, animated: false)
+                self.navigationController?.popToViewController(viewController, animated: true)
             }
         }
-        
     }
-    @IBAction func jogarNovamente(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
+    
+    @IBAction func jogarNovamente(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
     }
 }

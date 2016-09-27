@@ -50,7 +50,7 @@ class NivelDoisViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func animacaoCarta(sender: AnyObject) { //animação dos botões quando selecionados.
+    @IBAction func animacaoCarta(_ sender: AnyObject) { //animação dos botões quando selecionados.
         if sender.tag != 100 {
             let img = self.imagem(sender as! UIButton).foto
             
@@ -60,33 +60,33 @@ class NivelDoisViewController: UIViewController {
             //adiciona o indice do botão que foi selecionado
             selecionados.append(self.imagem(sender as! UIButton).indice)
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 25), dispatch_get_main_queue()) {
-                sender.setBackgroundImage(UIImage(named: img), forState: .Normal)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(25) / Double(NSEC_PER_SEC)) {
+                sender.setBackgroundImage(UIImage(named: img), for: UIControlState())
             }
-            UIView.transitionWithView(sender as! UIView, duration: 0.5, options: .TransitionFlipFromRight, animations: {
+            UIView.transition(with: sender as! UIView, duration: 0.5, options: .transitionFlipFromRight, animations: {
             }) { (finished) in
                 self.jogo(sender as! UIButton)
             }
         }
     }
     
-    func jogo(carta: UIButton){ // compara se as cartas soteadas são iguais
+    func jogo(_ carta: UIButton){ // compara se as cartas soteadas são iguais
         
         var c = 0
         
         if selecionados.count == 1 {
             for c in cartas {
                 if c == carta{
-                    c.userInteractionEnabled = false
+                    c.isUserInteractionEnabled = false
                 } else {
-                    c.userInteractionEnabled = true
+                    c.isUserInteractionEnabled = true
                 }
             }
         } else if selecionados.count == 2 {
             //compara as cartas pelo nome da foto
             var comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto
             if nomeCategoria == "Números"{
-                comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString("-1.png", withString: ".png") || self.imagem(cartas[selecionados[1]]).foto.stringByReplacingOccurrencesOfString(".png", withString: "-1.png") == self.imagem(cartas[selecionados[0]]).foto
+                comparacao = self.imagem(cartas[selecionados[0]]).foto == self.imagem(cartas[selecionados[1]]).foto.replacingOccurrences(of: "-1.png", with: ".png") || self.imagem(cartas[selecionados[1]]).foto.replacingOccurrences(of: ".png", with: "-1.png") == self.imagem(cartas[selecionados[0]]).foto
             }
             
             if comparacao == true{
@@ -103,11 +103,11 @@ class NivelDoisViewController: UIViewController {
                 
             } else {
                 //errou
-                NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
+                Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
             }
             
             if cartas.count == c {
-                let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Parabens") as! GanhouViewController
+                let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
                 self.navigationController?.pushViewController(chamada, animated: true)
             }
         }
@@ -132,13 +132,13 @@ class NivelDoisViewController: UIViewController {
         selecionados.removeAll()
     }
     
-    func imagem(sender: UIButton) -> (foto: String, indice: Int){ // retorna a imagem do botão selecionado
+    func imagem(_ sender: UIButton) -> (foto: String, indice: Int){ // retorna a imagem do botão selecionado
         var indice = ""
         var i = 0
         var j = 0
         for carta in cartas{
             if sender == carta {
-                indice = self.retorno[self.cartas.indexOf(carta)!]
+                indice = self.retorno[self.cartas.index(of: carta)!]
                 j = i
             }
             i+=1

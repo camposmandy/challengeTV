@@ -29,67 +29,66 @@ class CategoriasViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     // MARK: - Collection
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categorias.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("celula", forIndexPath: indexPath) as! CategoriaCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celula", for: indexPath) as! CategoriaCollectionViewCell
         
-        cell.img.image = UIImage(named: categorias[indexPath.row])
+        cell.img.image = UIImage(named: categorias[(indexPath as NSIndexPath).row])
         
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let i = indexPath.row
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let i = (indexPath as NSIndexPath).row
         categoria = categorias[i]
     }
     
-    func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator:UIFocusAnimationCoordinator) {
+    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator:UIFocusAnimationCoordinator) {
         
         if let previousIndexPath = context.previouslyFocusedIndexPath,
-            let cell = collectionView.cellForItemAtIndexPath(previousIndexPath) {
+            let cell = collectionView.cellForItem(at: previousIndexPath) {
             cell.contentView.layer.borderWidth = 0.0
             cell.contentView.layer.shadowRadius = 0.0
             cell.contentView.layer.shadowOpacity = 0
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                context.previouslyFocusedView?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                context.previouslyFocusedView?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             })
             
         }
         
         if let indexPath = context.nextFocusedIndexPath,
-            let cell = collectionView.cellForItemAtIndexPath(indexPath) {
-            let celula = collectionView.dequeueReusableCellWithReuseIdentifier("celula", forIndexPath: indexPath) as! CategoriaCollectionViewCell
+            let cell = collectionView.cellForItem(at: indexPath) {
+            let celula = collectionView.dequeueReusableCell(withReuseIdentifier: "celula", for: indexPath) as! CategoriaCollectionViewCell
             
             celula.img.adjustsImageWhenAncestorFocused = true
             
-            cell.contentView.layer.shadowColor = UIColor.blackColor().CGColor
+            cell.contentView.layer.shadowColor = UIColor.black.cgColor
             cell.contentView.layer.shadowRadius = 10.0
             cell.contentView.layer.shadowOpacity = 1
-            cell.contentView.layer.shadowOffset = CGSizeZero
-            collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
+            cell.contentView.layer.shadowOffset = CGSize.zero
+            collectionView.scrollToItem(at: indexPath, at: [.centeredHorizontally, .centeredVertically], animated: true)
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.13, 1.13)
+                context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.13, y: 1.13)
             })
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            let vc = segue.destinationViewController as! NivelViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let vc = segue.destination as! NivelViewController
             let celula = sender as! UICollectionViewCell
-            let indexPath = collectionView.indexPathForCell(celula)
-            let userPost = categorias[(indexPath?.row)!]
+            let indexPath = collectionView.indexPath(for: celula)
+            let userPost = categorias[((indexPath as NSIndexPath?)?.row)!]
             vc.c = userPost
     }
 }

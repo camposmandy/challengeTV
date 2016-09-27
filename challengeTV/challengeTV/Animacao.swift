@@ -8,7 +8,6 @@
 
 import UIKit
 
-public let kkDefaultFlakeFileName               = "confete"
 public let kkDefaultFlakesCount                 = 200
 public let kkDefaultFlakeWidth: Float           = 40.0
 public let kkDefaultFlakeHeight: Float          = 46.0
@@ -17,24 +16,22 @@ public let kkDefaultMaximumSize: Float          = 0.8
 public let kkDefaultAnimationDurationMin: Float = 6.0
 public let kkDefaultAnimationDurationMax: Float = 12.0
 
-public class BolasBasqueteCaindo: UIView {
+open class Animacao: UIView {
     
-    public var flakesCount: Int?
-    public var flakeFileName: String?
-    public var flakeWidth: Float?
-    public var flakeHeight: Float?
-    public var flakeMinimumSize: Float?
-    public var flakeMaximumSize: Float?
+    open var flakesCount: Int?
+    open var flakeWidth: Float?
+    open var flakeHeight: Float?
+    open var flakeMinimumSize: Float?
+    open var flakeMaximumSize: Float?
     
-    public var animationDurationMin: Float?
-    public var animationDurationMax: Float?
+    open var animationDurationMin: Float?
+    open var animationDurationMax: Float?
     
-    public var flakesArray: [UIImageView]?
+    open var flakesArray: [UIImageView]?
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
         clipsToBounds             = true
-        self.flakeFileName        = kkDefaultFlakeFileName
         self.flakesCount          = kkDefaultFlakesCount
         self.flakeWidth           = kkDefaultFlakeWidth
         self.flakeHeight          = kkDefaultFlakeHeight
@@ -48,37 +45,44 @@ public class BolasBasqueteCaindo: UIView {
         super.init(coder: aDecoder)!
     }
     
-    public func createFlakes() {
+    open func createFlakes() {
         flakesArray = [UIImageView]()
-        let flakeImage: UIImage = UIImage(named: flakeFileName!)!
-        for i: Int in 0 ..< flakesCount! {
-            var vz: Float = 1.0 * Float(rand()) / Float(RAND_MAX)
+    
+        let arrayImagesNames = ["estrela", "estrela1"] //array de imagens que irá cair.
+        
+        for _ in 0..<flakesCount! {
+            var vz: Float = 1.0 * Float(arc4random()) / Float(RAND_MAX)
             vz = vz < flakeMinimumSize! ? flakeMinimumSize! : vz
             vz = vz > flakeMaximumSize! ? flakeMaximumSize! : vz
             
-            let vw = flakeWidth! * vz
+            let vw = flakeWidth!  * vz
             let vh = flakeHeight! * vz
             
-            var vx = Float(frame.size.width) * Float(rand()) / Float(RAND_MAX)
-            var vy = Float(frame.size.height) * 1.5 * Float(rand()) / Float(RAND_MAX)
+            var vx = Float(frame.size.width) * Float(arc4random()) / Float(RAND_MAX)
+            var vy = Float(frame.size.height) * 1.5 * Float(arc4random()) / Float(RAND_MAX)
             
             vy += Float(frame.size.height)
             vx -= vw
             
-            let imageFrame = CGRectMake(CGFloat(vx), CGFloat(vy), CGFloat(vw), CGFloat(vh))
-            let imageView: UIImageView = UIImageView(image: flakeImage)
+            let imageFrame = CGRect(x: CGFloat(vx), y: CGFloat(vy), width: CGFloat(vw), height: CGFloat(vh))
+            
+            
+            let random = Int(arc4random_uniform(UInt32(2))) //sorteia as imagens randomicamente.
+            let str = arrayImagesNames[random] //recebe a imagem sorteada.
+            
+            let imageView: UIImageView = UIImageView(image: UIImage(named: str))
             imageView.frame = imageFrame
-            imageView.userInteractionEnabled = false
+            imageView.isUserInteractionEnabled = false
             flakesArray?.append(imageView)
             addSubview(imageView)
         }
     }
     
-    public func startSnow() {
+    open func startSnow() {
         if flakesArray == nil {
             createFlakes()
         }
-        backgroundColor = UIColor.clearColor()
+        backgroundColor = UIColor.clear
         
         let rotAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.y")
         rotAnimation.repeatCount = Float.infinity
@@ -95,17 +99,17 @@ public class BolasBasqueteCaindo: UIView {
             let endypos = frame.size.height
             p.y = endypos
             v.center = p
-            let timeInterval: Float = (animationDurationMax! - animationDurationMin!) * Float(rand()) / Float(RAND_MAX)
+            let timeInterval: Float = (animationDurationMax! - animationDurationMin!) * Float(arc4random()) / Float(RAND_MAX)
             theAnimation.duration = CFTimeInterval(timeInterval + animationDurationMin!)
             theAnimation.fromValue = -startypos
-            v.layer.addAnimation(theAnimation, forKey: "transform.translation.y")
+            v.layer.add(theAnimation, forKey: "transform.translation.y")
             
             rotAnimation.duration = CFTimeInterval(timeInterval)
-            v.layer.addAnimation(rotAnimation, forKey: "transform.rotation.y")
+            v.layer.add(rotAnimation, forKey: "transform.rotation.y")
         }
     }
     
-    public func stopSnow() {
+    open func stopSnow() {
         for v: UIImageView in flakesArray! {
             v.layer.removeAllAnimations()
         }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -130,67 +130,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="110" y="555" width="388" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="388" id="Txx-6B-Fee"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="JOGOS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="110" y="691" width="388" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="INSTRUÇÕES">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Fcv-oL-r9t" kind="show" id="s7n-vx-ICO"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MEMORIZANDO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-dx-r1W">
-                                <rect key="frame" x="110" y="168" width="526" height="66"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="70"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
-                                <rect key="frame" x="976" y="291" width="508" height="639"/>
+                                <rect key="frame" x="1142" y="221" width="508" height="639"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="508" id="dSL-yy-vB8"/>
+                                    <constraint firstAttribute="width" constant="508" id="6jd-uD-93v"/>
+                                    <constraint firstAttribute="height" constant="639" id="cls-Lm-nqq"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-ef-ZwN">
-                                <rect key="frame" x="110" y="827" width="388" height="86"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="On/Off MÚSICA"/>
-                                <connections>
-                                    <action selector="musicaOnOf:" destination="osL-do-noh" eventType="primaryActionTriggered" id="Wv4-Y7-23m"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-q2-Dn7">
+                                <rect key="frame" x="110" y="341" width="483" height="398"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="40" width="315" height="86"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="315" id="9IN-rE-XBM"/>
+                                            <constraint firstAttribute="height" constant="86" id="tne-fs-mtN"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="JOGOS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="156" width="315" height="86"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="INSTRUÇÕES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Fcv-oL-r9t" kind="show" id="s7n-vx-ICO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-ef-ZwN" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="272" width="393" height="133"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="393" id="a8n-n9-uTh"/>
+                                            <constraint firstAttribute="height" constant="133" id="iR2-7F-W57"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" image="music">
+                                            <color key="titleShadowColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicaOnOf:" destination="osL-do-noh" eventType="primaryActionTriggered" id="Wv4-Y7-23m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pdj-47-AXs" firstAttribute="centerY" secondItem="c4x-q2-Dn7" secondAttribute="centerY" id="41d-LI-C7O"/>
+                                    <constraint firstAttribute="width" constant="483" id="Bio-NV-UiN"/>
+                                    <constraint firstAttribute="height" constant="398" id="GRH-ic-VYF"/>
+                                    <constraint firstItem="pdj-47-AXs" firstAttribute="top" secondItem="OIh-8C-M9g" secondAttribute="bottom" constant="30" id="Pei-Rs-Aya"/>
+                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="30" id="aWQ-vI-g4X"/>
+                                    <constraint firstItem="pdj-47-AXs" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="dId-F2-sbn"/>
+                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="lgY-jY-Eu8"/>
+                                    <constraint firstItem="OIh-8C-M9g" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="n8Y-Tr-sV9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMORIZANDO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-dx-r1W">
+                                <rect key="frame" x="62" y="90" width="1796" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1796" id="KiW-9M-Poh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="M8F-yQ-4x9" secondAttribute="trailing" id="153-tH-TWa"/>
-                            <constraint firstItem="OIh-8C-M9g" firstAttribute="leading" secondItem="pdj-47-AXs" secondAttribute="leading" id="95W-Gb-Vts"/>
-                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="bottom" secondItem="FFQ-gR-cpR" secondAttribute="top" id="F1i-rW-UlL"/>
-                            <constraint firstAttribute="trailing" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="436" id="Je1-cq-dhk"/>
-                            <constraint firstItem="OIh-8C-M9g" firstAttribute="trailing" secondItem="pdj-47-AXs" secondAttribute="trailing" id="SAP-0d-mVR"/>
-                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leading" id="b3V-5Z-FDp"/>
-                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="303" id="f6T-Xh-iEB"/>
-                            <constraint firstItem="pdj-47-AXs" firstAttribute="top" secondItem="OIh-8C-M9g" secondAttribute="bottom" constant="50" id="gkN-lI-Yld"/>
-                            <constraint firstItem="hhL-3v-7ZT" firstAttribute="top" secondItem="lH7-OQ-lyK" secondAttribute="bottom" constant="146" id="i07-6K-qId"/>
-                            <constraint firstItem="FFQ-gR-cpR" firstAttribute="top" secondItem="hhL-3v-7ZT" secondAttribute="bottom" constant="150" id="lub-5V-yhe"/>
-                            <constraint firstItem="M8F-yQ-4x9" firstAttribute="top" secondItem="hAw-Gu-he7" secondAttribute="top" id="wYH-IL-pdZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hhL-3v-7ZT" secondAttribute="trailing" constant="250" id="53W-UD-pH8"/>
+                            <constraint firstItem="hMV-dx-r1W" firstAttribute="centerX" secondItem="hAw-Gu-he7" secondAttribute="centerX" id="8nU-a5-x3H"/>
+                            <constraint firstItem="c4x-q2-Dn7" firstAttribute="centerY" secondItem="hAw-Gu-he7" secondAttribute="centerY" id="i0H-4K-FBE"/>
+                            <constraint firstItem="c4x-q2-Dn7" firstAttribute="leading" secondItem="hAw-Gu-he7" secondAttribute="leadingMargin" constant="90" id="jAd-cT-Duw"/>
+                            <constraint firstItem="hhL-3v-7ZT" firstAttribute="centerY" secondItem="hAw-Gu-he7" secondAttribute="centerY" id="nA7-Zf-6aj"/>
+                            <constraint firstItem="hMV-dx-r1W" firstAttribute="top" secondItem="hAw-Gu-he7" secondAttribute="topMargin" constant="90" id="udB-8a-alc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oVR-x9-bs1"/>
@@ -198,6 +221,7 @@
                         <outlet property="imgDemo" destination="hhL-3v-7ZT" id="9uL-JA-3pK"/>
                         <outlet property="instrucoes" destination="pdj-47-AXs" id="ZiQ-VA-4s5"/>
                         <outlet property="jogos" destination="OIh-8C-M9g" id="W44-aM-TS4"/>
+                        <outlet property="som_image" destination="8A2-ef-ZwN" id="gQK-dg-i0U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo1-wx-WQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -419,7 +443,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Nível: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Nível: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
                                 <rect key="frame" x="901" y="60" width="119" height="40"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -480,19 +504,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mxZ-st-cvS">
+                                <rect key="frame" x="84" y="39" width="1766" height="10"/>
+                                <color key="progressTintColor" red="0.15615725569766792" green="1" blue="0.049720530546662367" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaX-J4-fon">
+                                <rect key="frame" x="90" y="65" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="jmn-yG-ivD" firstAttribute="top" secondItem="KNB-cE-SEr" secondAttribute="topMargin" constant="60" id="vcE-JE-GmH"/>
-                            <constraint firstItem="jmn-yG-ivD" firstAttribute="centerX" secondItem="KNB-cE-SEr" secondAttribute="centerX" id="vm8-l6-vgL"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="barraDeProgresso" destination="mxZ-st-cvS" id="B6I-HX-o90"/>
                         <outlet property="carta1" destination="wFB-kK-iIY" id="ITE-OO-dCR"/>
                         <outlet property="carta2" destination="LqS-To-mW7" id="MxA-5r-IEX"/>
                         <outlet property="carta3" destination="JbI-dE-7TP" id="JZt-UQ-fjh"/>
                         <outlet property="carta4" destination="MW0-oU-d4U" id="Jba-Fz-Ih3"/>
                         <outlet property="carta5" destination="ukV-NT-SUS" id="uZp-Aq-KOz"/>
                         <outlet property="carta6" destination="SVK-wq-LLa" id="nE4-pn-tLD"/>
+                        <outlet property="pontuacao" destination="GaX-J4-fon" id="cVe-1Y-OpK"/>
+                        <outlet property="tempoLbl" destination="WZa-Ce-UVF" id="Pnf-CE-iSf"/>
                         <outletCollection property="cartas" destination="SVK-wq-LLa" collectionClass="NSMutableArray" id="rnb-6O-3i7"/>
                         <outletCollection property="cartas" destination="MW0-oU-d4U" collectionClass="NSMutableArray" id="afi-zn-47Z"/>
                         <outletCollection property="cartas" destination="JbI-dE-7TP" collectionClass="NSMutableArray" id="iO1-Yu-a1J"/>
@@ -685,6 +718,9 @@
                             <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="50" id="Yuc-Z7-6OG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mensagemFimJogo" destination="4hu-E5-ge4" id="f3t-S8-Z4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVi-dz-nmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1434,6 +1470,7 @@
         <image name="Ganhou" width="1280" height="768"/>
         <image name="Parte de tras" width="426" height="626"/>
         <image name="fundo" width="5667" height="4000"/>
+        <image name="music" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="s7n-vx-ICO"/>

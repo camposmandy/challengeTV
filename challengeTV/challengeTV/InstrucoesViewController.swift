@@ -25,51 +25,51 @@ class InstrucoesViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     // MARK: - Collection
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return instrucoes.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionInstrucoes.dequeueReusableCellWithReuseIdentifier("cellInstrucoes", forIndexPath: indexPath) as! InstrucoesCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionInstrucoes.dequeueReusableCell(withReuseIdentifier: "cellInstrucoes", for: indexPath) as! InstrucoesCollectionViewCell
         
-        cell.imgInstrucoes.image = UIImage(named: instrucoes[indexPath.row])
+        cell.imgInstrucoes.image = UIImage(named: instrucoes[(indexPath as NSIndexPath).row])
         
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didUpdateFocusInContext context: UICollectionViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         if let previousIndexPath = context.previouslyFocusedIndexPath,
-            let cell = collectionInstrucoes.cellForItemAtIndexPath(previousIndexPath) {
+            let cell = collectionInstrucoes.cellForItem(at: previousIndexPath) {
             cell.contentView.layer.borderWidth = 0.0
             cell.contentView.layer.shadowRadius = 0.0
             cell.contentView.layer.shadowOpacity = 0
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                context.previouslyFocusedView?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                context.previouslyFocusedView?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             })
         }
         
         if let indexPath = context.nextFocusedIndexPath,
-            let cell = collectionInstrucoes.cellForItemAtIndexPath(indexPath) {
-            let celula = collectionInstrucoes.dequeueReusableCellWithReuseIdentifier("cellInstrucoes", forIndexPath: indexPath) as! InstrucoesCollectionViewCell
+            let cell = collectionInstrucoes.cellForItem(at: indexPath) {
+            let celula = collectionInstrucoes.dequeueReusableCell(withReuseIdentifier: "cellInstrucoes", for: indexPath) as! InstrucoesCollectionViewCell
             
             celula.imgInstrucoes.adjustsImageWhenAncestorFocused = true
             
-            cell.contentView.layer.shadowColor = UIColor.blackColor().CGColor
+            cell.contentView.layer.shadowColor = UIColor.black.cgColor
             cell.contentView.layer.shadowRadius = 10.0
             cell.contentView.layer.shadowOpacity = 1
-            cell.contentView.layer.shadowOffset = CGSizeZero
-            collectionInstrucoes.scrollToItemAtIndexPath(indexPath, atScrollPosition: [.CenteredHorizontally, .CenteredVertically], animated: true)
+            cell.contentView.layer.shadowOffset = CGSize.zero
+            collectionInstrucoes.scrollToItem(at: indexPath, at: [.centeredHorizontally, .centeredVertically], animated: true)
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                context.nextFocusedView?.transform = CGAffineTransformMakeScale(1.13, 1.13)
+                context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.13, y: 1.13)
             })
             
         }

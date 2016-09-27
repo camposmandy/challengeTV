@@ -9,13 +9,14 @@
 import UIKit
 
 class Jogo: NSObject {
-
-    var cartas = [String]()
-    var categoria = String()
-    var bolas = BolasBasqueteCaindo()
-
-    //Tem a função de embaralhar as cartas do jogos para não estarem sempre na mesma posição.
-    func embaralhar(c: [String]) -> [String] {
+    
+    var tempo : TimeInterval = 60
+    var tempoRef : TimeInterval = 60
+    
+    /* MARK: - Cartas */
+    
+    // Tem a função de embaralhar as cartas do jogos para não estarem sempre na mesma posição.
+    func embaralhar(_ c: [String]) -> [String] {
         var cartas = c
         
         for i in 0..<c.count {
@@ -27,39 +28,60 @@ class Jogo: NSObject {
         return cartas
     }
     
-    func interacao(cartas: [UIButton], status: Bool){
+    // Set do estado das cartas. Se elas podem ser tocadas ou não, de acordo com a situação.
+    func interacao(_ cartas: [UIButton], status: Bool){
         for c in cartas{
-            c.userInteractionEnabled = status
+            c.isUserInteractionEnabled = status
         }
     }
-
-    func ganhouJogo(view: UIView){
-        bolas = BolasBasqueteCaindo(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
-        bolas.flakesCount = 100
-        view.insertSubview(bolas, atIndex: 1)
-        bolas.startSnow()
-    }
     
-    func animacaoAcerto(sender: UIButton){
+    /* MARK: - Animações das cartas */
+    
+    func animacaoAcerto(_ sender: UIButton){
         UIView.beginAnimations("teste", context: nil)
         UIView.setAnimationDuration(1.0)
-        sender.transform = CGAffineTransformMakeScale(1.8, 1.8)
+        sender.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
         sender.alpha = 1.0
         UIView.commitAnimations()
         
         UIView.beginAnimations("teste", context: nil)
         UIView.setAnimationDuration(1.0)
-        sender.transform = CGAffineTransformMakeScale(1, 1)
+        sender.transform = CGAffineTransform(scaleX: 1, y: 1)
         sender.alpha = 1.0
         UIView.commitAnimations()
     }
     
-    func animacaoErro(sender: UIButton){
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 250), dispatch_get_main_queue()) {
-            sender.setBackgroundImage(UIImage(named: "Parte de tras"), forState: .Normal)
+    func animacaoErro(_ sender: UIButton){
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(250) / Double(NSEC_PER_SEC)) {
+            sender.setBackgroundImage(UIImage(named: "Parte de tras"), for: UIControlState())
         }
-        UIView.transitionWithView(sender, duration: 0.5, options: .TransitionFlipFromLeft, animations: {
+        UIView.transition(with: sender, duration: 0.5, options: .transitionFlipFromLeft, animations: {
             }, completion: nil)
+    }
+    
+    /* MARK: - Barra de progresso */
+    
+    func atualizarTempo(_ barra: UIProgressView) -> String{
+        
+        // Decrementa o tempo
+        tempo -= 0.1
+        
+        // Comparação para não mostrar números negativos
+        if tempo <= 0 {
+            tempo = 0
+        }
+        
+        // Atualiza a barra
+        barra.progress = Float(tempo/tempoRef)
+        
+        let tempoString = NSString(format: "Tempo = %.1f", tempo)
+        
+        // Muda a cor da barra para vermelho qnd esta perto do fim
+        if barra.progress < 0.2 {
+            barra.progressTintColor = UIColor.red
+        }
+        
+        return  "\(tempoString)"
     }
     
 }
