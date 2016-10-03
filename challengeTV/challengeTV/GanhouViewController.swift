@@ -12,6 +12,7 @@ class GanhouViewController: UIViewController {
     
     /* MARK: - Outlet */
     @IBOutlet weak var mensagemFimJogo: UILabel!
+    @IBOutlet weak var pontuacao      : UILabel!
     
     /* MARK: - Variaveis */
     var confetes : Animacao?
@@ -21,8 +22,9 @@ class GanhouViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Mensagem e tempo (falta o tempo)
+        // Mensagem e pontuação
         mensagemFimJogo.text = mensagem
+        pontuacao.text = score
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(GanhouViewController.tapped))
         tapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue as Int)]

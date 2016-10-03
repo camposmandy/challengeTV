@@ -10,35 +10,43 @@ import UIKit
 
 class NivelTresViewController: UIViewController {
 
-    var managerJogo = Jogo()
+    // Variaveis
+    var bonus         = 0.0
+    var managerJogo   = Jogo()
     var nomeCategoria = String()
-    var opcoesCarta = [String]() //imagens das cartas
-//    var nomeCategoria = String()
-    var cartas = [UIButton]()
-    var retorno = [String]()
-    var selecionados = [Int]()
-    var b = UIButton()
-    
-    @IBOutlet weak var carta1: UIButton!
-    @IBOutlet weak var carta2: UIButton!
-    @IBOutlet weak var carta3: UIButton!
-    @IBOutlet weak var carta4: UIButton!
-    @IBOutlet weak var carta5: UIButton!
-    @IBOutlet weak var carta6: UIButton!
-    @IBOutlet weak var carta7: UIButton!
-    @IBOutlet weak var carta8: UIButton!
-    @IBOutlet weak var carta9: UIButton!
+    var opcoesCarta   = [String]() //imagens das cartas
+    var cartas        = [UIButton]()
+    var retorno       = [String]()
+    var selecionados  = [Int]()
+    var timer         = Timer()
+    var tempo   : TimeInterval = 60
+    var tempoRef: TimeInterval = 60
+
+    // Cartas
+    @IBOutlet weak var carta1 : UIButton!
+    @IBOutlet weak var carta2 : UIButton!
+    @IBOutlet weak var carta3 : UIButton!
+    @IBOutlet weak var carta4 : UIButton!
+    @IBOutlet weak var carta5 : UIButton!
+    @IBOutlet weak var carta6 : UIButton!
+    @IBOutlet weak var carta7 : UIButton!
+    @IBOutlet weak var carta8 : UIButton!
+    @IBOutlet weak var carta9 : UIButton!
     @IBOutlet weak var carta10: UIButton!
     @IBOutlet weak var carta11: UIButton!
     @IBOutlet weak var carta12: UIButton!
     @IBOutlet weak var carta13: UIButton!
     @IBOutlet weak var carta14: UIButton!
+    
+    // Progresso
+    @IBOutlet weak var pontuacao       : UILabel!
+    @IBOutlet weak var barraDeProgresso: UIProgressView!
+    @IBOutlet weak var tempoLbl        : UILabel!
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Categoria
         if nomeCategoria == "Animais"{
             opcoesCarta = ["Cachorro.png", "Elefante.png", "Gato.png","Girafa.png", "Onca.png", "Panda.png", "Pinguim.png", "Cachorro.png", "Elefante.png", "Gato.png","Girafa.png", "Onca.png", "Panda.png", "Pinguim.png"]
         } else if nomeCategoria == "Frutas"{
@@ -51,11 +59,12 @@ class NivelTresViewController: UIViewController {
         retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(NivelTresViewController.atualizarTempo), userInfo: nil, repeats: true)
     }
     
+    /* MARK: - Actions */
+
     @IBAction func animacaoCarta(_ sender: AnyObject) { //animação dos botões quando selecionados.
         if sender.tag != 100 {
             let img = self.imagem(sender as! UIButton).foto
@@ -73,6 +82,36 @@ class NivelTresViewController: UIViewController {
             }) { (finished) in
                 self.jogo(sender as! UIButton)
             }
+        }
+    }
+    
+    /* MARK: - Funções */
+
+    func atualizarTempo(){
+        tempo -= 0.1
+        
+        if tempo <= 0 {
+            tempo = 0
+            
+            timer.invalidate()
+            
+            // Fim do tempo
+            let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
+            
+            chamada.score    = pontuacao.text
+            chamada.mensagem = "O tempo acabou 😰"
+            
+            self.navigationController?.pushViewController(chamada, animated: true)
+        }
+        
+        barraDeProgresso.progress = Float(tempo/tempoRef)
+        
+        let tempoString = NSString(format: "Tempo = %.1f", tempo)
+        
+        tempoLbl.text = "\(tempoString)"
+        
+        if barraDeProgresso.progress < 0.2 {
+            barraDeProgresso.progressTintColor = UIColor.red
         }
     }
     
@@ -114,12 +153,24 @@ class NivelTresViewController: UIViewController {
             
             if cartas.count == c {
                 let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
+                
+                chamada.mensagem = "Você ganhou! 😃"
+                chamada.score    = pontuacao.text
+                
                 self.navigationController?.pushViewController(chamada, animated: true)
             }
         }
     }
     
     func acerto(){
+        //Calculo pont
+        bonus = tempo
+        let conta = cartas.count - 2
+        let soma = (bonus*3)
+        let cs = soma - Double(conta)
+        
+        pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String
+        
         for i in selecionados{
             cartas[i].tag = 100
             managerJogo.animacaoAcerto(cartas[i])

@@ -42,15 +42,12 @@ class NivelViewController: UIViewController {
         } else if segue.identifier == "dois"{
             let vc = segue.destination as! NivelDoisViewController
             vc.nomeCategoria = c
-            
         }  else if segue.identifier == "tres"{
             let vc = segue.destination as! NivelTresViewController
             vc.nomeCategoria = c
-
         } else if segue.identifier == "quatro"{
             let vc = segue.destination as! NivelQuatroViewController
             vc.nomeCategoria = c
-
         } else {
             let vc = segue.destination as! NivelCincoViewController
             vc.nomeCategoria = c

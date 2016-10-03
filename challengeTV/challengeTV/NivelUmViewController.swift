@@ -50,7 +50,7 @@ class NivelUmViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         // Barra de tempo
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector: #selector(NivelUmViewController.atualizarTempo), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(NivelUmViewController.atualizarTempo), userInfo: nil, repeats: true)
         
 
     }
@@ -158,10 +158,12 @@ class NivelUmViewController: UIViewController {
         bonus = tempo
         let conta = cartas.count - 2
         
-        let soma = (bonus*2)
-            let cs = soma - Double(conta)
+        let soma = (bonus)
+        let cs = soma - Double(conta)
         
-        pontuacao.text = "\(cs)"
+        
+        pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String
+        
         for i in selecionados{
             cartas[i].tag = 100
             JManager.animacaoAcerto(cartas[i])

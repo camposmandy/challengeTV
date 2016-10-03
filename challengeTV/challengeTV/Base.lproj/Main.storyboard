@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAn-xz-ovQ">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="GAn-xz-ovQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufz-F8-k2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1176" y="1251"/>
+            <point key="canvasLocation" x="-1486" y="766"/>
         </scene>
         <!--Instrucoes View Controller-->
         <scene sceneID="SoR-QQ-Jfj">
@@ -33,19 +35,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-Kk-jj7">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-Kk-jj7">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INSTRUÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1As-6u-iGx">
-                                <rect key="frame" x="810" y="163" width="302" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUÇÕES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1As-6u-iGx">
+                                <frame key="frameInset" minX="810" minY="163" width="302" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-qq-aTV">
-                                <rect key="frame" x="0.0" y="253" width="1920" height="665"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="665" id="yQF-qq-qYb"/>
-                                </constraints>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-qq-aTV">
+                                <frame key="frameInset" minY="253" width="1920" height="665"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n9k-AF-UGZ">
                                     <size key="itemSize" width="689" height="583"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -60,14 +63,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="689" height="583"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-4d-7sE" userLabel="imgViewInstrucoes">
-                                                    <rect key="frame" x="106" y="12" width="500" height="550"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-4d-7sE" userLabel="imgViewInstrucoes">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="500" id="HdA-7D-TEK"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="fjG-4d-7sE" secondAttribute="trailing" constant="75" id="cSA-6F-pby"/>
@@ -81,17 +82,6 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="1Bu-Kk-jj7" firstAttribute="top" secondItem="rPb-6P-04a" secondAttribute="top" id="4yj-uq-1zV"/>
-                            <constraint firstItem="dgr-qq-aTV" firstAttribute="trailing" secondItem="1Bu-Kk-jj7" secondAttribute="trailing" id="ciw-Bf-J6g"/>
-                            <constraint firstItem="dgr-qq-aTV" firstAttribute="leading" secondItem="1Bu-Kk-jj7" secondAttribute="leading" id="dAp-fX-Yta"/>
-                            <constraint firstItem="dgr-qq-aTV" firstAttribute="top" secondItem="1As-6u-iGx" secondAttribute="bottom" constant="24" id="diG-la-XR8"/>
-                            <constraint firstItem="1Bu-Kk-jj7" firstAttribute="leading" secondItem="rPb-6P-04a" secondAttribute="leading" id="g2r-e7-Xsr"/>
-                            <constraint firstItem="1Bu-Kk-jj7" firstAttribute="bottom" secondItem="H7j-eb-VW9" secondAttribute="top" id="jTg-O0-QDq"/>
-                            <constraint firstItem="H7j-eb-VW9" firstAttribute="top" secondItem="dgr-qq-aTV" secondAttribute="bottom" constant="162" id="mKQ-TG-KEr"/>
-                            <constraint firstItem="1Bu-Kk-jj7" firstAttribute="centerX" secondItem="1As-6u-iGx" secondAttribute="centerX" id="qd3-KP-fMi"/>
-                            <constraint firstAttribute="trailing" secondItem="1Bu-Kk-jj7" secondAttribute="trailing" id="zDT-ho-zyw"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bXu-Go-tWi"/>
                     <connections>
@@ -100,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rk-zu-ETY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2935" y="26"/>
+            <point key="canvasLocation" x="3975" y="766"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z41-NN-hKc">
@@ -116,7 +106,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XN-L0-3Gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="26"/>
+            <point key="canvasLocation" x="3975" y="-1026"/>
         </scene>
         <!--Inicial View Controller-->
         <scene sceneID="I1c-Io-yz1">
@@ -131,79 +121,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-yQ-4x9">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-3v-7ZT">
-                                <rect key="frame" x="1142" y="221" width="508" height="639"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="508" id="6jd-uD-93v"/>
                                     <constraint firstAttribute="height" constant="639" id="cls-Lm-nqq"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-q2-Dn7">
-                                <rect key="frame" x="110" y="341" width="483" height="398"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8C-M9g" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="40" width="315" height="86"/>
-                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="315" id="9IN-rE-XBM"/>
                                             <constraint firstAttribute="height" constant="86" id="tne-fs-mtN"/>
                                         </constraints>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="JOGOS">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="mlS-9S-Q4W" kind="show" id="DQf-0i-qDL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-47-AXs" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="156" width="315" height="86"/>
-                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="INSTRUÇÕES">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="Fcv-oL-r9t" kind="show" id="s7n-vx-ICO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-ef-ZwN" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                        <rect key="frame" x="45" y="272" width="393" height="133"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-ef-ZwN" customClass="botaoFocado2View" customModule="challengeTV" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="393" id="a8n-n9-uTh"/>
-                                            <constraint firstAttribute="height" constant="133" id="iR2-7F-W57"/>
+                                            <constraint firstAttribute="width" constant="161" id="YXg-SM-tEK"/>
                                         </constraints>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" image="music">
-                                            <color key="titleShadowColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="musicaOnOf:" destination="osL-do-noh" eventType="primaryActionTriggered" id="Wv4-Y7-23m"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="pdj-47-AXs" firstAttribute="centerY" secondItem="c4x-q2-Dn7" secondAttribute="centerY" id="41d-LI-C7O"/>
                                     <constraint firstAttribute="width" constant="483" id="Bio-NV-UiN"/>
                                     <constraint firstAttribute="height" constant="398" id="GRH-ic-VYF"/>
+                                    <constraint firstAttribute="bottom" secondItem="8A2-ef-ZwN" secondAttribute="bottom" constant="-9" id="IGK-6V-TfT"/>
+                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="centerX" secondItem="pdj-47-AXs" secondAttribute="centerX" id="IJs-vK-6Xa"/>
                                     <constraint firstItem="pdj-47-AXs" firstAttribute="top" secondItem="OIh-8C-M9g" secondAttribute="bottom" constant="30" id="Pei-Rs-Aya"/>
-                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="30" id="aWQ-vI-g4X"/>
+                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="top" secondItem="pdj-47-AXs" secondAttribute="bottom" constant="32" id="X3j-sg-f8D"/>
                                     <constraint firstItem="pdj-47-AXs" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="dId-F2-sbn"/>
-                                    <constraint firstItem="8A2-ef-ZwN" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="lgY-jY-Eu8"/>
                                     <constraint firstItem="OIh-8C-M9g" firstAttribute="centerX" secondItem="c4x-q2-Dn7" secondAttribute="centerX" id="n8Y-Tr-sV9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMORIZANDO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-dx-r1W">
-                                <rect key="frame" x="62" y="90" width="1796" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1796" id="KiW-9M-Poh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -226,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo1-wx-WQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="1251"/>
+            <point key="canvasLocation" x="901" y="766"/>
         </scene>
         <!--Categorias View Controller-->
         <scene sceneID="Ig4-Pg-8al">
@@ -241,20 +226,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-wg-KrQ">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="1920" id="RNF-qd-Mml"/>
-                                    <constraint firstAttribute="height" constant="1080" id="y8c-3v-Fbd"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-wg-KrQ">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CATEGORIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMn-TQ-iL1">
-                                <rect key="frame" x="806" y="100" width="310" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CATEGORIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMn-TQ-iL1">
+                                <frame key="frameInset" minX="806" minY="100" width="310" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-GY-unS">
-                                <rect key="frame" x="0.0" y="195" width="1920" height="825"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-GY-unS">
+                                <frame key="frameInset" minY="195" width="1920" height="825"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YKo-BY-7lf">
                                     <size key="itemSize" width="773" height="459"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -269,11 +254,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="773" height="459"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-Xw-hpe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="773" height="459"/>
-                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-Xw-hpe"/>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="ghX-Xw-hpe" firstAttribute="top" secondItem="bju-jt-XT6" secondAttribute="top" id="Gxg-l3-vfY"/>
@@ -289,18 +271,6 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="lHB-GY-unS" secondAttribute="bottom" constant="60" id="2Ca-ew-LxD"/>
-                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" id="6ne-OL-Ewt"/>
-                            <constraint firstItem="RxJ-dx-LGt" firstAttribute="top" secondItem="hsa-wg-KrQ" secondAttribute="bottom" id="Bk4-pR-7mR"/>
-                            <constraint firstItem="OMn-TQ-iL1" firstAttribute="centerX" secondItem="JIt-09-wT4" secondAttribute="centerX" id="YWY-U9-C8i"/>
-                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="centerX" secondItem="JIt-09-wT4" secondAttribute="centerX" id="aS4-Jt-YKR"/>
-                            <constraint firstItem="lHB-GY-unS" firstAttribute="leading" secondItem="hsa-wg-KrQ" secondAttribute="leading" id="oRb-CG-tdb"/>
-                            <constraint firstItem="OMn-TQ-iL1" firstAttribute="top" secondItem="JIt-09-wT4" secondAttribute="topMargin" constant="100" id="p7R-jJ-6hw"/>
-                            <constraint firstItem="lHB-GY-unS" firstAttribute="trailing" secondItem="hsa-wg-KrQ" secondAttribute="trailing" id="rsE-ac-Tnq"/>
-                            <constraint firstItem="lHB-GY-unS" firstAttribute="top" secondItem="OMn-TQ-iL1" secondAttribute="bottom" constant="29" id="w5u-eV-ZHb"/>
-                            <constraint firstItem="hsa-wg-KrQ" firstAttribute="centerY" secondItem="JIt-09-wT4" secondAttribute="centerY" id="wko-5f-pBg"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="lHB-GY-unS" id="48k-9j-6DY"/>
@@ -321,78 +291,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-yz-6ug">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1080" id="aBk-iX-X0l"/>
-                                    <constraint firstAttribute="width" constant="1920" id="j7V-aX-Xjl"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-yz-6ug">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="175" y="497" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="Z4n-Iw-1p8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-UI-46Z" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <frame key="frameInset" minX="175" minY="497" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 1"/>
                                 <connections>
                                     <segue destination="Jns-5a-Pc6" kind="show" identifier="um" id="ca2-Fq-xjk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="735" y="497" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="joP-kY-ha0"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-NG-NUT" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <frame key="frameInset" minX="735" minY="497" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 2"/>
                                 <connections>
                                     <segue destination="FhU-KX-0tY" kind="show" identifier="dois" id="t0D-cV-4k1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="1295" y="497" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="QUk-ch-Qs0"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-vg-Y3r" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <frame key="frameInset" minX="1295" minY="497" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 3"/>
                                 <connections>
                                     <segue destination="4f3-V5-gOc" kind="show" identifier="tres" id="acs-Bl-yep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="1015" y="683" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="aiN-2B-RTm"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-ph-8hb" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <frame key="frameInset" minX="1015" minY="683" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 5"/>
                                 <connections>
                                     <segue destination="X0y-Ec-Tyw" kind="show" identifier="cinco" id="h52-xB-jir"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Escolha um nível para jogar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
-                                <rect key="frame" x="764" y="371" width="394" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolha um nível para jogar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-Te-YGt">
+                                <frame key="frameInset" minX="764" minY="371" width="394" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOME DA CATEGORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
-                                <rect key="frame" x="699" y="275" width="524" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOME DA CATEGORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-Sy-ZAU">
+                                <frame key="frameInset" minX="699" minY="275" width="524" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="455" y="683" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="450" id="Luu-un-JKR"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-Fa-pAd" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
+                                <frame key="frameInset" minX="455" minY="683" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Nível 4"/>
                                 <connections>
@@ -400,25 +360,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="qGn-vg-Y3r" firstAttribute="leading" secondItem="Jw9-NG-NUT" secondAttribute="trailing" constant="110" id="24X-Vo-rcS"/>
-                            <constraint firstItem="iKz-yz-6ug" firstAttribute="centerY" secondItem="f49-tQ-1S2" secondAttribute="centerY" id="4c1-b7-GDz"/>
-                            <constraint firstItem="iKz-yz-6ug" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="Bxg-fG-3NZ"/>
-                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="UXg-Te-YGt" secondAttribute="centerX" id="CxH-bc-Idf"/>
-                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerY" secondItem="f49-tQ-1S2" secondAttribute="centerY" id="Cyp-kj-K8z"/>
-                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" constant="-280" id="FqF-4E-9xc"/>
-                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="HX6-6u-jcf"/>
-                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="leading" secondItem="utc-UI-46Z" secondAttribute="trailing" constant="110" id="ZhH-bR-c6Q"/>
-                            <constraint firstItem="cTo-ph-8hb" firstAttribute="leading" secondItem="1rV-Fa-pAd" secondAttribute="trailing" constant="110" id="bGa-IY-esp"/>
-                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="centerX" secondItem="f49-tQ-1S2" secondAttribute="centerX" id="bcf-GR-69U"/>
-                            <constraint firstItem="iBX-Sy-ZAU" firstAttribute="top" secondItem="5xU-7s-i48" secondAttribute="bottom" constant="130" id="d51-Cg-qx1"/>
-                            <constraint firstItem="UXg-Te-YGt" firstAttribute="top" secondItem="iBX-Sy-ZAU" secondAttribute="bottom" constant="30" id="l5w-As-b4Q"/>
-                            <constraint firstItem="UXg-Te-YGt" firstAttribute="centerX" secondItem="Jw9-NG-NUT" secondAttribute="centerX" id="nUP-Zs-HaW"/>
-                            <constraint firstItem="cTo-ph-8hb" firstAttribute="bottom" secondItem="1rV-Fa-pAd" secondAttribute="bottom" id="oK2-Pd-ED2"/>
-                            <constraint firstItem="Jw9-NG-NUT" firstAttribute="top" secondItem="utc-UI-46Z" secondAttribute="top" id="p3g-N2-fxC"/>
-                            <constraint firstItem="qGn-vg-Y3r" firstAttribute="top" secondItem="utc-UI-46Z" secondAttribute="top" id="tNA-bL-29B"/>
-                            <constraint firstItem="1rV-Fa-pAd" firstAttribute="top" secondItem="Jw9-NG-NUT" secondAttribute="bottom" constant="100" id="z5u-JJ-d3A"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="categoria" destination="iBX-Sy-ZAU" id="Hbf-Mk-jJZ"/>
@@ -441,17 +382,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-ar-H6L">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Nível: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmn-yG-ivD">
-                                <rect key="frame" x="901" y="60" width="119" height="40"/>
+                                <frame key="frameInset" minX="901" minY="60" width="119" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-kK-iIY">
-                                <rect key="frame" x="1260" y="620" width="300" height="400"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="1260" minY="620" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -459,7 +403,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-To-mW7">
-                                <rect key="frame" x="810" y="620" width="300" height="400"/>
+                                <frame key="frameInset" minX="810" minY="620" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -467,7 +412,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-dE-7TP">
-                                <rect key="frame" x="1260" y="152" width="300" height="400"/>
+                                <frame key="frameInset" minX="1260" minY="152" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -475,7 +421,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-oU-d4U">
-                                <rect key="frame" x="810" y="152" width="300" height="400"/>
+                                <frame key="frameInset" minX="810" minY="152" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -483,7 +430,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-NT-SUS">
-                                <rect key="frame" x="360" y="620" width="300" height="400"/>
+                                <frame key="frameInset" minX="360" minY="620" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -491,7 +439,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-wq-LLa">
-                                <rect key="frame" x="360" y="152" width="300" height="400"/>
+                                <frame key="frameInset" minX="360" minY="152" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -499,19 +448,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZa-Ce-UVF">
-                                <rect key="frame" x="1555" y="55" width="207" height="49"/>
+                                <frame key="frameInset" minX="1555" minY="55" width="207" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mxZ-st-cvS">
-                                <rect key="frame" x="84" y="39" width="1766" height="10"/>
-                                <color key="progressTintColor" red="0.15615725569766792" green="1" blue="0.049720530546662367" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="84" minY="39" width="1766" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.15615725569766792" green="1" blue="0.049720530546662367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaX-J4-fon">
-                                <rect key="frame" x="90" y="65" width="88" height="30"/>
+                                <frame key="frameInset" minX="90" minY="65" width="570" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -536,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EK3-a8-fKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="5181"/>
+            <point key="canvasLocation" x="901" y="5975"/>
         </scene>
         <!--Nivel Dois View Controller-->
         <scene sceneID="gIX-fJ-Y7R">
@@ -550,11 +502,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-4v-lDl">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-4v-lDl">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="bMc-oa-0x2">
+                                <frame key="frameInset" minX="77" minY="20" width="1766" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.1561572557" green="1" blue="0.049720530550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtO-02-BiX">
+                                <frame key="frameInset" minX="77" minY="48" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-Kl-w0T">
-                                <rect key="frame" x="115" y="615" width="250" height="350"/>
+                                <frame key="frameInset" minX="115" minY="615" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -562,7 +528,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-PP-xth">
-                                <rect key="frame" x="115" y="172" width="250" height="350"/>
+                                <frame key="frameInset" minX="115" minY="172" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -570,7 +537,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ika-3B-LFE">
-                                <rect key="frame" x="475" y="615" width="250" height="350"/>
+                                <frame key="frameInset" minX="475" minY="615" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -578,7 +546,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tg-Gc-0ge">
-                                <rect key="frame" x="835" y="615" width="250" height="350"/>
+                                <frame key="frameInset" minX="835" minY="615" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -586,7 +555,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-hR-Chk">
-                                <rect key="frame" x="835" y="172" width="250" height="350"/>
+                                <frame key="frameInset" minX="835" minY="172" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -594,7 +564,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Un-sz-Onj">
-                                <rect key="frame" x="1555" y="615" width="250" height="350"/>
+                                <frame key="frameInset" minX="1555" minY="615" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -602,7 +573,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-Ya-5bp">
-                                <rect key="frame" x="1555" y="172" width="250" height="350"/>
+                                <frame key="frameInset" minX="1555" minY="172" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -610,7 +582,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA5-Nc-vwx">
-                                <rect key="frame" x="475" y="172" width="250" height="350"/>
+                                <frame key="frameInset" minX="475" minY="172" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -618,7 +591,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-KQ-oJy">
-                                <rect key="frame" x="1195" y="615" width="250" height="350"/>
+                                <frame key="frameInset" minX="1195" minY="615" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -626,7 +600,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Ve-8Ew">
-                                <rect key="frame" x="1195" y="172" width="250" height="350"/>
+                                <frame key="frameInset" minX="1195" minY="172" width="250" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -634,19 +609,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-cJ-LLf">
-                                <rect key="frame" x="780" y="70" width="480" height="40"/>
+                                <frame key="frameInset" minX="904" minY="48" width="112" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32G-Tp-260">
+                                <frame key="frameInset" minX="1636" minY="39" width="207" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="SFN-4v-lDl" firstAttribute="top" secondItem="NDZ-Yl-5U1" secondAttribute="top" id="03O-lG-GPa"/>
-                            <constraint firstItem="SFN-4v-lDl" firstAttribute="leading" secondItem="NDZ-Yl-5U1" secondAttribute="leading" id="GxN-yB-cFC"/>
-                            <constraint firstItem="SFN-4v-lDl" firstAttribute="bottom" secondItem="Gz0-hV-Oca" secondAttribute="top" id="hxg-yL-RCv"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="barraDeProgresso" destination="bMc-oa-0x2" id="MCY-vP-OEJ"/>
                         <outlet property="carta1" destination="0V2-PP-xth" id="vHU-6c-6X6"/>
                         <outlet property="carta10" destination="3Un-sz-Onj" id="Jjc-kF-0ey"/>
                         <outlet property="carta2" destination="SH3-Kl-w0T" id="KnS-r4-jRX"/>
@@ -657,11 +636,13 @@
                         <outlet property="carta7" destination="HBG-Ve-8Ew" id="Lcm-GI-Qrh"/>
                         <outlet property="carta8" destination="Pny-KQ-oJy" id="Pgj-P3-FSi"/>
                         <outlet property="carta9" destination="Rgg-Ya-5bp" id="uf1-EL-JOP"/>
+                        <outlet property="pontuacao" destination="DtO-02-BiX" id="E8s-eb-9oi"/>
+                        <outlet property="tempoLbl" destination="32G-Tp-260" id="ESj-MN-fbc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUb-ew-wmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3975" y="2231"/>
+            <point key="canvasLocation" x="3975" y="2517"/>
         </scene>
         <!--Ganhou View Controller-->
         <scene sceneID="qY7-oO-UDX">
@@ -676,19 +657,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="smB-i7-Fz4">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <frame key="frameInset" minY="-8" width="1920" height="1088"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PARABÉNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
-                                <rect key="frame" x="831" y="70" width="259" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="KmT-AA-5zj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-cz-1Lz" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="250" y="486" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="250" minY="486" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Níveis"/>
                                 <connections>
@@ -696,35 +671,43 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-de-14t" customClass="botaoFocadoView" customModule="challengeTV" customModuleProvider="target">
-                                <rect key="frame" x="250" y="672" width="450" height="86"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="250" minY="672" width="450" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.35294117650000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
                                     <action selector="menu:" destination="ODY-Xc-jyv" eventType="primaryActionTriggered" id="ufN-J5-WPM"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganhou" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
-                                <rect key="frame" x="926" y="201" width="674" height="678"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="678" id="G0b-td-xtW"/>
-                                    <constraint firstAttribute="width" constant="674" id="aXV-5H-JPW"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ganhou" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-sV-iuC">
+                                <frame key="frameInset" minX="926" minY="201" width="674" height="678"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARABÉNS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-E5-ge4">
+                                <frame key="frameInset" minX="687" minY="60" width="547" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBF-Fb-l08" userLabel="score">
+                                <frame key="frameInset" minX="754" minY="201" width="412" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="QhJ-sV-iuC" firstAttribute="centerY" secondItem="MzV-hb-VRd" secondAttribute="centerY" id="EZH-Aq-CSn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QhJ-sV-iuC" secondAttribute="trailing" constant="300" id="O47-CV-S8c"/>
-                            <constraint firstItem="4hu-E5-ge4" firstAttribute="top" secondItem="ZRf-aB-HPs" secondAttribute="bottom" constant="50" id="Yuc-Z7-6OG"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mensagemFimJogo" destination="4hu-E5-ge4" id="f3t-S8-Z4K"/>
+                        <outlet property="pontuacao" destination="WBF-Fb-l08" id="a6e-Jw-DLK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVi-dz-nmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6404" y="3446"/>
+            <point key="canvasLocation" x="3975" y="7639"/>
         </scene>
         <!--Nivel Tres View Controller-->
         <scene sceneID="JEE-a0-gqw">
@@ -738,11 +721,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="xlN-9f-ROa">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="xlN-9f-ROa">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-ke-wWa">
+                                <frame key="frameInset" minX="77" minY="20" width="1766" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.1561572557" green="1" blue="0.049720530550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FI-2b-I2P">
+                                <frame key="frameInset" minX="77" minY="48" width="263" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6C-QX-aB0">
-                                <rect key="frame" x="380" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="380" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -750,7 +747,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7u-pE-B5H">
-                                <rect key="frame" x="380" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="380" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -758,7 +756,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-dl-F7s">
-                                <rect key="frame" x="1340" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="1340" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -766,7 +765,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBl-bK-xTX">
-                                <rect key="frame" x="620" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="620" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -774,7 +774,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFv-vJ-fcx">
-                                <rect key="frame" x="1100" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="1100" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -782,7 +783,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-UW-tiS">
-                                <rect key="frame" x="860" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="860" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -790,7 +792,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-FE-LVB">
-                                <rect key="frame" x="860" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="860" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -798,7 +801,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zox-8U-Ne7">
-                                <rect key="frame" x="1100" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="1100" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -806,7 +810,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-DR-etY">
-                                <rect key="frame" x="1340" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="1340" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -814,7 +819,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2r-e4-aV4">
-                                <rect key="frame" x="140" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="140" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -822,7 +828,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-xO-Yk7">
-                                <rect key="frame" x="1580" y="640" width="200" height="300"/>
+                                <frame key="frameInset" minX="1580" minY="640" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -830,7 +837,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-eq-pmx">
-                                <rect key="frame" x="1580" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="1580" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -838,7 +846,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-EK-AyQ">
-                                <rect key="frame" x="620" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="620" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -846,7 +855,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWN-cX-2TJ">
-                                <rect key="frame" x="140" y="250" width="200" height="300"/>
+                                <frame key="frameInset" minX="140" minY="250" width="200" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -854,19 +864,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-Cy-OcK">
-                                <rect key="frame" x="784" y="63" width="480" height="40"/>
+                                <frame key="frameInset" minX="904" minY="48" width="113" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSb-Nv-S8h">
+                                <frame key="frameInset" minX="1636" minY="39" width="207" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="xlN-9f-ROa" firstAttribute="bottom" secondItem="Ftz-AL-nac" secondAttribute="top" id="8K6-oh-c2T"/>
-                            <constraint firstItem="xlN-9f-ROa" firstAttribute="leading" secondItem="mZ1-ob-LfI" secondAttribute="leading" id="9T3-Q0-slH"/>
-                            <constraint firstItem="xlN-9f-ROa" firstAttribute="top" secondItem="mZ1-ob-LfI" secondAttribute="top" id="z5B-j9-fYf"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="barraDeProgresso" destination="e8M-ke-wWa" id="CZf-Rf-aME"/>
                         <outlet property="carta1" destination="yWN-cX-2TJ" id="3Nf-WE-i3t"/>
                         <outlet property="carta10" destination="zox-8U-Ne7" id="4H6-fb-C7D"/>
                         <outlet property="carta11" destination="dGs-DR-etY" id="79W-bE-xFm"/>
@@ -881,11 +895,13 @@
                         <outlet property="carta7" destination="FK6-FE-LVB" id="pAQ-Fg-FDY"/>
                         <outlet property="carta8" destination="V2f-UW-tiS" id="cSH-lB-02M"/>
                         <outlet property="carta9" destination="lFv-vJ-fcx" id="VM5-A6-JxK"/>
+                        <outlet property="pontuacao" destination="4FI-2b-I2P" id="mG8-QN-mnJ"/>
+                        <outlet property="tempoLbl" destination="QSb-Nv-S8h" id="e7z-Cg-jYn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kV1-P9-yYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3975" y="3431"/>
+            <point key="canvasLocation" x="3975" y="3852"/>
         </scene>
         <!--Nivel Quatro View Controller-->
         <scene sceneID="Pal-5T-lMB">
@@ -899,240 +915,202 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-fy-lF9">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-fy-lF9">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
-                                <rect key="frame" x="797" y="57" width="480" height="40"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-ir-yY4">
-                                <rect key="frame" x="1425" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="RU6-li-zQS"/>
-                                    <constraint firstAttribute="width" constant="170" id="pVs-hL-DX6"/>
-                                </constraints>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-aX-hg4">
+                                <frame key="frameInset" minX="77" minY="20" width="1766" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.1561572557" green="1" blue="0.049720530550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-ir-yY4">
+                                <frame key="frameInset" minX="1425" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="uT0-Mx-Ois"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2m-V9-CSs">
-                                <rect key="frame" x="1425" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="rDP-UA-qIt"/>
-                                    <constraint firstAttribute="width" constant="170" id="rYO-Rk-Xb4"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2m-V9-CSs">
+                                <frame key="frameInset" minX="1425" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="SGe-ii-wAX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-9r-M6d">
-                                <rect key="frame" x="985" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="5wV-4a-VZM"/>
-                                    <constraint firstAttribute="height" constant="270" id="Lxc-9U-H1s"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-9r-M6d">
+                                <frame key="frameInset" minX="985" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="ITB-og-V8q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oes-Gk-fMR">
-                                <rect key="frame" x="985" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="K5f-1x-fGP"/>
-                                    <constraint firstAttribute="width" constant="170" id="gLV-yD-WfU"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oes-Gk-fMR">
+                                <frame key="frameInset" minX="985" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="hLH-66-hWP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-m2-4iw">
-                                <rect key="frame" x="1205" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="PlF-rN-RUe"/>
-                                    <constraint firstAttribute="width" constant="170" id="gpX-vs-T4t"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-m2-4iw">
+                                <frame key="frameInset" minX="1205" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="i82-3M-b9Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLx-az-YGg">
-                                <rect key="frame" x="1205" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="Jea-ow-fIQ"/>
-                                    <constraint firstAttribute="height" constant="270" id="awN-uu-ee8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLx-az-YGg">
+                                <frame key="frameInset" minX="1205" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="C0P-72-tZc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7Q-7f-KJA">
-                                <rect key="frame" x="765" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="3XG-ub-zbj"/>
-                                    <constraint firstAttribute="width" constant="170" id="ZR1-tw-WvS"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7Q-7f-KJA">
+                                <frame key="frameInset" minX="765" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="kLu-Qp-eff"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-kc-yvt">
-                                <rect key="frame" x="765" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="XUY-JA-FUV"/>
-                                    <constraint firstAttribute="height" constant="270" id="iSg-8G-Qcb"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-kc-yvt">
+                                <frame key="frameInset" minX="765" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="Jfm-S6-VDs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOP-nM-fYZ">
-                                <rect key="frame" x="545" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="WTH-f5-2Bv"/>
-                                    <constraint firstAttribute="width" constant="170" id="aCf-9Q-pkb"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOP-nM-fYZ">
+                                <frame key="frameInset" minX="545" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="sF5-X8-01d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNI-zL-Xii">
-                                <rect key="frame" x="545" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="pzy-QD-Nz4"/>
-                                    <constraint firstAttribute="width" constant="170" id="rv4-jE-hrw"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNI-zL-Xii">
+                                <frame key="frameInset" minX="545" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="K4F-oE-L04"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-QJ-h87">
-                                <rect key="frame" x="325" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="ekz-i2-wYh"/>
-                                    <constraint firstAttribute="width" constant="170" id="ioL-A7-bFZ"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-QJ-h87">
+                                <frame key="frameInset" minX="325" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="kad-5w-0e2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-sd-Vfw">
-                                <rect key="frame" x="325" y="145" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="2x2-k7-wHf"/>
-                                    <constraint firstAttribute="height" constant="270" id="hkp-JL-eET"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-sd-Vfw">
+                                <frame key="frameInset" minX="325" minY="145" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="ELi-by-wyN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-IJ-amO">
-                                <rect key="frame" x="1425" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="UHh-yg-Yhz"/>
-                                    <constraint firstAttribute="width" constant="170" id="yFB-dN-wQV"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-IJ-amO">
+                                <frame key="frameInset" minX="1425" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="1lf-Th-hEc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-lo-Aug">
-                                <rect key="frame" x="1210" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="NEY-BQ-PjL"/>
-                                    <constraint firstAttribute="width" constant="170" id="yPA-e1-i5C"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-lo-Aug">
+                                <frame key="frameInset" minX="1210" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="9kC-so-4p7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oav-m0-hKb">
-                                <rect key="frame" x="985" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="RMA-da-1b2"/>
-                                    <constraint firstAttribute="height" constant="270" id="r6j-BL-hji"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oav-m0-hKb">
+                                <frame key="frameInset" minX="985" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="vgu-wD-n2u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-9O-UNe">
-                                <rect key="frame" x="765" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="GdV-JX-rvq"/>
-                                    <constraint firstAttribute="height" constant="270" id="TUr-C2-fRF"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-9O-UNe">
+                                <frame key="frameInset" minX="765" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="tK1-ho-hc5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWR-k2-dii">
-                                <rect key="frame" x="545" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="4Rq-jH-9Ma"/>
-                                    <constraint firstAttribute="height" constant="270" id="qXh-v6-OGR"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWR-k2-dii">
+                                <frame key="frameInset" minX="545" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="bnW-rR-EfT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-6w-pFH">
-                                <rect key="frame" x="325" y="753" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="2tv-hg-M8e"/>
-                                    <constraint firstAttribute="width" constant="170" id="vLB-Qc-wuy"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-6w-pFH">
+                                <frame key="frameInset" minX="325" minY="753" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="gqp-Wi-W55" eventType="primaryActionTriggered" id="F1C-Wh-9D9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50u-dH-TeR">
+                                <frame key="frameInset" minX="77" minY="48" width="418" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Uy-vLT">
+                                <frame key="frameInset" minX="903" minY="48" width="115" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UA-sF-KI6">
+                                <frame key="frameInset" minX="1636" minY="39" width="207" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="2b1-fy-lF9" firstAttribute="top" secondItem="p37-dW-5XH" secondAttribute="top" id="DeW-Tk-06Z"/>
-                            <constraint firstItem="2b1-fy-lF9" firstAttribute="bottom" secondItem="fPF-Wi-i6g" secondAttribute="top" id="p0y-jF-P1s"/>
-                            <constraint firstAttribute="trailing" secondItem="2b1-fy-lF9" secondAttribute="trailing" id="t0a-NK-CoQ"/>
-                            <constraint firstItem="2b1-fy-lF9" firstAttribute="leading" secondItem="p37-dW-5XH" secondAttribute="leading" id="tE3-aU-73Z"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="barraDeProgresso" destination="OAn-aX-hg4" id="YdY-g2-DhZ"/>
                         <outlet property="carta1" destination="1HT-sd-Vfw" id="dZe-x6-eXG"/>
                         <outlet property="carta10" destination="oes-Gk-fMR" id="8HF-7I-0Ih"/>
                         <outlet property="carta11" destination="kU1-9r-M6d" id="wMG-uA-Lpt"/>
@@ -1151,11 +1129,13 @@
                         <outlet property="carta7" destination="5v5-kc-yvt" id="TKy-72-W0h"/>
                         <outlet property="carta8" destination="U7Q-7f-KJA" id="5QR-Bn-SJ0"/>
                         <outlet property="carta9" destination="LkG-9O-UNe" id="Fay-as-iDK"/>
+                        <outlet property="pontuacao" destination="50u-dH-TeR" id="4Wl-of-fjS"/>
+                        <outlet property="tempoLbl" destination="7UA-sF-KI6" id="tkJ-02-UPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJL-0Z-99Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3969" y="4661"/>
+            <point key="canvasLocation" x="3975" y="5975"/>
         </scene>
         <!--Nivel Cinco View Controller-->
         <scene sceneID="DIH-Y4-oKs">
@@ -1169,171 +1149,142 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-Kv-Cf3">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-Kv-Cf3">
+                                <frame key="frameInset" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-oV-cSq">
-                                <rect key="frame" x="1425" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="AM2-5I-gcb"/>
-                                    <constraint firstAttribute="height" constant="270" id="Snm-t3-NFO"/>
-                                </constraints>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-8B-H5f">
+                                <frame key="frameInset" minX="77" minY="20" width="1766" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.1561572557" green="1" blue="0.049720530550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9o-2x-0lJ">
+                                <frame key="frameInset" minX="77" minY="48" width="443" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-oV-cSq">
+                                <frame key="frameInset" minX="1425" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="jK7-nk-2eN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-sY-xN2">
-                                <rect key="frame" x="1425" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="R28-Ad-9VP"/>
-                                    <constraint firstAttribute="height" constant="270" id="eJd-YQ-jd8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-sY-xN2">
+                                <frame key="frameInset" minX="1425" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="R0d-Mu-yUD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-4t-2dw">
-                                <rect key="frame" x="1640" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="NEH-bl-hdG"/>
-                                    <constraint firstAttribute="width" constant="170" id="pCo-3Y-RPs"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-4t-2dw">
+                                <frame key="frameInset" minX="1640" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="XtL-Et-ama"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-aX-6dw">
-                                <rect key="frame" x="1210" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="094-I5-pZy"/>
-                                    <constraint firstAttribute="height" constant="270" id="Dqt-w0-Hj7"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-aX-6dw">
+                                <frame key="frameInset" minX="1210" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="n9Z-nc-XzE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOo-00-d1c">
-                                <rect key="frame" x="995" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="B5a-km-9Na"/>
-                                    <constraint firstAttribute="height" constant="270" id="bTB-Wq-EsG"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOo-00-d1c">
+                                <frame key="frameInset" minX="995" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="43J-YR-oUP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-8H-kOF">
-                                <rect key="frame" x="995" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="S7L-Pg-w6Y"/>
-                                    <constraint firstAttribute="width" constant="170" id="cMA-Sy-3iE"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-8H-kOF">
+                                <frame key="frameInset" minX="995" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="n2u-og-zN7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqk-9t-58h">
-                                <rect key="frame" x="1210" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="2vM-LV-Ble"/>
-                                    <constraint firstAttribute="width" constant="170" id="mTP-n3-R0c"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqk-9t-58h">
+                                <frame key="frameInset" minX="1210" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="kVW-8C-h6v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzL-kF-NnS">
-                                <rect key="frame" x="780" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="2NN-5G-eZc"/>
-                                    <constraint firstAttribute="width" constant="170" id="PEV-cY-HBk"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzL-kF-NnS">
+                                <frame key="frameInset" minX="780" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="Arl-Gm-I9p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-As-pEy">
-                                <rect key="frame" x="780" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="RbX-9T-AaQ"/>
-                                    <constraint firstAttribute="width" constant="170" id="k8j-Yk-WQi"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-As-pEy">
+                                <frame key="frameInset" minX="780" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="fJm-vG-ZhK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-fr-J9d">
-                                <rect key="frame" x="565" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="2dn-8h-EXz"/>
-                                    <constraint firstAttribute="width" constant="170" id="IPe-ce-Efm"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-fr-J9d">
+                                <frame key="frameInset" minX="565" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="iTy-y3-ttx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-Bk-yuQ">
-                                <rect key="frame" x="350" y="749" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="EzE-Ud-gUm"/>
-                                    <constraint firstAttribute="height" constant="270" id="tQj-Ga-0f8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-Bk-yuQ">
+                                <frame key="frameInset" minX="350" minY="749" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="u55-jz-GHY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3co-BU-Q3h">
-                                <rect key="frame" x="350" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="Jkn-2c-rvz"/>
-                                    <constraint firstAttribute="width" constant="170" id="yx0-MP-HTh"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3co-BU-Q3h">
+                                <frame key="frameInset" minX="350" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="4g0-QD-2ve"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-qi-eVp">
-                                <rect key="frame" x="565" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="3kr-8Q-7KX"/>
-                                    <constraint firstAttribute="width" constant="170" id="mJD-sw-ErV"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-qi-eVp">
+                                <frame key="frameInset" minX="565" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="koz-TD-6R1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-dD-mBs">
-                                <rect key="frame" x="135" y="450" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="FQP-jv-NDG"/>
-                                    <constraint firstAttribute="height" constant="270" id="Scj-9K-Hrj"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsK-dD-mBs">
+                                <frame key="frameInset" minX="135" minY="450" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
@@ -1341,102 +1292,74 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível: 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-LH-iTF">
-                                <rect key="frame" x="858" y="60" width="480" height="40"/>
+                                <frame key="frameInset" minX="904" minY="48" width="112" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0m-W6-qZQ">
-                                <rect key="frame" x="1425" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="BPX-30-NWi"/>
-                                    <constraint firstAttribute="height" constant="270" id="BXn-QI-QPz"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0m-W6-qZQ">
+                                <frame key="frameInset" minX="1425" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="qgh-tx-dHk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-dc-den">
-                                <rect key="frame" x="995" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="Kf6-bO-ipt"/>
-                                    <constraint firstAttribute="height" constant="270" id="uFR-Vc-42q"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-dc-den">
+                                <frame key="frameInset" minX="995" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="y2c-qh-jpb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-2y-vX5">
-                                <rect key="frame" x="1210" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="kZ3-Ll-lSo"/>
-                                    <constraint firstAttribute="width" constant="170" id="l4N-2p-SmF"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-2y-vX5">
+                                <frame key="frameInset" minX="1210" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="59D-1h-fWK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-3q-zLs">
-                                <rect key="frame" x="780" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="Opl-Nh-ndL"/>
-                                    <constraint firstAttribute="width" constant="170" id="hYG-jz-UHK"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-3q-zLs">
+                                <frame key="frameInset" minX="780" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="8oy-Qh-INW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-85-WX2">
-                                <rect key="frame" x="565" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="7ua-GT-NcH"/>
-                                    <constraint firstAttribute="height" constant="270" id="djD-Ud-F2p"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-85-WX2">
+                                <frame key="frameInset" minX="565" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="cDO-4M-hog"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-vy-rtc">
-                                <rect key="frame" x="350" y="153" width="170" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="PkL-D5-b16"/>
-                                    <constraint firstAttribute="width" constant="170" id="lCU-NF-Hdr"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-vy-rtc">
+                                <frame key="frameInset" minX="350" minY="153" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" backgroundImage="Parte de tras"/>
                                 <connections>
                                     <action selector="animacaoCarta:" destination="X0y-Ec-Tyw" eventType="primaryActionTriggered" id="wCk-9M-13d"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ2-r9-V2p">
+                                <frame key="frameInset" minX="1636" minY="39" width="207" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="3co-BU-Q3h" firstAttribute="top" secondItem="QEy-vy-rtc" secondAttribute="bottom" constant="30" id="0Bc-Wd-1PN"/>
-                            <constraint firstItem="BE3-oV-cSq" firstAttribute="top" secondItem="RB0-sY-xN2" secondAttribute="bottom" constant="30" id="1jD-km-sLR"/>
-                            <constraint firstItem="RTm-Bk-yuQ" firstAttribute="top" secondItem="3co-BU-Q3h" secondAttribute="bottom" constant="30" id="2B0-rh-gVb"/>
-                            <constraint firstItem="jRB-Kv-Cf3" firstAttribute="top" secondItem="K0D-wa-lg6" secondAttribute="top" id="B6y-hr-13M"/>
-                            <constraint firstAttribute="trailing" secondItem="jRB-Kv-Cf3" secondAttribute="trailing" id="Erf-dt-nBp"/>
-                            <constraint firstItem="tUk-fr-J9d" firstAttribute="top" secondItem="ULG-qi-eVp" secondAttribute="bottom" constant="30" id="Mmm-3r-mQG"/>
-                            <constraint firstItem="DOo-00-d1c" firstAttribute="top" secondItem="9ZE-8H-kOF" secondAttribute="bottom" constant="30" id="NTQ-ne-iva"/>
-                            <constraint firstItem="jRB-Kv-Cf3" firstAttribute="leading" secondItem="K0D-wa-lg6" secondAttribute="leading" id="Wbm-So-7tm"/>
-                            <constraint firstItem="jRB-Kv-Cf3" firstAttribute="bottom" secondItem="R9Q-FP-IHa" secondAttribute="top" id="bBa-r2-Dvg"/>
-                            <constraint firstItem="RB0-sY-xN2" firstAttribute="top" secondItem="x0m-W6-qZQ" secondAttribute="bottom" constant="30" id="fXt-A7-36Y"/>
-                            <constraint firstItem="iqk-9t-58h" firstAttribute="top" secondItem="CyE-2y-vX5" secondAttribute="bottom" constant="30" id="hPN-cW-bhc"/>
-                            <constraint firstItem="ULG-qi-eVp" firstAttribute="top" secondItem="Isq-85-WX2" secondAttribute="bottom" constant="30" id="kNO-Zu-X2P"/>
-                            <constraint firstItem="9ZE-8H-kOF" firstAttribute="top" secondItem="Ipz-dc-den" secondAttribute="bottom" constant="30" id="mMx-XI-SlM"/>
-                            <constraint firstItem="9FW-aX-6dw" firstAttribute="top" secondItem="iqk-9t-58h" secondAttribute="bottom" constant="30" id="n6r-kf-hZ4"/>
-                            <constraint firstItem="JzL-kF-NnS" firstAttribute="top" secondItem="ePZ-As-pEy" secondAttribute="bottom" constant="30" id="uMy-Ca-jWG"/>
-                            <constraint firstItem="ePZ-As-pEy" firstAttribute="top" secondItem="HB3-3q-zLs" secondAttribute="bottom" constant="30" id="yuN-px-3ce"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="carta1" destination="rsK-dD-mBs" id="XKU-6F-Vfu"/>
@@ -1463,7 +1386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgw-ov-7EU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3969" y="5863"/>
+            <point key="canvasLocation" x="901" y="7639"/>
         </scene>
     </scenes>
     <resources>
@@ -1472,7 +1395,12 @@
         <image name="fundo" width="5667" height="4000"/>
         <image name="music" width="100" height="100"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="s7n-vx-ICO"/>
+        <segue reference="0V9-1s-tW5"/>
     </inferredMetricsTieBreakers>
 </document>

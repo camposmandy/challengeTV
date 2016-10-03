@@ -17,7 +17,10 @@ class NivelDoisViewController: UIViewController {
     var cartas = [UIButton]()
     var retorno = [String]()
     var selecionados = [Int]()
-    var b = UIButton()
+    var bonus = 0.0
+    var timer = Timer()
+    var tempo: TimeInterval = 60
+    var tempoRef: TimeInterval = 60
     
     @IBOutlet weak var carta1: UIButton!
     @IBOutlet weak var carta2: UIButton!
@@ -29,7 +32,10 @@ class NivelDoisViewController: UIViewController {
     @IBOutlet weak var carta8: UIButton!
     @IBOutlet weak var carta9: UIButton!
     @IBOutlet weak var carta10: UIButton!
-    
+    @IBOutlet weak var pontuacao: UILabel!
+    @IBOutlet weak var barraDeProgresso: UIProgressView!
+    @IBOutlet weak var tempoLbl: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +52,11 @@ class NivelDoisViewController: UIViewController {
         retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        // Barra de tempo
+        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(NivelDoisViewController.atualizarTempo), userInfo: nil, repeats: true)
+        
+    }
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }
@@ -67,6 +78,34 @@ class NivelDoisViewController: UIViewController {
             }) { (finished) in
                 self.jogo(sender as! UIButton)
             }
+        }
+    }
+    
+    func atualizarTempo(){
+        tempo -= 0.1
+        
+        if tempo <= 0 {
+            tempo = 0
+            
+            timer.invalidate()
+            
+            // Fim do tempo
+            let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
+            
+            chamada.score    = pontuacao.text
+            chamada.mensagem = "O tempo acabou 😰"
+            
+            self.navigationController?.pushViewController(chamada, animated: true)
+        }
+        
+        barraDeProgresso.progress = Float(tempo/tempoRef)
+        
+        let tempoString = NSString(format: "Tempo = %.1f", tempo)
+        
+        tempoLbl.text = "\(tempoString)"
+        
+        if barraDeProgresso.progress < 0.2 {
+            barraDeProgresso.progressTintColor = UIColor.red
         }
     }
     
@@ -106,14 +145,29 @@ class NivelDoisViewController: UIViewController {
                 Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
             }
             
-            if cartas.count == c {
+            if cartas.count == c { // quando todas as cartas forem desviradas 
+               
+                timer.invalidate()// para o tempo
+                
                 let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
+                
+                chamada.score = pontuacao.text
+                chamada.mensagem = "Você ganhou! 😃"
                 self.navigationController?.pushViewController(chamada, animated: true)
             }
         }
     }
     
     func acerto(){
+        // Calculo pont
+        bonus = tempo
+        
+        let conta = cartas.count  - 2
+        let soma = (bonus*2)
+        let cs = soma - Double(conta)
+        
+        pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String
+        
         for i in selecionados{
             cartas[i].tag = 100
             managerJogo.animacaoAcerto(cartas[i])
