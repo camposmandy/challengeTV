@@ -70,7 +70,7 @@ class NivelCincoViewController: UIViewController {
     }
     /* MARK: - Actions */
 
-    @IBAction func animacaoCarta(_ sender: AnyObject) { //animação dos botões quando selecionados.
+    @IBAction func animacaoCarta(_ sender: AnyObject) { //animação dos botõe0s quando selecionados.
         if sender.tag != 100 {
             let img = self.imagem(sender as! UIButton).foto
             
@@ -115,8 +115,13 @@ class NivelCincoViewController: UIViewController {
         
         tempoLbl.text = "\(tempoString)"
         
-        if barraDeProgresso.progress < 0.2 {
-            barraDeProgresso.progressTintColor = UIColor.red
+        if barraDeProgresso.progress <= 0.3 && barraDeProgresso.progress > 0.1 {
+                barraDeProgresso.progressTintColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+        } else if barraDeProgresso.progress <= 0.1 {
+//            UIView.animate(withDuration: 20.0, animations: {
+//                self.barraDeProgresso.transform = CGAffineTransform(scaleX: 1, y: 4)
+//            })
+            barraDeProgresso.progressTintColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
         }
     }
     
