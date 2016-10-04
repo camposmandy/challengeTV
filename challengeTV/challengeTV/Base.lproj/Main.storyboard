@@ -1362,6 +1362,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="barraDeProgresso" destination="bwB-8B-H5f" id="GrO-sA-R8Q"/>
                         <outlet property="carta1" destination="rsK-dD-mBs" id="XKU-6F-Vfu"/>
                         <outlet property="carta10" destination="JzL-kF-NnS" id="hks-sJ-hcw"/>
                         <outlet property="carta11" destination="Ipz-dc-den" id="4BP-qC-bSt"/>
@@ -1382,6 +1383,8 @@
                         <outlet property="carta7" destination="tUk-fr-J9d" id="RR4-Lf-uqg"/>
                         <outlet property="carta8" destination="HB3-3q-zLs" id="xjz-Kw-sGy"/>
                         <outlet property="carta9" destination="ePZ-As-pEy" id="p8x-1v-n3E"/>
+                        <outlet property="pontuacao" destination="r9o-2x-0lJ" id="laI-DR-SU1"/>
+                        <outlet property="tempoLbl" destination="PZ2-r9-V2p" id="PhZ-HI-zAQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgw-ov-7EU" userLabel="First Responder" sceneMemberID="firstResponder"/>

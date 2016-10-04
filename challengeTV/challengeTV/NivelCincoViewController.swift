@@ -22,7 +22,6 @@ class NivelCincoViewController: UIViewController {
     var tempo   : TimeInterval = 60
     var tempoRef: TimeInterval = 60
     
-    
     // Cartas
     @IBOutlet weak var carta1 : UIButton!
     @IBOutlet weak var carta2 : UIButton!
@@ -49,8 +48,6 @@ class NivelCincoViewController: UIViewController {
     @IBOutlet weak var pontuacao       : UILabel!
     @IBOutlet weak var barraDeProgresso: UIProgressView!
     @IBOutlet weak var tempoLbl        : UILabel!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
