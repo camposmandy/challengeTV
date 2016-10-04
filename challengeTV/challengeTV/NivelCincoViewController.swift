@@ -10,7 +10,7 @@ import UIKit
 
 class NivelCincoViewController: UIViewController {
     // Variaveis
-    var bonus         = 0.0
+    var bonus         = 0.0, conta = 0, cs = 0.0
     var managerJogo   = Jogo()
     var timer         = Timer()
     var nomeCategoria = String()
@@ -173,9 +173,9 @@ class NivelCincoViewController: UIViewController {
     func acerto(){
         //Calculo pont
         bonus = tempo
-        let conta = cartas.count - 2
+        conta = conta + 2
         let soma = bonus*5
-        let cs = soma - Double(conta)
+        cs = cs + (soma + Double(conta))
         
         pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String
         

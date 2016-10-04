@@ -19,6 +19,7 @@ class NivelUmViewController: UIViewController {
     var timer = Timer()
     var countTempo: Double = 120*60
     var bonus = 0.0
+    var conta = 0.0, cs = 0.0
     var tempo: TimeInterval = 60
     var tempoRef: TimeInterval = 60
     let GameC = GameCenter()
@@ -52,7 +53,7 @@ class NivelUmViewController: UIViewController {
         // Barra de tempo
         timer = Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(NivelUmViewController.atualizarTempo), userInfo: nil, repeats: true)
         
-
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -85,9 +86,9 @@ class NivelUmViewController: UIViewController {
         if tempo <= 0 {
             tempo = 0
             
-            timer.invalidate()            
+            timer.invalidate()
             
-            // Fim do tempo 
+            // Fim do tempo
             let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
             
             chamada.score    = pontuacao.text
@@ -143,7 +144,7 @@ class NivelUmViewController: UIViewController {
                 GameC.Conquista()
                 
                 timer.invalidate() // parar o tempo
-
+                
                 let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
                 
                 chamada.score = pontuacao.text
@@ -156,10 +157,9 @@ class NivelUmViewController: UIViewController {
     
     func acerto(){
         bonus = tempo
-        let conta = cartas.count - 2
-        
-        let soma = (bonus)
-        let cs = soma - Double(conta)
+        conta = conta + 2
+        let soma = bonus
+        cs = cs + (soma + Double(conta))
         
         
         pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String

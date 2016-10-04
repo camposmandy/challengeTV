@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "INSTRUÇÕES"; ObjectID = "1As-6u-iGx"; */
+"1As-6u-iGx.text" = "INSTRUÇÕES";
+
+/* Class = "UIButton"; normalTitle = "Nível 4"; ObjectID = "1rV-Fa-pAd"; */
+"1rV-Fa-pAd.normalTitle" = "Nível 4";
+
+/* Class = "UILabel"; text = "TIMER"; ObjectID = "32G-Tp-260"; */
+"32G-Tp-260.text" = "TIMER";
+
+/* Class = "UILabel"; text = "Pontuação"; ObjectID = "4FI-2b-I2P"; */
+"4FI-2b-I2P.text" = "Pontuação";
+
+/* Class = "UILabel"; text = "PARABÉNS"; ObjectID = "4hu-E5-ge4"; */
+"4hu-E5-ge4.text" = "PARABÉNS";
+
+/* Class = "UILabel"; text = "Pontuação"; ObjectID = "50u-dH-TeR"; */
+"50u-dH-TeR.text" = "Pontuação";
+
+/* Class = "UILabel"; text = "TIMER"; ObjectID = "7UA-sF-KI6"; */
+"7UA-sF-KI6.text" = "TIMER";
+
+/* Class = "UILabel"; text = "Nível: 4"; ObjectID = "Cun-Uy-vLT"; */
+"Cun-Uy-vLT.text" = "Nível: 4";
+
+/* Class = "UILabel"; text = "Pontuação"; ObjectID = "DtO-02-BiX"; */
+"DtO-02-BiX.text" = "Pontuação";
+
+/* Class = "UILabel"; text = "Nível: 2"; ObjectID = "EP4-cJ-LLf"; */
+"EP4-cJ-LLf.text" = "Nível: 2";
+
+/* Class = "UILabel"; text = "Nível: 5"; ObjectID = "GZL-LH-iTF"; */
+"GZL-LH-iTF.text" = "Nível: 5";
+
+/* Class = "UILabel"; text = "Pontuação"; ObjectID = "GaX-J4-fon"; */
+"GaX-J4-fon.text" = "Pontuação";
+
+/* Class = "UIButton"; normalTitle = "Nível 2"; ObjectID = "Jw9-NG-NUT"; */
+"Jw9-NG-NUT.normalTitle" = "Nível 2";
+
+/* Class = "UIButton"; normalTitle = "JOGOS"; ObjectID = "OIh-8C-M9g"; */
+"OIh-8C-M9g.normalTitle" = "JOGOS";
+
+/* Class = "UILabel"; text = "CATEGORIAS"; ObjectID = "OMn-TQ-iL1"; */
+"OMn-TQ-iL1.text" = "CATEGORIAS";
+
+/* Class = "UILabel"; text = "TIMER"; ObjectID = "PZ2-r9-V2p"; */
+"PZ2-r9-V2p.text" = "TIMER";
+
+/* Class = "UILabel"; text = "TIMER"; ObjectID = "QSb-Nv-S8h"; */
+"QSb-Nv-S8h.text" = "TIMER";
+
+/* Class = "UILabel"; text = "Escolha um nível para jogar"; ObjectID = "UXg-Te-YGt"; */
+"UXg-Te-YGt.text" = "Escolha um nível para jogar";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "WBF-Fb-l08"; */
+"WBF-Fb-l08.text" = "Score";
+
+/* Class = "UILabel"; text = "TIMER"; ObjectID = "WZa-Ce-UVF"; */
+"WZa-Ce-UVF.text" = "TIMER";
+
+/* Class = "UIButton"; normalTitle = "Nível 5"; ObjectID = "cTo-ph-8hb"; */
+"cTo-ph-8hb.normalTitle" = "Nível 5";
+
+/* Class = "UIButton"; normalTitle = "Níveis"; ObjectID = "dbh-cz-1Lz"; */
+"dbh-cz-1Lz.normalTitle" = "Níveis";
+
+/* Class = "UILabel"; text = "MEMORIZANDO"; ObjectID = "hMV-dx-r1W"; */
+"hMV-dx-r1W.text" = "MEMORIZANDO";
+
+/* Class = "UILabel"; text = "NOME DA CATEGORIA"; ObjectID = "iBX-Sy-ZAU"; */
+"iBX-Sy-ZAU.text" = "NOME DA CATEGORIA";
+
+/* Class = "UILabel"; text = " Nível: 1"; ObjectID = "jmn-yG-ivD"; */
+"jmn-yG-ivD.text" = " Nível: 1";
+
+/* Class = "UIButton"; normalTitle = "INSTRUÇÕES"; ObjectID = "pdj-47-AXs"; */
+"pdj-47-AXs.normalTitle" = "INSTRUÇÕES";
+
+/* Class = "UIButton"; normalTitle = "Nível 3"; ObjectID = "qGn-vg-Y3r"; */
+"qGn-vg-Y3r.normalTitle" = "Nível 3";
+
+/* Class = "UILabel"; text = "Pontuação"; ObjectID = "r9o-2x-0lJ"; */
+"r9o-2x-0lJ.text" = "Pontuação";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "sNn-de-14t"; */
+"sNn-de-14t.normalTitle" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Nível 1"; ObjectID = "utc-UI-46Z"; */
+"utc-UI-46Z.normalTitle" = "Nível 1";
+
+/* Class = "UILabel"; text = "Nível: 3"; ObjectID = "wBp-Cy-OcK"; */
+"wBp-Cy-OcK.text" = "Nível: 3";

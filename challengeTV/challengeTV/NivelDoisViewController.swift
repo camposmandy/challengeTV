@@ -9,15 +9,15 @@
 import UIKit
 
 class NivelDoisViewController: UIViewController {
-
+    
     var managerJogo = Jogo()
     var nomeCategoria = String()
     var opcoesCarta = [String]() //imagens das cartas
-//    var nomeCategoria = String()
+    //    var nomeCategoria = String()
     var cartas = [UIButton]()
     var retorno = [String]()
     var selecionados = [Int]()
-    var bonus = 0.0
+    var bonus = 0.0, conta = 0, cs = 0.0
     var timer = Timer()
     var tempo: TimeInterval = 60
     var tempoRef: TimeInterval = 60
@@ -35,7 +35,7 @@ class NivelDoisViewController: UIViewController {
     @IBOutlet weak var pontuacao: UILabel!
     @IBOutlet weak var barraDeProgresso: UIProgressView!
     @IBOutlet weak var tempoLbl: UILabel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +51,7 @@ class NivelDoisViewController: UIViewController {
         cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10]
         retorno = managerJogo.embaralhar(opcoesCarta) //retorna um array de cartas embaralhadas.
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         // Barra de tempo
         timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(NivelDoisViewController.atualizarTempo), userInfo: nil, repeats: true)
@@ -145,8 +145,8 @@ class NivelDoisViewController: UIViewController {
                 Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.erro), userInfo: nil, repeats: false)
             }
             
-            if cartas.count == c { // quando todas as cartas forem desviradas 
-               
+            if cartas.count == c { // quando todas as cartas forem desviradas
+                
                 timer.invalidate()// para o tempo
                 
                 let chamada = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Parabens") as! GanhouViewController
@@ -162,9 +162,9 @@ class NivelDoisViewController: UIViewController {
         // Calculo pont
         bonus = tempo
         
-        let conta = cartas.count  - 2
+        conta =  conta + 2
         let soma = (bonus*2)
-        let cs = soma - Double(conta)
+        cs = cs + (soma + Double(conta))
         
         pontuacao.text = NSString(format: "Pontuação = %.1f", cs) as String
         

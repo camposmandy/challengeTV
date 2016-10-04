@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3706D1111CF6146800926E53 /* Jogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706D1101CF6146800926E53 /* Jogo.swift */; };
 		371C39F61CECFB8700BBE2BA /* NivelUmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */; };
-		373B48341D08A8F6002230C6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B48331D08A8F6002230C6 /* GameKit.framework */; };
 		373B48361D09EC1A002230C6 /* GameCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B48351D09EC1A002230C6 /* GameCenter.swift */; };
 		378BEBF31D9B06E90030AA69 /* botaoFocado2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378BEBF21D9B06E90030AA69 /* botaoFocado2View.swift */; };
 		37B629C71CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */; };
@@ -34,9 +33,9 @@
 /* Begin PBXFileReference section */
 		3706D1101CF6146800926E53 /* Jogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jogo.swift; sourceTree = "<group>"; };
 		371C39F51CECFB8700BBE2BA /* NivelUmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelUmViewController.swift; sourceTree = "<group>"; };
-		373B48331D08A8F6002230C6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		373B48351D09EC1A002230C6 /* GameCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenter.swift; sourceTree = "<group>"; };
 		378BEBF21D9B06E90030AA69 /* botaoFocado2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = botaoFocado2View.swift; sourceTree = "<group>"; };
+		379BA1181DA41E98009ED2A6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		37B629C61CEA3FDA00E65EC1 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		37C076801CE24D2D00997545 /* challengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = challengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C076831CE24D2D00997545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373B48341D08A8F6002230C6 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +80,6 @@
 		37C076771CE24D2D00997545 = {
 			isa = PBXGroup;
 			children = (
-				373B48331D08A8F6002230C6 /* GameKit.framework */,
 				37C076821CE24D2D00997545 /* challengeTV */,
 				37C076811CE24D2D00997545 /* Products */,
 			);
@@ -166,6 +163,12 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 55Z8HFH9WB;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -174,7 +177,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 37C076771CE24D2D00997545;
@@ -233,6 +235,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37C076881CE24D2D00997545 /* Base */,
+				379BA1181DA41E98009ED2A6 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -335,12 +338,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55Z8HFH9WB;
 				INFOPLIST_FILE = challengeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.challengeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Debug;
 		};
@@ -351,12 +357,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55Z8HFH9WB;
 				INFOPLIST_FILE = challengeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.challengeTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
